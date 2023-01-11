@@ -15,6 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div>
+          <h1>Welcome</h1>
+          <h3>Team Error-4O4</h3>
+        </div>
         {/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
@@ -38,7 +42,7 @@ export default function Home() {
             </a>
           </div>
         </div> */}
-{/* 
+        {/* 
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -119,5 +123,5 @@ export default function Home() {
         </div> */}
       </main>
     </>
-  )
+  );
 }
