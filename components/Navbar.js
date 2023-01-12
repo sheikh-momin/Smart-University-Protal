@@ -2,19 +2,7 @@ import Link from "next/link";
 
 
 const Navbar = () => {
-  //   const menuItems = (
-  //     <React.Fragment>
-  //       <li>
-  //         <Link to="/">Home</Link>
-  //       </li>
-  //       <li>
-  //         <Link to="/faculty">Faculty</Link>
-  //       </li>
-  //       <li>
-  //         <Link to="/about">About</Link>
-  //       </li>
-  //     </React.Fragment>
-  //   );
+
   return (
     <div>
       <div className="navbar bg-teal-700 text-white py-12">
@@ -41,38 +29,17 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a href="/faculty">Faculty</a>
+                <Link href="/faculty">Faculty</Link>
               </li>
-              {/* <li tabIndex={0}>
-                <a className="justify-between">
-                  Parent
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-                </a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li> */}
+              
               <li>
-                <a href="/faculty">Admission</a>
+                <Link href="/admission">Admission</Link>
               </li>
               <li>
-                <a href="/faculty">About</a>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <a href="/faculty">Blog</a>
+                <Link href="/blog">Blog</Link>
               </li>
             </ul>
           </div>
@@ -85,38 +52,17 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a href="/faculty">Faculty</a>
+              <Link href="/faculty">Faculty</Link>
             </li>
-            {/* <li tabIndex={0}>
-              <a>
-                Parent
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li> */}
+            
             <li>
-              <a href="/faculty">Admission</a>
+              <Link href="/admission">Admission</Link>
             </li>
             <li>
-              <a href="/faculty">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="/faculty">Blog</a>
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
         </div>

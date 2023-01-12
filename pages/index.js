@@ -2,8 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-
 import HomePage from "./home";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-<<<<<<< HEAD
-      
       <HomePage></HomePage>
-=======
-      <Navbar></Navbar>
-      <Carusol></Carusol>
->>>>>>> bfe3218ac8228aba064fc860ce7b95477eccffb8
+      
+
     </>
   );
 }
