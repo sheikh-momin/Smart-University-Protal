@@ -29,17 +29,17 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link href="/academics" className="text-xl font-semibold">
+        <Link href="/" className="text-xl font-semibold">
           Academics
         </Link>
       </li>
       <li>
-        <Link href="/Campus life" className="text-xl font-semibold">
+        <Link href="/" className="text-xl font-semibold">
           Campus life
         </Link>
       </li>
       <li>
-        <Link href="/Campus life" className="text-xl font-semibold mr-48">
+        <Link href="/" className="text-xl font-semibold mr-48">
           Institution Center
         </Link>
       </li>
