@@ -4,42 +4,42 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link href="/" className="text-xl font-semibold">
+        <Link href="/" className="text-2xl font-semibold">
           Home
         </Link>
       </li>
       <li>
-        <Link href="/faculty" className="text-xl font-semibold">
+        <Link href="/faculty" className="text-2xl font-semibold">
           Faculty
         </Link>
       </li>
       <li>
-        <Link href="/admission" className="text-xl font-semibold">
+        <Link href="/admission" className="text-2xl font-semibold">
           Admission
         </Link>
       </li>
       <li>
-        <Link href="/about" className="text-xl font-semibold">
+        <Link href="/about" className="text-2xl font-semibold">
           About
         </Link>
       </li>
       <li>
-        <Link href="/blog" className="text-xl font-semibold">
+        <Link href="/blog" className="text-2xl font-semibold">
           Blog
         </Link>
       </li>
       <li>
-        <Link href="/" className="text-xl font-semibold">
+        <Link href="/" className="text-2xl font-semibold">
           Academics
         </Link>
       </li>
       <li>
-        <Link href="/" className="text-xl font-semibold">
+        <Link href="/" className="text-2xl font-semibold">
           Campus life
         </Link>
       </li>
       <li>
-        <Link href="/" className="text-xl font-semibold mr-48">
+        <Link href="/" className="text-2xl font-semibold mr-48">
           Institution Center
         </Link>
       </li>

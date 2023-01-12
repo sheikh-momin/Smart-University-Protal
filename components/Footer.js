@@ -10,10 +10,9 @@ const Footer = () => {
             alt=""
             className="w-16 h-12"
           />
-          <p className="font-bold text-xl">
-            Dreamers University <br />
-            Providing reliable Education since 1992
-          </p>
+          <p className="font-bold text-2xl">Dreamers University </p>
+          <p className="text-xl"> Providing reliable Education since 1992 </p>
+
           <p className="text-xl">©All rights reserved by Dreamers University</p>
         </div>
         <div>
