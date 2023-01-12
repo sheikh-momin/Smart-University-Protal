@@ -4,28 +4,44 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link href="/">Home</Link>
+        <Link href="/" className="text-xl font-semibold">
+          Home
+        </Link>
       </li>
       <li>
-        <Link href="/faculty">Faculty</Link>
+        <Link href="/faculty" className="text-xl font-semibold">
+          Faculty
+        </Link>
       </li>
       <li>
-        <Link href="/admission">Admission</Link>
+        <Link href="/admission" className="text-xl font-semibold">
+          Admission
+        </Link>
       </li>
       <li>
-        <Link href="/about">About</Link>
+        <Link href="/about" className="text-xl font-semibold">
+          About
+        </Link>
       </li>
       <li>
-        <Link href="/blog">Blog</Link>
+        <Link href="/blog" className="text-xl font-semibold">
+          Blog
+        </Link>
       </li>
       <li>
-        <Link href="/academics">Academics</Link>
+        <Link href="/academics" className="text-xl font-semibold">
+          Academics
+        </Link>
       </li>
       <li>
-        <Link href="/Campus life">Campus life</Link>
+        <Link href="/Campus life" className="text-xl font-semibold">
+          Campus life
+        </Link>
       </li>
       <li>
-        <Link href="/Campus life">Institution Center</Link>
+        <Link href="/Campus life" className="text-xl font-semibold mr-48">
+          Institution Center
+        </Link>
       </li>
     </>
   );
@@ -57,10 +73,22 @@ const Navbar = () => {
               {menuItems}
             </ul>
           </div>
-          <div className="mx-auto">
-            <Link href="/home" className="btn btn-ghost normal-case text-xl">
-              Dreamers University
-            </Link>
+          <div className="mx-auto flex">
+            <div>
+              <img
+                src="https://lirp.cdn-website.com/1f50fc79/dms3rep/multi/opt/US+Dream+Academy+favicon+logo-1920w.png"
+                alt=""
+                className="w-16 h-12"
+              />
+            </div>
+            <div>
+              <Link
+                href="/home"
+                className="btn btn-ghost normal-case text-3xl font-serif italic"
+              >
+                Dreamers University
+              </Link>
+            </div>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
