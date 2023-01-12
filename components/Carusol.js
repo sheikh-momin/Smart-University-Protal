@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const Carusol = () => {
+// <<<<<<< HEAD
   return (
     <div>
       <div className="carousel w-full lg:h-[600px]">
@@ -59,6 +60,7 @@ const Carusol = () => {
               ❯
             </a>
           </div>
+{/* >>>>>>> 5470d4160268c5b3ef9f1c5a94c1f1f625e01f58 */}
         </div>
       </div>
     </div>
