@@ -1,11 +1,53 @@
 import Link from "next/link";
 
-
 const Navbar = () => {
-
+  const menuItems = (
+    <>
+      <li>
+        <Link href="/" className="text-2xl font-semibold">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link href="/faculty" className="text-2xl font-semibold">
+          Faculty
+        </Link>
+      </li>
+      <li>
+        <Link href="/admission" className="text-2xl font-semibold">
+          Admission
+        </Link>
+      </li>
+      <li>
+        <Link href="/about" className="text-2xl font-semibold">
+          About
+        </Link>
+      </li>
+      <li>
+        <Link href="/blog" className="text-2xl font-semibold">
+          Blog
+        </Link>
+      </li>
+      <li>
+        <Link href="/" className="text-2xl font-semibold">
+          Academics
+        </Link>
+      </li>
+      <li>
+        <Link href="/" className="text-2xl font-semibold">
+          Campus life
+        </Link>
+      </li>
+      <li>
+        <Link href="/" className="text-2xl font-semibold mr-48">
+          Institution Center
+        </Link>
+      </li>
+    </>
+  );
   return (
     <div>
-      <div className="navbar bg-teal-700 text-white py-12">
+      <div className="navbar bg-teal-800 text-white py-12">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -26,45 +68,31 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-black"
             >
-              <li>
-                <Link href="/faculty">Faculty</Link>
-              </li>
-              
-              <li>
-                <Link href="/admission">Admission</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/blog">Blog</Link>
-              </li>
+              {menuItems}
             </ul>
           </div>
-          <div className="mx-auto">
-            <Link href="/home" className="btn btn-ghost normal-case text-xl">
-              Dreamers University
-            </Link>
+          <div className="mx-auto flex">
+            <div>
+              <img
+                src="https://lirp.cdn-website.com/1f50fc79/dms3rep/multi/opt/US+Dream+Academy+favicon+logo-1920w.png"
+                alt=""
+                className="w-16 h-12"
+              />
+            </div>
+            <div>
+              <Link
+                href="/home"
+                className="btn btn-ghost normal-case text-3xl font-serif italic"
+              >
+                Dreamers University
+              </Link>
+            </div>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link href="/faculty">Faculty</Link>
-            </li>
-            
-            <li>
-              <Link href="/admission">Admission</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/blog">Blog</Link>
-            </li>
-          </ul>
+          <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
       </div>
     </div>
