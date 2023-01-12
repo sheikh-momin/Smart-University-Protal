@@ -1,8 +1,34 @@
 import Link from "next/link";
 
-
 const Navbar = () => {
-
+  const menuItems = (
+    <>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li>
+        <Link href="/faculty">Faculty</Link>
+      </li>
+      <li>
+        <Link href="/admission">Admission</Link>
+      </li>
+      <li>
+        <Link href="/about">About</Link>
+      </li>
+      <li>
+        <Link href="/blog">Blog</Link>
+      </li>
+      <li>
+        <Link href="/academics">Academics</Link>
+      </li>
+      <li>
+        <Link href="/Campus life">Campus life</Link>
+      </li>
+      <li>
+        <Link href="/Campus life">Institution Center</Link>
+      </li>
+    </>
+  );
   return (
     <div>
       <div className="navbar bg-teal-700 text-white py-12">
@@ -26,21 +52,9 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-black"
             >
-              <li>
-                <Link href="/faculty">Faculty</Link>
-              </li>
-              
-              <li>
-                <Link href="/admission">Admission</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/blog">Blog</Link>
-              </li>
+              {menuItems}
             </ul>
           </div>
           <div className="mx-auto">
@@ -50,21 +64,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link href="/faculty">Faculty</Link>
-            </li>
-            
-            <li>
-              <Link href="/admission">Admission</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/blog">Blog</Link>
-            </li>
-          </ul>
+          <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
       </div>
     </div>

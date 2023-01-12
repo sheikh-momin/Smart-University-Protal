@@ -1,7 +1,6 @@
-import React from 'react';
-import Carusol from '../../components/Carusol';
-import Navbar from '../../components/Navbar';
-
+import React from "react";
+import Carusol from "../../components/Carusol";
+import Navbar from "../../components/Navbar";
 const HomePage = () => {
   return (
     <div>

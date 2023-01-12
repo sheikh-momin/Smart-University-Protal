@@ -1,10 +1,9 @@
 import Image from "next/image";
 
-
 const Carusol = () => {
   return (
     <div>
-      <div className="carousel w-full ">
+      <div className="carousel w-full lg:h-[600px]">
         <div id="slide1" className="carousel-item relative w-full">
           <img
             src="https://wallpaperaccess.com/full/1209573.jpg"
