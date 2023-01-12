@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+
 
 const Navbar = () => {
   //   const menuItems = (
@@ -77,9 +77,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="mx-auto">
-            <a className="btn btn-ghost normal-case text-xl">
+            <Link href="/home" className="btn btn-ghost normal-case text-xl">
               Dreamers University
-            </a>
+            </Link>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
