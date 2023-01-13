@@ -1,16 +1,10 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD 
 import Footer from "../../components/Footer"
-import Navbar from "../../components/Navbar"
-
-=======
 import Navbar from "../../components/Navbar";
->>>>>>> 99a8b7a07efa1a761b9b0c9ad07f13adb0dc60cd
 
 const About = () => {
   return (
     <div>
-      {/* <h1>About</h1> */}
-      {/* <h2>about</h2> */}
       <Navbar></Navbar>
       <div className="bg-teal-700">
         <div>
@@ -41,12 +35,10 @@ const About = () => {
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-80  bg-teal-700  text-white">
                   {/* <!-- Sidebar content here --> */}
-<<<<<<< HEAD
                   <li><a className="ml-10 text-md">Objective Of Dreamers University</a></li>
                   <li><a className="ml-10 text-md">History of Dreamers University</a></li>
                   <li><a className="ml-10 text-md">Structure of Dreamers University</a></li>
                   <li><a className="ml-10 text-md">Member States</a></li>
-=======
                   <li>
                     <a className="ml-10 text-md">Objective Of University</a>
                   </li>
@@ -63,7 +55,6 @@ const About = () => {
                   <li>
                     <a className="ml-10 text-md">Member States</a>
                   </li>
->>>>>>> 99a8b7a07efa1a761b9b0c9ad07f13adb0dc60cd
                 </ul>
               </div>
             </div>
@@ -222,7 +213,6 @@ const About = () => {
               advisory and consultancy services for Government, International
               Bodies, Foundations and allied Organisations.
             </p>
-<<<<<<< HEAD
             <h2 className="text-white text-md mt-3">It was initially established as the Islamic Centre for Technical and Vocational Training and Research, ICTVTR in pursuance of the Resolution No. 5/9-E of the Ninth Islamic Conference of Foreign Ministers (ICFM) held in Dakar, Senegal in 1978. The foundation stone of ICTVTR was laid on 27 March 1981 by His Excellency Late Ziaur Rahman, the President of Bangladesh in the presence of His Excellency Late Yasir Arafat, President of Palestine and Late Dr. Habib Chatty, the then Secretary General of the OIC on the 30-acre land donated by the Government of the People's Republic of Bangladesh to the OIC.</h2>
             <p className="text-white text-md mt-3">ICTVTR was renamed as the Islamic Institute of Technology (IIT), by the Twenty-second ICFM held in Casablanca, Kingdom of Morocco in 1994. It is mandated to help develop human resources in the Member Countries of the OIC in the fields of engineering and technology as well as technical education.</p>
             <h2 className="text-white text-md mt-3">The process of renaming Islamic Institute of Technology (IIT) as Islamic University of Technology (Dreamers University) began with a discussion in the 25th meeting of the Governing Board of IIT held in Dhaka, Bangladesh on 20-23 November 2000. In course of deliberation, the Honourable Members of the Governing Board felt the necessity of renaming the Institute and decided unanimously the following:</h2>
@@ -235,7 +225,6 @@ const About = () => {
             <p className="text-white text-md mt-3">The Vice Chancellor of the University is the chief executive in charge of the overall management of the University and takes measures necessary for realizing the objectives of the University. The Member States cooperate in every possible manner to assist the University in pursuing its objectives. The budget of the University is financed by mandatory contributions of the Government of the Member States in proportion to their contribution to the budget of the General Secretariat of the Organization of the Islamic Conference.</p>
 
             <h5 className="text-white text-xl mt-10 mb-20"> Funded by organisation of Dreamers Cooperation</h5>
-=======
 
             <h3 className="text-white text-4xl mt-12">
               Structure of Dreamers University
@@ -259,8 +248,6 @@ const About = () => {
               contribution to the budget of the General Secretariat of the
               Organization of the Islamic Conference.
             </p>
->>>>>>> 99a8b7a07efa1a761b9b0c9ad07f13adb0dc60cd
-
             <h5 className="text-white text-xl mt-10">
               {" "}
               Funded by organisation of Dreamers Cooperation
@@ -268,11 +255,7 @@ const About = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       <Footer></Footer>
-      {/* .. */}
-=======
->>>>>>> 99a8b7a07efa1a761b9b0c9ad07f13adb0dc60cd
     </div>
   );
 };
