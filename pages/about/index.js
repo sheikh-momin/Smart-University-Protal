@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer"
 import Navbar from "../../components/Navbar"
 
 
@@ -28,7 +29,7 @@ const About = () => {
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-80  bg-teal-700  text-white">
                   {/* <!-- Sidebar content here --> */}
-                  <li><a className="ml-10 text-md">Objective Of University</a></li>
+                  <li><a className="ml-10 text-md">Objective Of Dreamers University</a></li>
                   <li><a className="ml-10 text-md">History of Dreamers University</a></li>
                   <li><a className="ml-10 text-md">Structure of Dreamers University</a></li>
                   <li><a className="ml-10 text-md">Member States</a></li>
@@ -74,28 +75,14 @@ const About = () => {
             <p className="text-white text-md mt-3">The structure of the University comprises the Joint General Assembly, the Governing Board, Syndicate and the Vice Chancellor. The internal setup and working conditions of the University are governed by its Internal Rules and Regulations as approved by the ICFM as well as by the provisions of the Personnel and Financial Regulations of the OIC.</p>
             <p className="text-white text-md mt-3">The Vice Chancellor of the University is the chief executive in charge of the overall management of the University and takes measures necessary for realizing the objectives of the University. The Member States cooperate in every possible manner to assist the University in pursuing its objectives. The budget of the University is financed by mandatory contributions of the Government of the Member States in proportion to their contribution to the budget of the General Secretariat of the Organization of the Islamic Conference.</p>
 
-            <h5 className="text-white text-xl mt-10"> Funded by organisation of Dreamers Cooperation</h5>
-
-
-
-
-
-
-
-
-
+            <h5 className="text-white text-xl mt-10 mb-20"> Funded by organisation of Dreamers Cooperation</h5>
 
           </div>
-
-
-
-
-
-
         </div>
 
       </div>
-
+      <Footer></Footer>
+      {/* .. */}
     </div>
   )
 }
