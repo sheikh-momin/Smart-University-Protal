@@ -6,14 +6,15 @@ import Navbar from "../../components/Navbar";
 import Faculty from "../faculty";
 import Notice from "../Notice";
 import News from "../News";
+import CampusLife from "../../components/CampusLife";
 const HomePage = () => {
   return (
     <div>
       <Navbar></Navbar>
       <Carusol></Carusol>
-      
       <News></News>
       <Faculty></Faculty>
+      <CampusLife></CampusLife>
       <Colabaration></Colabaration>
       <Footer></Footer>
     </div>
