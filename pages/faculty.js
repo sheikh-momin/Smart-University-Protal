@@ -15,7 +15,7 @@ const faculty = () => {
       <Swiper
         slidesPerView={5}
         // centeredSlides={true}
-        spaceBetween={10}
+        // spaceBetween={10}
         // loop={true}
         // loopFillGroupWithBlank={false}
         grabCursor={true}
@@ -23,7 +23,7 @@ const faculty = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 2000,
+          delay: 1500,
           disableOnInteraction: false,
         }}
         breakpoints={{

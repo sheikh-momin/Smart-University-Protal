@@ -78,7 +78,7 @@ const Navbar = () => {
               <img
                 src="https://lirp.cdn-website.com/1f50fc79/dms3rep/multi/opt/US+Dream+Academy+favicon+logo-1920w.png"
                 alt=""
-                className="w-16 h-12"
+                className="lg:w-16 lg:h-12 sm:h-20"
               />
             </div>
             <div>

@@ -1,17 +1,20 @@
-import React from 'react'
-import vu from '../Assets/vu.jpg'
+import React from "react";
+import vu from "../Assets/vu.jpg";
 
 const News = () => {
   return (
-    <section>
-      <div className="hero min-h-screen bg-base-200">
+    <section className=" bg-teal-700 py-24">
+      <h2 className="text-center text-white font-serif font-bold text-3xl italic mb-6">
+        News & Notice
+      </h2>
+      <div className="hero">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card w-96 bg-base-100 shadow-xl">
             <div className="card-body">
               <h2 className="card-title ">Notice!</h2>
               <div className="flex flex-col w-full border-opacity-50">
                 <div className="divider"></div>
-                
+
                 <div className="btn-group">
                   <button className="btn btn-secondary">Admission</button>
                   <button className="btn btn-primary">Administration</button>
@@ -35,11 +38,9 @@ const News = () => {
                 <div className="flex flex-1 flex-col p-4 border-l-8 dark:border-violet-400">
                   <span className="text-2xl"></span>
                   <span className="text-xs dark:text-gray-400">
-                 Admission test result-2023.pdf
+                    Admission test result-2023.pdf
                   </span>
                 </div>
-
-                
               </div>
 
               <div className="card-actions justify-end"></div>
@@ -106,6 +107,6 @@ const News = () => {
       </div>
     </section>
   );
-}
+};
 
-export default News
+export default News;
