@@ -13,16 +13,17 @@ const faculty = () => {
         Faculties
       </h2>
       <Swiper
-        slidesPerView={1}
-        centeredSlides={true}
+        slidesPerView={5}
+        // centeredSlides={true}
         spaceBetween={10}
-        loop={true}
+        // loop={true}
+        // loopFillGroupWithBlank={false}
         grabCursor={true}
         pagination={{
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         breakpoints={{
@@ -43,6 +44,7 @@ const faculty = () => {
             spaceBetween: 60,
           },
         }}
+        navigation={true}
         modules={[Autoplay, Navigation]}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
