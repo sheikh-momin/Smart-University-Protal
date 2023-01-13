@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar";
 import Faculty from "../faculty";
 import Notice from "../Notice";
 import News from "../News";
+
 const HomePage = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const HomePage = () => {
       
       <News></News>
       <Faculty></Faculty>
+      
       <Colabaration></Colabaration>
       <Footer></Footer>
     </div>
