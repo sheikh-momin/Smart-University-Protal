@@ -74,7 +74,7 @@ const Blog = () => {
         </div>
 
         {/* fifth */}
-        <div className='mt-5'>
+        <div className='mt-5 ml-5'>
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img src="https://roverchallenge.eu/wp-content/uploads/2020/09/ERC2020_Lukasz_Widziszowski__LCS7610.jpg" alt="Shoes" /></figure>
             <div className="card-body">
