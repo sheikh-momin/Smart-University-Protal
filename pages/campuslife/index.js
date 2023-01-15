@@ -1,11 +1,14 @@
 import React from 'react';
+import Facilities from '../../components/campusLife/Facilities';
+import StudentActivities from '../../components/campusLife/StudentActivities';
 import Navbar from '../../components/Navbar';
 
 const Campuslife = () => {
     return (
         <div>
             <Navbar></Navbar>
-            this is campus life and its working
+            <StudentActivities></StudentActivities>
+            <Facilities></Facilities>
         </div>
     );
 };
