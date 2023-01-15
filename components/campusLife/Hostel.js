@@ -3,8 +3,9 @@ import React from 'react';
 const Hostel = () => {
     return (
 
-        <div>
+        <div className='container mx-auto mt-12'>
              <h1 className='text-center text-teal-700 text-4xl font-bold italic font-serif mb-3'>Hostel Facilities</h1>
+             <div className="divider"></div>
             
              <div className="hero ">
   <div className="hero-content flex-col lg:flex-row">

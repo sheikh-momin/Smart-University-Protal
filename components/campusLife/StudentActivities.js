@@ -3,7 +3,7 @@ import React from 'react';
 const StudentActivities = () => {
     return (
         <div className='container mx-auto'>
-            <h1 className='text-center mb-6 text-teal-700 text-4xl font-bold italic font-serif'>Student Activities</h1>
+            <h1 className='text-center mt-10 text-teal-700 text-4xl font-bold italic font-serif'>Student Activities</h1>
             <div className="divider"></div>
             <p>The overall activities of OSA are divided into two major areas of operations:</p>
             <p className='text-xl italic '> <span className='text-2xl font-bold italic font-serif'>Campus Activities </span><br></br>
