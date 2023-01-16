@@ -14,10 +14,6 @@ const faculty = () => {
       </h2>
       <Swiper
         slidesPerView={5}
-        // centeredSlides={true}
-        // spaceBetween={10}
-        // loop={true}
-        // loopFillGroupWithBlank={false}
         grabCursor={true}
         pagination={{
           clickable: true,
