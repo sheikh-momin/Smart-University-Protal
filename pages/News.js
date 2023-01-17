@@ -3,7 +3,7 @@ import vu from "../Assets/vu.jpg";
 
 const News = () => {
   return (
-    <section className=" bg-teal-700 py-24">
+    <section className="bg-emerald-900 py-24">
       <h2 className="text-center text-white font-serif font-bold text-3xl italic mb-6">
         News & Notice
       </h2>
