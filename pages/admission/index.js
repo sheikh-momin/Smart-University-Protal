@@ -9,7 +9,7 @@ const Admission = () => {
   return (
     <div >
       <Navbar></Navbar>
-      <div className="grid grid-cols-12 gap-4 my-20">
+      <div className="md:grid grid-cols-12 gap-4 my-20">
         <div className="col-span-9"><Info></Info></div>
         <div className="col-span-3 mt-16"><Category></Category></div>
       </div>
