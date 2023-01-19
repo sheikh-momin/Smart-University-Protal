@@ -154,7 +154,7 @@ const Blog = () => {
         pageId="1552348765040416"
         appId="955564245411512"
         language="en-au"
-        themeColor={"#000000"}
+        themeColor={"#1261A0"}
         bottomSpacing={100}
         loggedInGreeting="loggedInGreeting"
         loggedOutGreeting="loggedOutGreeting"
