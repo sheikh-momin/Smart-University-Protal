@@ -9,7 +9,7 @@ const Blog = () => {
 
       <Navbar></Navbar>
 
-      
+      {/* grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3.. */}
       <div class="grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10">
         {/* first */}
         <div className='lg:ml-10 md:ml-0'>
