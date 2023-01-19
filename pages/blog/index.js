@@ -153,9 +153,9 @@ const Blog = () => {
       <MessengerChat
         pageId="1552348765040416"
         appId="955564245411512"
-        language="sv_SE"
+        language="en-au"
         themeColor={"#000000"}
-        bottomSpacing={300}
+        bottomSpacing={100}
         loggedInGreeting="loggedInGreeting"
         loggedOutGreeting="loggedOutGreeting"
         greetingDialogDisplay={"show"}
