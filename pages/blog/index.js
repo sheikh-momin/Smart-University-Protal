@@ -1,8 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import MessengerCustomerChat from "react-messenger-customer-chat";
-
+// import MessengerCustomerChat from "react-messenger-customer-chat";
 const Blog = () => {
   return (
     <div>
@@ -150,10 +149,10 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId="1552348765040416"
         appId="955564245411512"
-      />
+      /> */}
       <Footer></Footer>
     </div>
   );
