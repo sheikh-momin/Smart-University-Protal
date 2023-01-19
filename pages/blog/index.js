@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-// import MessengerCustomerChat from "react-messenger-customer-chat";
+import { MessengerChat } from "react-messenger-chat-plugin";
+
 const Blog = () => {
   return (
     <div>
       <Navbar></Navbar>
-
       {/* grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3.. */}
       <div class="grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10">
         {/* first */}
@@ -149,11 +149,37 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      {/* <MessengerCustomerChat
+      {/* <MessengerChat pageId="1552348765040416" appId="955564245411512" /> */}
+      <MessengerChat
         pageId="1552348765040416"
         appId="955564245411512"
-      /> */}
-      <Footer></Footer>
+        language="sv_SE"
+        themeColor={"#000000"}
+        bottomSpacing={300}
+        loggedInGreeting="loggedInGreeting"
+        loggedOutGreeting="loggedOutGreeting"
+        greetingDialogDisplay={"show"}
+        debugMode={true}
+        onMessengerShow={() => {
+          console.log("onMessengerShow");
+        }}
+        onMessengerHide={() => {
+          console.log("onMessengerHide");
+        }}
+        onMessengerDialogShow={() => {
+          console.log("onMessengerDialogShow");
+        }}
+        onMessengerDialogHide={() => {
+          console.log("onMessengerDialogHide");
+        }}
+        onMessengerMounted={() => {
+          console.log("onMessengerMounted");
+        }}
+        onMessengerLoad={() => {
+          console.log("onMessengerLoad");
+        }}
+      />
+      ,<Footer></Footer>
     </div>
   );
 };

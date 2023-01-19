@@ -15,6 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <MessengerChat pageId="1552348765040416" />
       <HomePage></HomePage>
     </>
   );
