@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import HomePage from "./home";
+import { MessengerChat } from "react-messenger-chat-plugin";
 
 const inter = Inter({ subsets: ["latin"] });
 
