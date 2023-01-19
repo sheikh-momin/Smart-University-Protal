@@ -8,6 +8,8 @@ import Notice from "../Notice";
 import News from "../News";
 import CampusLife from "../../components/CampusLife";
 import FacultyHome from "../../components/facultyHome";
+import MessengerCustomerChat from "react-messenger-customer-chat";
+
 const HomePage = () => {
   return (
     <div>
@@ -17,7 +19,11 @@ const HomePage = () => {
       <FacultyHome></FacultyHome>
       <CampusLife></CampusLife>
       <Colabaration></Colabaration>
-      <Footer></Footer>
+      <MessengerCustomerChat
+        pageId="1552348765040416"
+        appId="955564245411512"
+      />
+      ,<Footer></Footer>
     </div>
   );
 };

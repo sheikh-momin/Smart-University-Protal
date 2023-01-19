@@ -29,13 +29,8 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-<<<<<<< HEAD
         <Link href="/academic" className="text-2xl font-semibold">
           Academic
-=======
-        <Link href="/" className="text-xl font-semibold">
-          Academics
->>>>>>> 0432e9a56c05fbb1d577749957e849d7fcf8c760
         </Link>
       </li>
       <li>
