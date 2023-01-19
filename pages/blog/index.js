@@ -9,10 +9,10 @@ const Blog = () => {
 
       <Navbar></Navbar>
 
-
-      <div class="grid grid-cols-3 gap-4 mt-10 mb-10">
+      {/* grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3.. */}
+      <div class="grid mt-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10">
         {/* first */}
-        <div className='ml-10'>
+        <div className='lg:ml-10 md:ml-0'>
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
               <img className='w-96 h-60' src="https://i.ytimg.com/vi/pzoD0JgTBFA/maxresdefault.jpg" alt="Shoes" /></figure>
@@ -27,14 +27,14 @@ const Blog = () => {
         </div>
 
         {/* second */}
-        <div className='ml-4'>
+        <div className='lg:ml-4 md:ml-0'>
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
               <img className='w-96 h-60' src="https://convocation.du.ac.bd/convocation_image/conv52-header.jpg" alt="Shoes" /></figure>
             <div className="card-body">
-              <h2 className="card-title">6th Convocation 2022</h2>
-              <p className='mt-3'>Prime Minister of Nepal and Chancellor of Tribhuvan University Mr. KP Sharma Oli will preside over the Convocation function while DU Vice-Chancellor Prof. Dr. Md. Akhtaruzzaman will be present there as the chief guest. The convocation function will also be addressed by TU Vice-Chancellor Prof. Dr. Dharma K. Baskota.</p>
-              <div className="card-actions justify-end mt-5">
+              <h2 className="card-title">6th Convocation 2022 of Dreamers University</h2>
+              <p className=''>Prime Minister of Nepal and Chancellor of Tribhuvan University Mr. KP Sharma Oli will preside over the Convocation function while DU Vice-Chancellor Prof. Dr. Md. Akhtaruzzaman will be present there as the chief guest. The convocation function will also be addressed by TU Vice-Chancellor Prof. Dr. Dharma K. Baskota.</p>
+              <div className="card-actions justify-end">
                 <button className="btn btn-primary">Read More</button>
               </div>
             </div>
@@ -60,7 +60,7 @@ const Blog = () => {
         </div>
 
         {/* fourth */}
-        <div className='mt-5 ml-10'>
+        <div className='mt-5 md:mt-0 lg:ml-10 md:ml-0'>
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img src="https://thefinancialexpress.com.bd/uploads/1633541447.jpg" alt="Shoes" /></figure>
             <div className="card-body">
@@ -74,7 +74,7 @@ const Blog = () => {
         </div>
 
         {/* fifth */}
-        <div className='mt-5 ml-5'>
+        <div className='lg:ml-5 md:ml-0'>
           <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img src="https://roverchallenge.eu/wp-content/uploads/2020/09/ERC2020_Lukasz_Widziszowski__LCS7610.jpg" alt="Shoes" /></figure>
             <div className="card-body">
