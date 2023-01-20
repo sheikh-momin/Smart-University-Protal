@@ -1,5 +1,5 @@
 import React from 'react'
-
+import jobplacement from "../../jobplacement/index";
 const careercenter = () => {
   return (
     <>
@@ -77,7 +77,7 @@ const careercenter = () => {
         <div>
         <p></p>
         </div>
-
+<jobplacement></jobplacement>
       </div>
     </>
   );
