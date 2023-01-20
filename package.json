@@ -17,12 +17,14 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.42.1",
     "react-hot-toast": "^2.4.0",
+
     "react-icons": "^4.7.1",
     "react-messenger-chat-plugin": "^3.0.5",
     "react-messenger-customer-chat": "^0.8.0",
     "react-toastify": "^9.1.1",
     "swiper": "^8.4.5",
     "tailwind-datepicker-react": "^1.2.3"
+    "swiper": "8.4.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

@@ -39,7 +39,11 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
+<<<<<<< HEAD
+        <Link href="/Institutes" className="text-2xl font-semibold">
+=======
         <Link href="/Institutes" className="text-xl font-semibold">
+>>>>>>> 8fac46fd4e1adea42cc4c79412101df89a8f9def
           Institution Center
         </Link>
       </li>

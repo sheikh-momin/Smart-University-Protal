@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import HomePage from "./home";
 import { MessengerChat } from "react-messenger-chat-plugin";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
       <MessengerChat pageId="1552348765040416" />
       <HomePage></HomePage>
+     
     </>
   );
 }
