@@ -18,15 +18,11 @@
     "react-hook-form": "^7.42.1",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.7.1",
-<<<<<<< HEAD
+    "react-messenger-chat-plugin": "^3.0.5",
     "react-messenger-customer-chat": "^0.8.0",
     "react-toastify": "^9.1.1",
     "swiper": "^8.4.5",
     "tailwind-datepicker-react": "^1.2.3"
-=======
-    "react-messenger-chat-plugin": "^3.0.5",
-    "swiper": "^8.4.5"
->>>>>>> 6920034eca3393025c1a59d0c353d59d55ea4e42
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
