@@ -4,45 +4,50 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link href="/" className="text-2xl font-semibold">
+        <Link href="/" className="text-xl font-semibold">
           Home
         </Link>
       </li>
       <li>
-        <Link href="/faculty" className="text-2xl font-semibold">
+        <Link href="/faculty" className="text-xl font-semibold">
           Faculty
         </Link>
       </li>
       <li>
-        <Link href="/admission" className="text-2xl font-semibold">
+        <Link href="/admission" className="text-xl font-semibold">
           Admission
         </Link>
       </li>
       <li>
-        <Link href="/about" className="text-2xl font-semibold">
+        <Link href="/about" className="text-xl font-semibold">
           About
         </Link>
       </li>
       <li>
-        <Link href="/blog" className="text-2xl font-semibold">
+        <Link href="/blog" className="text-xl font-semibold">
           Blog
         </Link>
       </li>
       <li>
-        <Link href="/" className="text-2xl font-semibold">
-          Academics
+        <Link href="/academic" className="text-2xl font-semibold">
+          Academic
         </Link>
       </li>
       <li>
-        <Link href="/campuslife" className="text-2xl font-semibold">
+        <Link href="/campuslife" className="text-xl font-semibold">
           Campus life
         </Link>
       </li>
       <li>
+<<<<<<< HEAD
         <Link href="/Institutes" className="text-2xl font-semibold">
+=======
+        <Link href="/Institutes" className="text-xl font-semibold">
+>>>>>>> 8fac46fd4e1adea42cc4c79412101df89a8f9def
           Institution Center
         </Link>
       </li>
+    
     </>
   );
   return (
@@ -84,7 +89,7 @@ const Navbar = () => {
             <div>
               <Link
                 href="/home"
-                className="btn btn-ghost normal-case text-3xl font-serif italic"
+                className="btn btn-ghost normal-case text-md font-serif italic"
               >
                 Dreamers University
               </Link>

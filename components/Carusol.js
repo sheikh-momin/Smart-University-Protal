@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 const Carusol = () => {
-  // <<<<<<< HEAD
   return (
     <div>
       <div className="carousel w-full lg:h-[800px]">

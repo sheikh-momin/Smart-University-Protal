@@ -8,6 +8,7 @@ import Notice from "../Notice";
 import News from "../News";
 import CampusLife from "../../components/CampusLife";
 import FacultyHome from "../../components/facultyHome";
+
 const HomePage = () => {
   return (
     <div>
@@ -16,8 +17,7 @@ const HomePage = () => {
       <News></News>
       <FacultyHome></FacultyHome>
       <CampusLife></CampusLife>
-      <Colabaration></Colabaration>
-      <Footer></Footer>
+      <Colabaration></Colabaration>,<Footer></Footer>
     </div>
   );
 };
