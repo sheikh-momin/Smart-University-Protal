@@ -29,9 +29,8 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-
-        <Link href="/academic" className="text-xl font-semibold">
-          Academics
+        <Link href="/academic" className="text-2xl font-semibold">
+          Academic
         </Link>
       </li>
       <li>
@@ -44,11 +43,7 @@ const Navbar = () => {
           Institution Center
         </Link>
       </li>
-      {/* <li>
-        <Link href="/dashboard" className="text-xl font-semibold">
-          Dashboard
-        </Link>
-      </li> */}
+    
     </>
   );
   return (
