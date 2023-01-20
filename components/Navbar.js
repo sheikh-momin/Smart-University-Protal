@@ -39,8 +39,17 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link href="/Institutes" className="text-xl font-semibold">
+        <Link href="/Institutes" className="text-2xl font-semibold">
           Institution Center
+        </Link>
+      </li>
+      <li>
+        <Link href="/jobplacement" className="text-2xl font-semibold">
+Jobplacement        </Link>
+      </li>
+      <li>
+        <Link href="/signIn" className="text-2xl font-semibold">
+          signin
         </Link>
       </li>
     

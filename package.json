@@ -18,9 +18,23 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.42.1",
     "react-hot-toast": "^2.4.0",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 744d0f26e8f99defc68676875cbaaf353e87e44f
+>>>>>>> 87ddc6958f342091d6bf109944a3440f848c97ce
     "react-icons": "^4.7.1",
     "react-messenger-chat-plugin": "^3.0.5",
-    "swiper": "^8.4.5"
+    "react-messenger-customer-chat": "^0.8.0",
+    "react-toastify": "^9.1.1",
+    "swiper": "^8.4.5",
+    "tailwind-datepicker-react": "^1.2.3"
+<<<<<<< HEAD
+=======
+    "swiper": "8.4.5"
+>>>>>>> 744d0f26e8f99defc68676875cbaaf353e87e44f
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
