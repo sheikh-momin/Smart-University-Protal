@@ -7,8 +7,6 @@ import Navbar from "../../components/Navbar";
 
 const ApplyOnline = () => {
 
-  
-
   return (
     <div>
       <Navbar></Navbar>
