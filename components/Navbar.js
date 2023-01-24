@@ -94,7 +94,7 @@ const Navbar = () => {
             <div>
               <Link
                 href="/home"
-                className="btn btn-ghost normal-case text-md font-serif italic"
+                className="btn btn-ghost normal-case text-md md:text-2xl font-serif italic"
               >
                 Dreamers University
               </Link>
