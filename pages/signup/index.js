@@ -79,6 +79,7 @@ const index = () => {
               <select {...register("accountType", { required: true })} className="select select-bordered w-full select-primary mb-5">
                 <option defaultValue='Student'>Student</option>
                 <option>Teacher</option>
+                <option>Employ</option>
               </select>
             <input
               {...register("password", { required: true })}
