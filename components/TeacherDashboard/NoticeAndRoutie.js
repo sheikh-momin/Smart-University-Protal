@@ -1,9 +1,11 @@
 import React from 'react';
+import News from '../../pages/News';
 
 const NoticeAndRoutie = () => {
     return (
         <div>
-            this is notice and routine
+            
+            
         </div>
     );
 };
