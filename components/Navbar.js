@@ -89,7 +89,6 @@ Job Placement        </Link>
           allUsers?.roll == "admin" ? <Link href="/signup" className="text-xl font-semibold">SignUp</Link> : <></>
         }
       </li>
-    
     </>
   );
   return (
