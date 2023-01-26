@@ -13,6 +13,7 @@
     "daisyui": "^2.46.1",
     "firebase": "^9.16.0",
     "flowbite-datepicker": "^1.2.2",
+    "jsonwebtoken": "^9.0.0",
     "mongodb": "^4.13.0",
     "next": "^13.1.1",
     "react": "18.2.0",

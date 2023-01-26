@@ -38,7 +38,7 @@ const index = () => {
                       Upload Your Resume
                     </h2>
                     <form
-                      action="http://localhost:5000/resume"
+                      action="https://smart-university-protal-server-ruby.vercel.app/resume"
                       method="post"
                       encType="multipart/form-data"
                     >

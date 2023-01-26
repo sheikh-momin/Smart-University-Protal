@@ -8,6 +8,7 @@ import { toast } from "react-hot-toast";
 const index = () => {
   const { createUser } = useContext(AuthContext);
 
+
   const { register, handleSubmit } = useForm();
   // const [data, setData] = useState("");
 
@@ -16,13 +17,14 @@ const index = () => {
   // const from = location.state?.from?.pathname || "/";
 
   const handleSignUp = (data) => {
+    const email =data.email
     const usersData = {
       email: data.email,
       password: data.password,
       roll: data.accountType,
     }
 
-    fetch('http://localhost:5000/allUsers', {
+    fetch('https://smart-university-protal-server-ruby.vercel.app/allUsers', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -31,7 +33,7 @@ const index = () => {
     })
       .then(res => res.json())
       .then(data => {
-        console.log(data)
+        getUserToken(email)
       })
 
     console.log("data", data);
@@ -55,6 +57,18 @@ const index = () => {
 
     
   };
+
+  const getUserToken = email =>{
+    fetch(`https://smart-university-protal-server-ruby.vercel.app/jwt?email=${email}`)
+    .then(res => res.json())
+    .then(data => {
+      if(data.accessToken){
+        localStorage.setItem('accessToken', data.accessToken)
+        navigate('/');
+        
+      }
+    })
+  }
 
   return (
    <>
