@@ -7,12 +7,12 @@ const index = () => {
     <>
       <Navbar></Navbar>
       <section className="p-8">
-        <div className="grid grid-cols-2 content-evenly text-black font-bold text-3xl bg-base-200 p-5 mb-20 mt-10 ">
-          <div className="col-start-1 col-end-3">
+        <div className="grid lg:grid-cols-2 content-evenly text-black font-bold text-3xl bg-base-200 p-5 mb-20 mt-10 ">
+          <div className="col-start-1 lg:col-end-3 sm:mb-8">
             <h2>Find Jobs or Internships</h2>
           </div>
 
-          <div className="col-end-7 col-span-2">
+          <div className="lg:col-end-7 lg:col-span-2">
             {/* The button to open modal */}
             <label
               htmlFor="my-modal-3"
