@@ -1,6 +1,23 @@
 import Link from "next/link";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../Context/AuthProvider";
+
 
 const Navbar = () => {
+
+  const {user} = useContext(AuthContext)
+  const [allUsers, setAllUsers]=useState("")
+
+  useEffect(()=>{
+    if(user?.email){
+      fetch(`http://localhost:5000/allUsers/${user?.email}`)
+      .then(res => res.json())
+      .then(data => {
+        setAllUsers(data)
+      })
+    }
+  },[user])
+
   const menuItems = (
     <>
       <li>
@@ -48,9 +65,29 @@ const Navbar = () => {
 Job Placement        </Link>
       </li>
       <li>
-        <Link href="/signin" className="text-xl font-semibold">
-          Sign In
-        </Link>
+        {
+          user?.email ? 
+          <>
+              {
+                allUsers?.roll=="Student" ?
+                  <Link href="/dashboard" className="text-xl text-[#facc15] font-bold">
+                    Student Portal
+                  </Link>
+                :
+                  <Link href="/teacherdashboard" className="text-xl  text-[#facc15] font-bold">
+                    Teachers Dashboard
+                  </Link>
+              }
+          </>
+          :
+            <Link href="/signin" className="text-xl font-semibold">Sign In</Link>
+        }
+
+      </li>
+      <li>
+        {
+          allUsers?.roll == "admin" ? <Link href="/signup" className="text-xl font-semibold">SignUp</Link> : <></>
+        }
       </li>
     
     </>

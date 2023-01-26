@@ -3,6 +3,7 @@ import { AuthContext } from "../../Context/AuthProvider";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
+import { toast } from "react-hot-toast";
 
 const index = () => {
   const { createUser } = useContext(AuthContext);
@@ -15,15 +16,44 @@ const index = () => {
   // const from = location.state?.from?.pathname || "/";
 
   const handleSignUp = (data) => {
-    console.log("data", data);
-    createUser(data.email, data.password)
-      .then((result) => {
-        const user = result.user;
+    const usersData = {
+      email: data.email,
+      password: data.password,
+      roll: data.accountType,
+    }
 
-        console.log(user);
+    fetch('http://localhost:5000/allUsers', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(usersData)
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
       })
 
+    console.log("data", data);
+    createUser(data.email, data.password, data.accountType)
+      .then((result) => {
+        const user = result.user;
+        toast.success('User Created Successfully');
+        console.log("User",user);
+
+        const userInfo = {
+          displayName: data.name
+        };
+        updateUser(userInfo)
+          .then(() => {
+            saveUser(data.name, data.email, data.accountType);
+
+          })
+          .catch(err => console.error(err));
+      })
       .catch((error) => console.log(error));
+
+    
   };
 
   return (
@@ -46,6 +76,10 @@ const index = () => {
               placeholder="Enter Email"
               className="input input-bordered input-primary w-full  mb-5"
             />
+              <select {...register("accountType", { required: true })} className="select select-bordered w-full select-primary mb-5">
+                <option defaultValue='Student'>Student</option>
+                <option>Teacher</option>
+              </select>
             <input
               {...register("password", { required: true })}
               placeholder="Enter Password"
