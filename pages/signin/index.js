@@ -50,7 +50,7 @@ const index = () => {
             />
             <input
               {...register("password", { required: true })}
-              placeholder="Enter Password"
+              placeholder="Enter Password" type="password"
               className="input input-bordered input-primary w-full  mb-5"
             />
 
