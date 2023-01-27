@@ -14,7 +14,7 @@ const ProfileForm = () => {
     <div>
       <form
         onSubmit={handleSubmit(handleForm)}
-        className="grid grid-cols-4 gap-4"
+        className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1"
       >
         <div className="form-control ">
           <label className="label">
