@@ -27,7 +27,6 @@ const index = () => {
       .then((result) => {
         const user = result.user;
         console.log("🚀 ~ file: Login.js ~ line  ~ .then ~ user", user);
-       
       })
       .catch((error) => {
         console.error(error);
