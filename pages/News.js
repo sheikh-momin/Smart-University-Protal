@@ -51,7 +51,7 @@ const News = () => {
               <div className="">
                 <h4 className="text-3xl text-primary mb-5">News</h4>
               </div>
-              <div className=" w-full flex gap-4  overflow-x-auto ">
+              <div className=" w-full lg:flex gap-4  overflow-x-auto ">
                 <div className=" h-48 w-52 bg-base-100 shadow-xl">
                   <figure className="">
                     <img

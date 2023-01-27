@@ -1,12 +1,8 @@
-<<<<<<< HEAD
+import Link from 'next/link';
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Context/AuthProvider';
-=======
-import Link from 'next/link';
-import React from 'react';
 import NoticeAndRoutie from './NoticeAndRoutie';
 import TeacherCourse from './TeacherCourse';
->>>>>>> origin/tanvirulIslam
 
 const TeacherDashboard = () => {
     const {user, logOut} = useContext(AuthContext)

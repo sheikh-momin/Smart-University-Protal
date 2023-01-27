@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useContext } from 'react';
 import Dashboard from '../../../components/Dashboard/Dashboard';
 import { AuthContext } from '../../../Context/AuthProvider';
@@ -9,9 +8,10 @@ const DashboardNavbar = () => {
         logOut()
             .then(() => { })
             .catch(error => console.error(error))
-
     }
     return (
+        <div>
+        <div>
         <div>
             <div className="navbar bg-teal-700">
                 <div className="navbar-start">
@@ -119,7 +119,7 @@ const DashboardNavbar = () => {
                         <li>
                             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                                 <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-900 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path></svg>
-                                            <span onClick={handleSingOut} class="flex-1 ml-3 whitespace-nowrap">log Out</span>
+                                            <span onClick={handleSingOut} className="flex-1 ml-3 whitespace-nowrap">log Out</span>
                             </a>
                         </li>
                     </ul>
@@ -149,38 +149,6 @@ const DashboardNavbar = () => {
 
 
 
-=======
-import React from "react";
-import Dashboard from "../../../components/Dashboard/Dashboard";
-
-const DashboardNavbar = () => {
-  return (
-    <div>
-      <div className="navbar bg-teal-700">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <label
-              tabIndex={0}
-              htmlFor="my-drawer"
-              className="btn btn-ghost btn-circle"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
-            </label>
-          </div>
->>>>>>> origin/Nishi
         </div>
         <div className="navbar-center">
           <a className="btn btn-ghost normal-case text-white text-xl">
@@ -211,8 +179,7 @@ const DashboardNavbar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+                stroke="currentColor">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -225,6 +192,7 @@ const DashboardNavbar = () => {
           </button>
         </div>
       </div>
+
 
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -455,7 +423,7 @@ const DashboardNavbar = () => {
                           clip-rule="evenodd"
                         ></path>
                       </svg>
-                      <span class="flex-1 ml-3 whitespace-nowrap">log Out</span>
+                                            <span onClick={handleSingOut} className="flex-1 ml-3 whitespace-nowrap">log Out</span>
                     </a>
                   </li>
                 </ul>
@@ -465,6 +433,7 @@ const DashboardNavbar = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

@@ -62,7 +62,6 @@ const Navbar = () => {
       </li>
       <li>
         <Link href="/jobplacement" className="text-xl font-semibold">
-<<<<<<< HEAD
 Job Placement        </Link>
       </li>
       <li>
@@ -89,15 +88,6 @@ Job Placement        </Link>
         {
           allUsers?.roll == "admin" ? <Link href="/signup" className="text-xl font-semibold">SignUp</Link> : <></>
         }
-=======
-          Jobplacement{" "}
-        </Link>
-      </li>
-      <li>
-        <Link href="/signin" className="text-xl font-semibold">
-          signin
-        </Link>
->>>>>>> origin/Nishi
       </li>
     </>
   );
