@@ -33,7 +33,7 @@ const index = () => {
     })
       .then(res => res.json())
       .then(data => {
-        getUserToken(email)
+        console.log(data)
       })
 
     console.log("data", data);
@@ -58,17 +58,6 @@ const index = () => {
     
   };
 
-  const getUserToken = email =>{
-    fetch(`https://smart-university-protal-server-ruby.vercel.app/jwt?email=${email}`)
-    .then(res => res.json())
-    .then(data => {
-      if(data.accessToken){
-        localStorage.setItem('accessToken', data.accessToken)
-        navigate('/');
-        
-      }
-    })
-  }
 
   return (
    <>
