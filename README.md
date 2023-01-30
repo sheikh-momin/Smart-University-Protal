@@ -15,6 +15,17 @@ git switch name/first project
 git push origin name/first-project
 
 
+git add. 
+git commit -m"Text"
+git fetch
+git rebase origin/main
+
+git push --force-with-lease origin <personal branch>
+
+git pull --rebase origin develop
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
