@@ -1,7 +1,18 @@
 ## Md Ruhul Amin ruhul.wd@gmail.com
 
 # obaidul 
-git check
+git init 
+git remote add origin <link>
+git add .
+
+git status
+git commit -m "Text Commit"
+
+git branch
+git branch name/first-project
+git switch name/first project
+
+git push origin name/first-project
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
