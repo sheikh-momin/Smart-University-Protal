@@ -1,4 +1,4 @@
-import Dashboard from '../../../components/Dashboard/Dashboard';
+import dashboard from '../../../components/Dashboard/Dashboard';
 
 import Dashboardnav from './Dashboardnav';
 
