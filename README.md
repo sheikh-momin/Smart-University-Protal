@@ -22,7 +22,7 @@ git rebase origin/main
 
 git push --force-with-lease origin <personal branch>
 
-git pull --rebase origin develop
+git pull --rebase origin main
 
 
 
