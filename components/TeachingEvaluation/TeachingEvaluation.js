@@ -28,7 +28,7 @@ const TeachingEvaluation = () => {
 
                 <div>
                     <table class="mt-10 w-full border-collapse border border-slate-300 ...">
-                    <thead>
+                    <thead >
                         <tr class=" text-2xl border bg-info border-slate-300 ...">
                         <th class="">Submit Status</th>
                         <th class="">Course Title</th>
@@ -37,26 +37,469 @@ const TeachingEvaluation = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class=" text-xl border bg-secondary-focus border-slate-300 ...">
-                        <td class="">Indiana</td>
+                        
+                        <tr class=" text-xl border bg-secondary border-slate-300 ...">
+                        <td class=""> 
+                            <label htmlFor="my-modal-5" className="btn bg-secondary-focus ">Submit Here</label>
+                            <input type="checkbox" id="my-modal-5" className="modal-toggle" />
+                            <div className="modal">
+                            <div className="modal-box w-11/12 max-w-5xl">
+                                <h3 className="font-bold text-lg">Give your Teacher feedback</h3>
+                                
+                                <div className="form-control">
+                                <p className="py-4">Teaching Quality</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+
+                                <div className="form-control">
+                                <p className="py-4">Class Arrangment</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Friendly</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Presenting Quality</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Time Mantaning</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Behavior</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="modal-action">
+                                <label htmlFor="my-modal-5" className="btn">Submit</label>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </td>
                         <td class="">Indianapolis</td>
                         <td class="">Indianapolis</td>
                         <td class="">Indianapolis</td>
                         </tr>
-                        <tr class="text-xl border bg-primary-focus border-slate-300 ...">
-                        <td class="">Ohio</td>
+                        <tr class="text-xl border bg-primary border-slate-300 ...">
+                        <td class=""> 
+                            <label htmlFor="my-modal-5" className="btn bg-primary-focus">Submit Here</label>
+                            <input type="checkbox" id="my-modal-5" className="modal-toggle" />
+                            <div className="modal">
+                            <div className="modal-box w-11/12 max-w-5xl">
+                                <h3 className="font-bold text-lg">Give your Teacher feedback</h3>
+                                
+                                <div className="form-control">
+                                <p className="py-4">Teaching Quality</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+
+                                <div className="form-control">
+                                <p className="py-4">Class Arrangment</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Friendly</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Presenting Quality</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Time Mantaning</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Behavior</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="modal-action">
+                                <label htmlFor="my-modal-5" className="btn">Submit</label>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </td>
                         <td class="">Columbus</td>
                         <td class="">Columbus</td>
                         <td class="">Columbus</td>
                         </tr>
                         <tr class="text-xl border bg-success border-slate-300 ...">
-                        <td class="">Michigan</td>
+                        <td class=""> 
+                            <label htmlFor="my-modal-5" className="btn  bg-green-500">Submit Here</label>
+                            <input type="checkbox" id="my-modal-5" className="modal-toggle" />
+                            <div className="modal">
+                            <div className="modal-box w-11/12 max-w-5xl">
+                                <h3 className="font-bold text-lg">Give your Teacher feedback</h3>
+                                
+                                <div className="form-control">
+                                <p className="py-4">Teaching Quality</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+
+                                <div className="form-control">
+                                <p className="py-4">Class Arrangment</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Friendly</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Presenting Quality</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Time Mantaning</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Behavior</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="modal-action">
+                                <label htmlFor="my-modal-5" className="btn  bg-green-500">
+                                <div id="snackbar">Some text some message..</div>
+                                    Submitted</label>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </td>
                         <td class="">Detroit</td>
                         <td class="">Detroit</td>
                         <td class="">Detroit</td>
                         </tr>
                         <tr class=" text-xl border bg-warning border-slate-300 ...">
-                        <td class="">Michigan</td>
+                        <td class=""> 
+                            <label htmlFor="my-modal-5" className="btn  bg-orange-600">Submit Here</label>
+                            <input type="checkbox" id="my-modal-5" className="modal-toggle" />
+                            <div className="modal">
+                            <div className="modal-box w-11/12 max-w-5xl">
+                                <h3 className="font-bold text-lg">Give your Teacher feedback</h3>
+                                
+                                <div className="form-control">
+                                <p className="py-4">Teaching Quality</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+
+                                <div className="form-control">
+                                <p className="py-4">Class Arrangment</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Friendly</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Presenting Quality</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Time Mantaning</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="form-control">
+                                <p className="py-4">Behavior</p>
+
+                                <label className="cursor-pointer label">
+                                    <span className="label-text">Very Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-error" />
+                                    <span className="label-text">Bad</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
+                                    <span className="label-text">Avarage</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
+                                    <span className="label-text">Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
+                                    <span className="label-text">Very Good</span>
+                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                </label>
+                                </div>
+                                <div className="modal-action">
+                                <label htmlFor="my-modal-5" className="btn">Submit</label>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </td>
                         <td class="">Detroit</td>
                         <td class="">Detroit</td>
                         <td class="">Detroit</td>
@@ -64,30 +507,17 @@ const TeachingEvaluation = () => {
                     </tbody>
                     </table>
                 </div>
+                <div>
+                
+                </div>
+
+                
 
             </div>
 
             
 
-            {/* <div className='mt-10 ml-16'>
-                <h2 className='text-2xl font-bold text-white text-center'>Faculty of Engineering</h2>
-                <div class="grid grid-cols-3 gap-5 ml-10 mt-10">
-                    <div className=' bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                        <Link href="/library/eee" className='text-black font-bold text-xl'>Electrical & Electronic Engineering</Link>
-                    </div>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                        <Link href="/library/cse" className='text-black font-bold text-xl' >Computer Science & Engineering</Link>
-                    </div>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                        <Link href="/library/civil" className='text-black font-bold text-xl'>Civil Engineering</Link>
-                    </div>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                        <Link href="/library/ae" className='text-black font-bold text-xl'>Architecture Engineering</Link>
-                    </div>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                        <Link href="/library/te" className='text-black font-bold text-xl'>Textile Engineering</Link>
-                    </div>
-                </div>
+           
 
               
 
@@ -101,53 +531,7 @@ const TeachingEvaluation = () => {
 
 
 
-                <div>
-                    <h2 className='mt-10 text-2xl font-bold text-white text-center'>Faculty of Business Administration</h2>
-                    <div class="grid grid-cols-3 gap-5 ml-10 mt-10">
-                        <div className=' bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                            <Link href="/library/ba" className='text-black font-bold text-xl'>Business Administration</Link>
-                        </div>
-                        <div className='bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                            <Link href="/library/bs" className='text-black font-bold text-xl' >Business Studies</Link>
-                        </div>
-                        <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                            <Link href="/library/th" className='text-black font-bold text-xl'>Tourism & Hospitalism</Link>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div>
-                    <h2 className='mt-10 text-2xl font-bold text-white text-center'>Faculty of Allied Health Sciences</h2>
-                    <div class="grid grid-cols-3 gap-5 ml-10 mt-10">
-                        <div className=' bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                            <Link href="/library/pharmacy" className='text-black font-bold text-xl'>Pharmacy </Link>
-                        </div>
-                        <div className='bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                            <Link href="/library/nfe" className='text-black font-bold text-xl' >Nutrition and Food Engineering</Link>
-                        </div>
-                        <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                            <Link href="/library/publich" className='text-black font-bold text-xl'>Public Health</Link>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div>
-                    <h2 className='mt-10 text-2xl font-bold text-white text-center'>Faculty of Law</h2>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md ml-10 mt-5'>
-                        <Link href="/library/law" className='text-black font-bold text-xl'>Law</Link>
-                    </div>
-                </div>
-
-
-
-
-
-            </div> */}
-
+                
 
 
 
