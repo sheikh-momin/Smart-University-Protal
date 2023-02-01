@@ -6,7 +6,7 @@ const RoutineAndNotics = () => {
     return (
         <div>
         <DashboardNavbar></DashboardNavbar>
-         <div className='flex bg-teal-800'>
+         <div className='flex bg-teal-600'>
             {/* <DashboardNavbar */}
 
             <Dashboardnav></Dashboardnav>
@@ -61,17 +61,17 @@ const RoutineAndNotics = () => {
 
                             <div className="collapse">
                                 <input type="checkbox" className="peer" /> 
-                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content">
+                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-400 peer-checked:text-secondary-content">
                                     Saturday
                                 </div>
-                                <div className="collapse-content bg-teal-200 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content"> 
+                                <div className="collapse-content bg-teal-500 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content"> 
                                     <p>hello</p>
                                 </div>
                             </div>
 
                             <div className="collapse">
                                 <input type="checkbox" className="peer" /> 
-                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content">
+                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-400 peer-checked:text-secondary-content">
                                     Sunday
                                 </div>
                                 <div className="collapse-content bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content"> 
@@ -81,7 +81,7 @@ const RoutineAndNotics = () => {
 
                             <div className="collapse">
                                 <input type="checkbox" className="peer" /> 
-                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content">
+                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-400 peer-checked:text-secondary-content">
                                     Monday
                                 </div>
                                 <div className="collapse-content bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content"> 
@@ -91,7 +91,7 @@ const RoutineAndNotics = () => {
 
                             <div className="collapse">
                                 <input type="checkbox" className="peer" /> 
-                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content">
+                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-400 peer-checked:text-secondary-content">
                                     Tuesday
                                 </div>
                                 <div className="collapse-content bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content"> 
@@ -101,7 +101,7 @@ const RoutineAndNotics = () => {
 
                             <div className="collapse">
                                 <input type="checkbox" className="peer" /> 
-                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content">
+                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-400 peer-checked:text-secondary-content">
                                     Wednesday
                                 </div>
                                 <div className="collapse-content bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content"> 
@@ -111,7 +111,7 @@ const RoutineAndNotics = () => {
 
                             <div className="collapse">
                                 <input type="checkbox" className="peer" /> 
-                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content">
+                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-400 peer-checked:text-secondary-content">
                                     Thursday
                                 </div>
                                 <div className="collapse-content bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content"> 
@@ -121,7 +121,7 @@ const RoutineAndNotics = () => {
 
                             <div className=" md-1 collapse">
                                 <input type="checkbox" className="peer" /> 
-                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content">
+                                <div className="collapse-title bg-teal-400 text-primary-content peer-checked:bg-teal-400 peer-checked:text-secondary-content">
                                     Friday
                                 </div>
                                 <div className="collapse-content bg-teal-400 text-primary-content peer-checked:bg-teal-200 peer-checked:text-secondary-content"> 
