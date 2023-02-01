@@ -171,8 +171,8 @@ const Certificate = () => {
 
                             <div>
                                 <div className="form-control">
-                                    <label className="cursor-pointer label">
-                                        <span className="label-text">Remember me</span>
+                                    <label className="cursor-pointer label  bg-teal-300 mt-5">
+                                        <span className="label-text text- accent-content text-lg ">Confirm Adjustment</span>
                                         <input type="checkbox" checked className="checkbox checkbox-accent" />
                                     </label>
                                 </div>    
