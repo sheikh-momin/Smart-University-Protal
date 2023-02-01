@@ -1,5 +1,7 @@
 import Dashboard from '../../../components/Dashboard/Dashboard';
 
+import Dashboardnav from './Dashboardnav';
+
 const DashboardNavbar = () => {
     
     return (
@@ -8,10 +10,12 @@ const DashboardNavbar = () => {
         <div>
             <div className="navbar bg-teal-700">
                 <div className="navbar-start">
-        
+                            <div className="dropdown">
+                                
+                            </div>
                 </div>
                 <div className="navbar-center">
-                    <a className="btn btn-ghost normal-case text-white text-xl">Dreamers University - Student Portal</a>
+                    <a className="btn btn-ghost normal-case text-white md:text-xl">Dreamers University - Student Portal</a>
                 </div>
                 <div className="navbar-end">
                     <button className="btn btn-ghost btn-circle">
