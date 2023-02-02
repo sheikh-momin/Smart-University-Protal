@@ -50,7 +50,7 @@ const Dashboardnav = () => {
         </li>
         <li>
           <a
-            href="/dashboard/financialAssistant"
+            href="/dashboard/FinancialAssistant"
             class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700"
           >
             <svg
@@ -69,7 +69,7 @@ const Dashboardnav = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="/dashboard/payment"
             class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700"
           >
             <svg

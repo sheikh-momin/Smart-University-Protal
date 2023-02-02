@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import WaiverForm from "../../components/WaiverForm";
+import Dashboardnav from "./dashboardNav/Dashboardnav";
 
 const FinancialAssistant = () => {
   return (
@@ -11,11 +12,20 @@ const FinancialAssistant = () => {
           Financial Assistance on GPA
         </h1>
       </div>
-      <div className="flex justify-center">
+      <div className="flex w-full">
+        <Dashboardnav></Dashboardnav>
+
+        <div className="flex justify-center lg:ml-48">
+          <div className="grid grid-cols-1 gap-4 my-20">
+            <WaiverForm></WaiverForm>
+          </div>
+        </div>
+      </div>
+      {/* <div className="flex justify-center">
         <div className="grid grid-cols-1 gap-4 mx-20 my-5">
           <WaiverForm></WaiverForm>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
