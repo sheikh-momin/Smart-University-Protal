@@ -22,7 +22,7 @@
     "react-messenger-chat-plugin": "^3.0.5",
     "react-messenger-customer-chat": "^0.8.0",
     "react-toastify": "^9.1.1",
-    "swiper": "^8.4.5",
+    "swiper": "^8.4.7",
     "tailwind-datepicker-react": "^1.2.3"
   },
   "devDependencies": {
