@@ -1,0 +1,48 @@
+[
+    {
+        "_id": "001",
+        "name": "Tanvir Islam Afnan",
+        "RegisteredId": "191-115-0246",
+        "email": "afnan15-2323@du.edu.bd",
+        "Semester": "Spring-2023",
+        "details":[
+            {
+                "CourseCode": "BBA-101",
+                "CourseTitle": "Introduction of business",
+                "credit": "3",
+                "Grade":"A+",
+                "Point":"4.00"
+            },
+            {
+                "CourseCode": "Phy-109",
+                "CourseTitle": "Computer Fundamental",
+                "credit": "3",
+                "Grade":"A+",
+                "Point":"4.00"
+            },
+            {
+                "CourseCode": "CSE-202",
+                "CourseTitle": "Physics-I",
+                "credit": "3",
+                "Grade":"A+",
+                "Point":"4.00" 
+            },
+            {
+                "CourseCode": "SOC-102",
+                "CourseTitle": "Sociology",
+                "credit": "3",
+                "Grade":"A+",
+                "Point":"4.00" 
+            },
+            {
+                "CourseCode": "CSE-111",
+                "CourseTitle": "Structure Programming",
+                "credit": "3",
+                "Grade":"A+",
+                "Point":"4.00" 
+            }
+            
+        ]     
+    }
+    
+]
