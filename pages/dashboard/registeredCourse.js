@@ -25,7 +25,7 @@ const RegisteredCourse = () => {
     }
     
   }, [user, semester])
-
+  console.log("COurses",courses)
   if (loading) {
     return <Loader></Loader>;
   }
@@ -72,7 +72,7 @@ const RegisteredCourse = () => {
                 user.email==courses.email ? 
                   courses?.subject?.map((course) =>
                     <tr key={course.CourseCode}>
-                      <th className="text-rose-600">{course.CourseCode}</th>
+                      <th className="text-blue-600">{course.CourseCode}</th>
                       <th>{course.CourseTitle}</th>
                       <th className="text-orange-500">{course.credit}</th>
                       <th>{course.section}</th>
