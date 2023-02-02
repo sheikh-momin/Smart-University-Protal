@@ -6,8 +6,7 @@ import { AuthContext } from "../Context/AuthProvider";
 const Navbar = () => {
 
   const {user} = useContext(AuthContext)
-  const [allUsers, setAllUsers]=useState("")
-
+  const [allUsers, setAllUsers] = useState()
   useEffect(()=>{
     if(user?.email){
       fetch(`https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`)
@@ -74,21 +73,30 @@ Job Placement        </Link>
                     Student Portal
                   </Link>
                 :
-                  <Link href="/teacherdashboard" className="text-xl  text-[#facc15] font-bold">
-                    Teachers Dashboard
-                  </Link>
+                <></>
               }
           </>
           :
             <Link href="/signin" className="text-xl font-semibold">Sign In</Link>
         }
+        {
+          user?.email ?
+            <>
+              {
+                allUsers?.roll == "Teacher" ?
+                  <Link href="/teacherdashboard" className="text-xl  text-[#facc15] font-bold">
+                    Teachers Dashboard
+                  </Link>
+                  :
+                  <></>
+              }
+            </>
+            :
+            <></>
+        }
 
       </li>
-      <li>
-        {
-          allUsers?.roll == "admin" ? <Link href="/signup" className="text-xl font-semibold">SignUp</Link> : <></>
-        }
-      </li>
+      
     </>
   );
   return (

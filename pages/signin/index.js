@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { AuthContext } from "../../Context/AuthProvider";
@@ -11,11 +11,11 @@ const index = () => {
   const [data, setData] = useState("");
 
   const handleSignIn = (data) => {
-    console.log("data", data);
+    
     logIn(data.email, data.password)
       .then((result) => {
         const user = result.user;
-        toast("Successfully Sing In ");
+        toast.success("Successfully Sing In ");
         console.log(user);
         
       })
@@ -33,6 +33,7 @@ const index = () => {
       });
   };
 
+  
   return (
    <>
    <Navbar></Navbar>
