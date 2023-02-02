@@ -33,7 +33,7 @@ const RoutineAndNotics = () => {
                             <div>
                                 <div className="form-control w-full max-w-3xl">
                                     <label className="label">
-                                        <span className="label-text text-white text-lg">Select Semester</span>
+                                        <span className="label-text bg-base-200 text-teal-900 text-lg">Select Semester</span>
                                     </label>
                                     <select className="select select-bordered  bg-teal-200  select-success w-full max-w-3xl">
                                         <option disabled selected>Click Here</option>
