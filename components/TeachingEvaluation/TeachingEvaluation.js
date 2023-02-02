@@ -7,13 +7,13 @@ const TeachingEvaluation = () => {
     return (
         <div>
         <DashboardNavbar></DashboardNavbar>
-         <div className='flex bg-teal-600'>
+         <div className='flex bg-white'>
             {/* <DashboardNavbar */}
 
             <Dashboardnav></Dashboardnav>
             <div className="form-control text-left w-full max-w-3xl mt-10 ml-40">
-                <label className="label text-center text-slate-800 bg-teal-500">
-                    <span className=" text-center text-3xl">Dreamers University Teaching Evaluation</span>
+                <label className="label text-center text-white bg-teal-400">
+                    <span className=" text-center text-3xl">Teaching Evaluation</span>
                 </label>
                 <select className="mt-5  bg-teal-200 select select-success w-full max-w-xs">
                 <option disabled selected>Select Semester</option>
@@ -27,9 +27,9 @@ const TeachingEvaluation = () => {
                 </select>  
 
                 <div>
-                    <table class="mt-10 w-full border-collapse border border-slate-300 ...">
+                    <table class="mt-10 w-full border-collapse border border-info ...">
                     <thead >
-                        <tr class=" text-2xl border bg-info border-slate-300 ...">
+                        <tr class=" text-2xl border  border-info ...">
                         <th class="">Submit Status</th>
                         <th class="">Course Title</th>
                         <th class="">Course Name</th>
@@ -38,9 +38,9 @@ const TeachingEvaluation = () => {
                     </thead>
                     <tbody>
                         
-                        <tr class=" text-xl border bg-secondary border-slate-300 ...">
+                        <tr class=" text-xl border  border-secondary-focus ...">
                         <td class=""> 
-                            <label htmlFor="my-modal-5" className="btn bg-secondary-focus ">Submit Here</label>
+                            <label htmlFor="my-modal-5" className="btn bg-secondary text-white ">Submit Here</label>
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
                             <div className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
@@ -154,9 +154,9 @@ const TeachingEvaluation = () => {
                         <td class="">Indianapolis</td>
                         <td class="">Indianapolis</td>
                         </tr>
-                        <tr class="text-xl border bg-primary border-slate-300 ...">
+                        <tr class="text-xl border  border-primary ...">
                         <td class=""> 
-                            <label htmlFor="my-modal-5" className="btn bg-primary-focus">Submit Here</label>
+                            <label htmlFor="my-modal-5" className="btn bg-primary text-white">Submit Here</label>
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
                             <div className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
@@ -270,9 +270,9 @@ const TeachingEvaluation = () => {
                         <td class="">Columbus</td>
                         <td class="">Columbus</td>
                         </tr>
-                        <tr class="text-xl border bg-success border-slate-300 ...">
+                        <tr class="text-xl border bg- border-green-500 ...">
                         <td class=""> 
-                            <label htmlFor="my-modal-5" className="btn  bg-green-500">Submit Here</label>
+                            <label htmlFor="my-modal-5" className="btn  bg-green-500 text-base-300">Submit Here</label>
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
                             <div className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
@@ -388,9 +388,9 @@ const TeachingEvaluation = () => {
                         <td class="">Detroit</td>
                         <td class="">Detroit</td>
                         </tr>
-                        <tr class=" text-xl border bg-blue-500 border-slate-300 ...">
+                        <tr class=" text-xl border  border-blue-900 ...">
                         <td class=""> 
-                            <label htmlFor="my-modal-5" className="btn  bg-blue-600">Submit Here</label>
+                            <label htmlFor="my-modal-5" className="btn text-base-300 bg-blue-500">Submit Here</label>
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
                             <div className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
