@@ -1,5 +1,7 @@
 import { useContext, useEffect, useState } from "react";
+import PrivateRoute from "../../components/PrivateRoute/PrivateRoute";
 import { AuthContext } from "../../Context/AuthProvider";
+
 import DashboardNavbar from "./dashboardNav/DashboardNavbar";
 
 
@@ -15,7 +17,7 @@ const Clearance = () => {
           setClearance(data)
         })
     }
-  },[])
+  },[user])
   
   return (
     <div className="bg-[#e4e4e7] pb-80">

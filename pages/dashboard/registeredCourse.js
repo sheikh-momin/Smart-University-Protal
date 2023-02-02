@@ -1,5 +1,6 @@
 import { Cagliostro } from "@next/font/google";
 import { useContext, useEffect, useState } from "react";
+import Loader from "../../components/Loader";
 import { AuthContext } from "../../Context/AuthProvider";
 import DashboardNavbar from "./dashboardNav/DashboardNavbar";
 
@@ -22,11 +23,14 @@ const RegisteredCourse = () => {
           setLoading(false)
         })
     }
-  },[])
-  console.log("courses",courses)
-  console.log(semester);
+    
+  }, [user, semester])
+
+  if (loading) {
+    return <Loader></Loader>;
+  }
   return (
-    <div className="bg-[#e4e4e7] pb-80">
+    <div  className="bg-[#e4e4e7] pb-80">
       <DashboardNavbar></DashboardNavbar>
       <div className="bg-slate-200 drop-shadow-lg py-3 mt-3">
         <h1 className="text-center text-cyan-500 text-3xl font-bold italic font-serif">Registered Course</h1>
