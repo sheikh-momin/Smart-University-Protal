@@ -22,15 +22,15 @@ const payment = () => {
       setLoading(false);
     }
   }, [user, semester]);
-  console.log(user?.email);
 
   if (loading) {
-    return <h2>Loading....</h2>;
+    return <progress className="progress w-56"></progress>;
   }
   return (
     <div>
       <div className="bg-[#e4e4e7] pb-80">
         <DashboardNavbar></DashboardNavbar>
+
         <div className="bg-slate-200 drop-shadow-lg py-3 mt-3">
           <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">
             Payment History
@@ -51,7 +51,6 @@ const payment = () => {
             </option>
             <option>Spring-2022</option>
             <option>Autumn-2022</option>
-            {/* <option>Summer-2022</option> */}
           </select>
         </div>
 

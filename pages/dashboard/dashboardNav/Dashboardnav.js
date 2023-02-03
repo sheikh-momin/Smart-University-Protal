@@ -10,7 +10,7 @@ const Dashboardnav = () => {
       .catch((error) => console.error(error));
   };
   return (
-    <div className="border-slate-100 border-r-2 mt-10 bg-teal-800">
+    <div className="border-slate-100 border-r-2 bg-teal-800">
       <ul className="p-4 w-80  text-base-content">
         <li>
           <a

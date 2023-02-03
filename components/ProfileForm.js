@@ -22,8 +22,12 @@ const ProfileForm = () => {
     const emergencyContact = data.emergencyContact;
     const maritalStatus = data.maritalStatus;
     const route = data.route;
+    const email = user.email;
+    const img = data.imgURL;
 
     const studentDetails = {
+      img: img,
+      email: email,
       Id: Id,
       name: name,
       father: father,
@@ -76,12 +80,12 @@ const ProfileForm = () => {
             </label>
             <input
               type="text"
-              {...register("email", { required: "Email Id is required" })}
+              // {...register("email", { required: "Email Id is required" })}
               name="mail"
               placeholder="Email"
               className="input input-bordered input-info"
               required
-              // defaultValue={user.email}
+              defaultValue={user?.email}
             />
             {errors.mail && (
               <p className="text-red-600">{errors.mail?.message}</p>
