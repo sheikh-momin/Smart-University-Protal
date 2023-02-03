@@ -51,7 +51,7 @@ const SemesterDrop = () => {
       setLoading(false)
     }
 
-  }, [user])
+  }, [user, semesterDrop])
   if (loading) {
     return <Loader></Loader>;
   }

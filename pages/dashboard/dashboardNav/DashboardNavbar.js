@@ -1,4 +1,5 @@
 import dashboard from '../../../components/Dashboard/Dashboard';
+import { AiOutlineMenu } from "react-icons/ai";
 
 import Dashboardnav from './Dashboardnav';
 
@@ -8,11 +9,14 @@ const DashboardNavbar = () => {
         <div>
         <div>
         <div>
-            <div className="navbar bg-teal-700">
+                    <div className="navbar bg-gradient-to-r from-cyan-500  via-blue-500 to-fuchsia-300">
                 <div className="navbar-start">
-                            <div className="dropdown">
-                                
-                            </div>
+                <div className='drawer-content'>
+                <label htmlFor="my-drawer" className=" drawer-button">
+                                    <AiOutlineMenu className='md:ml-10 ' size="30px"></AiOutlineMenu>
+                </label>
+                </div>
+                
                 </div>
                 <div className="navbar-center">
                     <a className="btn btn-ghost normal-case text-white md:text-xl">Dreamers University - Student Portal</a>

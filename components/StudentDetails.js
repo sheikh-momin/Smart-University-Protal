@@ -13,15 +13,15 @@ const StudentDetails = () => {
         .then((data) => {
           data.map((s) => {
             setStudentDetails(s);
-            setLoading(false);
           });
+          setLoading(false);
         });
     }
   }, [user]);
 
   console.log(studentDetails);
   if (loading) {
-    return <progress className="progress w-56"></progress>;
+    return <progress className="progress text-center w-56"></progress>;
   }
 
   return (
