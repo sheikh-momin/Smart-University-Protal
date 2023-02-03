@@ -8,7 +8,9 @@ const StudentDetails = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/studentDetails`)
+      fetch(
+        `https://smart-university-protal-server-sigma.vercel.app/studentDetails`
+      )
         .then((res) => res.json())
         .then((data) => {
           data.map((s) => {
@@ -25,7 +27,7 @@ const StudentDetails = () => {
   }
 
   return (
-    <div>
+    <div className="bg-zinc-300">
       {user?.email && (
         <div className="hero bg-base-200 mb-5 hover:scale-110 ease-in duration-500">
           <div className="hero-content flex-col lg:flex-row">
