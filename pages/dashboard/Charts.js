@@ -100,12 +100,12 @@ const Charts = () => {
 
 
                 <Line className='' type="monotone" dataKey="payment" stroke="#000" activeDot={{ r: 8 }} />
-                <XAxis dataKey="month" stroke="#fff" />
-                <YAxis stroke="#fff" />
+                <XAxis dataKey="month" stroke="#000" />
+                <YAxis stroke="#000" />
                 <Tooltip></Tooltip>
                 {/* dataKey="amt" */}
-                <Area type="monotone" fill="#8884d8" stroke="#8884d8" />
-                <Bar dataKey="payment" barSize={20} fill="#fff" />
+                <Area type="monotone" fill="#000" stroke="#0000" />
+                <Bar dataKey="payment" barSize={20} fill="#008080" />
                 {/* <CartesianGrid strokeDasharray="3 3" /> */}
             </ComposedChart>
         </div>

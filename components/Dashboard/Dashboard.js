@@ -4,7 +4,7 @@ import Charts from '../../pages/dashboard/Charts';
 
 const Dashboard = () => {
     return (
-        <div className='w-3/4 bg-teal-700 mt-10'>
+        <div className='w-3/4 bg-zinc-300'>
             <section className="mt-12">
                 <h2></h2>
 
