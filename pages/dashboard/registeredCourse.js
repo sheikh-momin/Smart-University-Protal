@@ -25,7 +25,6 @@ const RegisteredCourse = () => {
     }
     
   }, [user, semester])
-  console.log("COurses",courses)
   if (loading) {
     return <Loader></Loader>;
   }

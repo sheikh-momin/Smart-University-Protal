@@ -1,21 +1,23 @@
 import DashboardNavbar from "./dashboardNav/DashboardNavbar";
 import { useForm } from "react-hook-form";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
 import { toast } from "react-hot-toast";
+import Loader from "../../components/Loader";
 
 
 const SemesterDrop = () => {
   const { register, handleSubmit } = useForm();
   const {user} = useContext(AuthContext)
-  
-  const onSubmit = data => {
+  const [semesterDrop, setSemesterDrop] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  const handleForm = data => {
     const email = user.email
     const semester = data.semester
     const causes = data.causes
     const whyDrop = data.whyDrop
     const date = new Date();
-    console.log(email, semester,causes,whyDrop,date);
 
     const reportedItem = {
       email: email,
@@ -25,7 +27,7 @@ const SemesterDrop = () => {
       whyDrop: whyDrop
     }
 
-    fetch('https://smart-university-protal-server-ruby.vercel.app/semesterDrop',{
+    fetch('https://smart-university-protal-server-l33i.vercel.app/drop', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -34,10 +36,27 @@ const SemesterDrop = () => {
     })
       .then(res => res.json())
       .then(data => {
-        console.log(data)
+        console.log("data",data)
         toast.success('Thanks for your response..We saved your form');
       })
   }
+  
+  useEffect(() => {
+    if (user?.email) {
+      fetch(`https://smart-university-protal-server-sigma.vercel.app/drop/${user?.email}`)
+        .then(res => res?.json())
+        .then(data => {
+          setSemesterDrop(data)
+        })
+      setLoading(false)
+    }
+
+  }, [user])
+  if (loading) {
+    return <Loader></Loader>;
+  }
+
+  
   return (
     <div className="bg-[#d4d4d8] pb-80 ">
       <DashboardNavbar></DashboardNavbar>
@@ -48,7 +67,7 @@ const SemesterDrop = () => {
 
       <div className="md:flex mt-10 mx-3 md:mx-40 justify-center">
         <div>
-          <form className="bg-white rounded p-10" onSubmit={handleSubmit(onSubmit)}>
+          <form className="bg-white rounded p-10" onSubmit={handleSubmit(handleForm)}>
             <select className="select w-full max-w-xs block bg-slate-200 " {...register("semester")}>
               <option disabled selected>Pick your Semester</option>
               <option value="Spring2023">Spring2023</option>
@@ -76,7 +95,6 @@ const SemesterDrop = () => {
 
               <thead>
                 <tr>
-                  <th></th>
                   <th>Semester</th>
                   <th>Causes</th>
                   <th>Date</th>
@@ -84,12 +102,19 @@ const SemesterDrop = () => {
               </thead>
               <tbody>
 
-                <tr>
-                  <th>1</th>
-                  <td>Cy Ganderton</td>
-                  <td>Quality Control Specialist</td>
-                  <td>Blue</td>
-                </tr>
+              {
+                semesterDrop.map((drop)=>
+                  user?.email==drop.email ?
+                    <tr>
+                      <td>{drop.semester}</td>
+                      <td>{drop.causes}</td>
+                      <td>{drop.date}</td>
+                    </tr>
+                    :
+                    <></>
+                )
+              }
+
               </tbody>
             </table>
           </div>
