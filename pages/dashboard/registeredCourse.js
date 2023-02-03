@@ -50,7 +50,7 @@ const RegisteredCourse = () => {
 
       <div className="mt-10 md:mx-40">
         <div className=" mt-3">
-          <h1 className="text-center bg-cyan-400 text-white md:text-xl  py-3 font-serif">Registered Course List </h1>
+          <h1 className="text-center bg-cyan-400 rounded text-white md:text-xl  py-3 font-serif">Registered Course List </h1>
         </div>
         <div className="overflow-x-auto">
           <table className="table  w-full">
