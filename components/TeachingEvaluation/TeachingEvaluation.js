@@ -7,7 +7,7 @@ const TeachingEvaluation = () => {
     return (
         <div>
         <DashboardNavbar></DashboardNavbar>
-         <div className='flex bg-white'>
+         <div className='flex bg-zinc-300'>
             {/* <DashboardNavbar */}
 
             <Dashboardnav></Dashboardnav>
@@ -27,8 +27,8 @@ const TeachingEvaluation = () => {
                 </select>  
 
                 <div>
-                    <table class="mt-10 w-full border-collapse border border-info ...">
-                    <thead >
+                    <table class="mt-10 w-full border-separate border-2 border-slate-400  ...">
+                    <thead className='border-4'>
                         <tr class=" text-2xl border bg-teal-100  border-info ...">
                         <th class="">Submit Status</th>
                         <th class="">Course Title</th>
@@ -38,7 +38,7 @@ const TeachingEvaluation = () => {
                     </thead>
                     <tbody>
                         
-                        <tr class=" text-xl border bg-red-100 border-secondary-focus ...">
+                        <tr class=" text-xl border-4 bg-red-100 border-secondary-focus ...">
                         <td class=""> 
                             <label htmlFor="my-modal-5" className="btn bg-secondary text-white ">Submit Here</label>
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
