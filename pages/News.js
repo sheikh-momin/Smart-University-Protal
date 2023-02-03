@@ -113,7 +113,7 @@ const News = () => {
                     setTabSelected({ ...tabSelected, currentTab: 2 })
                   }
                 >
-                  <span>Tab 2</span>
+                  <span>Admission</span>
                 </button>
               </li>
               <li className="" role="presentation">
@@ -136,11 +136,11 @@ const News = () => {
                     setTabSelected({ ...tabSelected, currentTab: 3 })
                   }
                 >
-                  <span>Tab 3</span>
+                  <span>Administration</span>
                 </button>
               </li>
             </ul>
-            <div className=" notice card overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200 h-48 w-64 text-black overflow-y-auto scroll-smooth ">
+            <div className=" notice card overflow-hidden rounded bg-white text-slate-500 shadow-md shadow-slate-200 h-48 w-full text-black overflow-y-auto scroll-smooth ">
               <div
                 className={`px-6 py-4 ${
                   tabSelected.currentTab === 1 ? "" : "hidden"

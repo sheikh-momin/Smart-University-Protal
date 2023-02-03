@@ -39,6 +39,11 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
+        <Link href="/hall" className="text-xl font-semibold">
+         Hall
+        </Link>
+      </li>
+      <li>
         <Link href="/Institutes" className="text-2xl font-semibold">
           Institution Center
         </Link>

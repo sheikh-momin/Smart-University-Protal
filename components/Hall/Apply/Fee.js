@@ -4,8 +4,8 @@ import React from 'react'
 const Fee = () => {
   
   return (
-    <div>
-      {/*<!-- Component: Basic accordion --> */}
+    <div className="grid justify-center">
+      {/*<!-- Component: Basic accordion 
       <section className="w-full divide-y rounded divide-slate-200 ">
         <details className="p-4 group">
           <summary className="relative cursor-pointer list-none pr-8 font-medium text-slate-700 transition-colors duration-300 focus-visible:outline-none group-hover:text-slate-900  [&::-webkit-details-marker]:hidden">
@@ -113,8 +113,60 @@ const Fee = () => {
          
           </p>
         </details>
-      </section>
+      </section>    --> */}
       {/*<!-- End Basic accordion --> */}
+
+      <div className="card  w-full  shadow-2xl bg-base-100">
+        <div className="card-body">
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Name</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              className="input input-bordered"
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Enter email"
+              className="input input-bordered"
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Phone Number</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Enter Phone Number"
+              className="input input-bordered"
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text"> Your Semester</span>
+            </label>
+            <select className="select input-bordered  w-full ">
+              <option disabled selected>
+                1st Semester
+              </option>
+              <option>2nd Semester</option>
+              <option>3rd Semester</option>
+              <option>4th Semester</option>
+              <option>5th Semester</option>
+            </select>
+          </div>
+          <div className="form-control mt-6">
+            <button className="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
