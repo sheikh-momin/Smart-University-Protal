@@ -1,0 +1,159 @@
+[
+          {    "email": "afnan15-2323@du.edu.bd",
+               "semester" : "Spring-2022",
+               "Enrollment":"1",
+             "fee":  
+             [
+              {
+                "Fee": "admissionFee",
+                "debit": "30000",
+                "balance": "30000"
+              },
+              {
+                "Fee":  "SemesterFee",
+                "debit": "12000",
+                "balance": "42000"
+              },
+              {
+                "Fee":  "LibraryFee",
+                "debit": "1000",
+                "balance": "43000"
+              },
+              {
+                "Fee":  "EstablishmentFee",
+                "debit": "4000",
+                "balance": "47000"
+              },
+              {
+                "Fee":  "OrientationFee",
+                "debit": "2000",
+                "balance": "49000"
+              },
+              {
+                "Fee":  "CSE-1121 Computer Programming 1 (3X2050)",
+                "debit": "6150",
+                "balance": "55150"
+              },
+              {
+                "Fee":  "CSE-1122 Computer Programming 1 Lab (1.5X2050)",
+                "debit": "3075",
+                "balance": "58225"
+              },
+              {
+                "Fee":  "EEE-1121 Basic Electrical Engineering (3X2050)",
+                "debit": "6150",
+                "balance": "64375"
+              },
+              
+              {
+                "Fee":  "EEE-1122 Basic Electrical Engineering Lab (1.5X2050)",
+                "debit": "3075",
+                "balance": "67450"
+              },
+              {
+                "Fee":  "MATH-1107 Mathematics I (Differential and Integral Calculus) (3X2050)",
+                "debit": "6150",
+                "balance": "73600"
+              },
+              {
+                "Fee":   "PHY-1101 Physics I (Mechanics, Waves, Heat and Thermodynamics) (3X2050)",
+                "debit": "6150",
+                "balance": "79750"
+              },
+              {
+                "Fee":   "UREL-1106 Advanced English (2X1100)",
+                "debit": "2200",
+                "balance": "81950"
+              },
+              {
+                "Fee":   "ExamFee",
+                "debit":"1800",
+                "balance": "83750"
+              },
+              {
+                "Fee":  "total",
+                "debit": "0",
+                "balance": "83750" 
+              }
+             ]
+            
+              
+             
+             },
+          {  "email": "afnan15-2323@du.edu.bd",
+                "semester" : "Autumn-2022",
+                "Enrollment":"2",
+             "fee":
+             [
+              {
+                "Fee":  "SemesterFee",
+                "debit": "12000",
+                "balance": "12000"
+              },
+              {
+                "Fee":  "EstablishmentFee",
+                "debit": "4000",
+                "balance": "16000"
+              },
+              {
+                "Fee":  "CSE-1221 Computer Programming 2 (3 X 2050)",
+                "debit": "6150",
+                "balance": "22150"
+              },
+              {
+                "Fee":   "CSE-1222 Computer Programming 2 Lab (1.5 X 2050)",
+                "debit": "3075",
+                "balance": "25225"
+              },
+              {
+                "Fee":   "CSE-1223 Discrete Mathematics (3 X 2050)",
+                "debit": "6150",
+                "balance": "31375"
+              },
+              {
+                "Fee":   "CSE-1230 Competitive Programming 1 (1 X 2050)",
+                "debit": "2050",
+                "balance": "33425"
+              },
+              {
+                "Fee": "EEE-1221 Electronics (3 X 2050)",
+                "debit": "6150",
+                "balance": "39575"
+              },
+              {
+                "Fee":  "EEE-1222 Electronics Lab (1.5 X 2050)",
+                "debit": "3075",
+                "balance": "42650"
+              },
+              {
+                "Fee":  "MATH-1207 Mathematics II (Geometry and Differential Equations) (3 X 2050)",
+                "debit": "6150",
+                "balance": "48800"
+              },
+              {
+                "Fee":  "PHY-1201 Physics II (Electromagnetism, Optics and Modern Physics) (3 X 2050)",
+                "debit": "6150",
+                "balance": "54950"
+              },
+              {
+                "Fee":   "PHY-1204 Physics II Lab (Electromagnetism, Optics and Modern Physics) (1.5 X 2050)",
+                "debit": "3075",
+                "balance": "54950"
+              },
+              {
+                "Fee":   "ExamFee",
+                "debit":"2250",
+                "balance": "57200"
+              },
+              {
+                "Fee":  "total",
+                "debit": "0",
+                "balance": "57200"
+              }
+             ]
+          }
+]     
+
+
+
+

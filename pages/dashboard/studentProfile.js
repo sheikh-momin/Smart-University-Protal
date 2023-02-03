@@ -3,7 +3,6 @@ import Dashboard from "../../components/Dashboard/Dashboard";
 import Navbar from "../../components/Navbar";
 import ProfileForm from "../../components/ProfileForm";
 import Dashboardnav from "./dashboardNav/Dashboardnav";
-import DashboardNavbar from "./dashboardNav/DashboardNavbar";
 
 const StudentProfile = () => {
   return (
@@ -18,7 +17,7 @@ const StudentProfile = () => {
         <div className="flex w-full">
           <Dashboardnav></Dashboardnav>
 
-          <div className="flex justify-center lg:ml-20 lg:mt-20">
+          <div className="flex justify-center lg:ml-20 lg:mt-12">
             <div className="grid grid-cols-1 gap-4 my-20">
               <ProfileForm></ProfileForm>
             </div>
