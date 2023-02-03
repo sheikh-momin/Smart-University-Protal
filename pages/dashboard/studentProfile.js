@@ -6,7 +6,7 @@ import Dashboardnav from "./dashboardNav/Dashboardnav";
 
 const StudentProfile = () => {
   return (
-    <div>
+    <div className="bg-zinc-300">
       <Navbar></Navbar>
       <div className="border-y border-slate-400 py-2">
         <h1 className="text-center text-teal-700 text-3xl font-bold italic font-serif">

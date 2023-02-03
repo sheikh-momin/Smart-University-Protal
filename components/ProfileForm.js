@@ -40,13 +40,16 @@ const ProfileForm = () => {
       route: route,
     };
     console.log(studentDetails);
-    fetch("http://localhost:5000/studentDetails", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(studentDetails),
-    })
+    fetch(
+      "https://smart-university-protal-server-sigma.vercel.app/studentDetails",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(studentDetails),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -54,7 +57,7 @@ const ProfileForm = () => {
       });
   };
   return (
-    <div>
+    <div className="bg-zinc-300">
       <form onSubmit={handleSubmit(handleForm)}>
         <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1">
           <div className="form-control ">
