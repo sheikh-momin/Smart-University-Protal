@@ -64,6 +64,11 @@ const Navbar = () => {
 Job Placement        </Link>
       </li>
       <li>
+        <Link href="/hall" className="text-xl font-semibold">
+        Hall
+        </Link>
+      </li>
+      <li>
         {
           user?.email ? 
           <>

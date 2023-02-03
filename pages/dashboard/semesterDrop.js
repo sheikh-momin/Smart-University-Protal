@@ -62,7 +62,7 @@ const SemesterDrop = () => {
     <div className="bg-[#d4d4d8] pb-80 ">
       <DashboardNavbar></DashboardNavbar>
 
-      <div className="bg-slate-200 drop-shadow-lg py-3 mt-5">
+      <div className="bg-slate-200 drop-shadow-lg py-3 ">
         <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">Semester Drop</h1>
       </div>
 
