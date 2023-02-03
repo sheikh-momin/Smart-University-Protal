@@ -1,15 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import { AuthContext } from '../../../Context/AuthProvider';
+import { AuthContext } from "../../../Context/AuthProvider";
 
 const Dashboardnav = () => {
-    const { user, logOut } = useContext(AuthContext)
-    const handleSingOut = () => {
-        logOut()
-            .then(() => { })
-            .catch(error => console.error(error))
+  const { user, logOut } = useContext(AuthContext);
+  const handleSingOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.error(error));
+  };
+  
 
-    }
+    
     return (
 
          <div className="border-slate-100 border-r-2 mt-10 bg-teal-800">

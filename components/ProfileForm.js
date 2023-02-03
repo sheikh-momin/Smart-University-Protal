@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 
 const ProfileForm = () => {
   const {
@@ -8,7 +9,42 @@ const ProfileForm = () => {
     formState: { errors },
   } = useForm();
   const handleForm = (data) => {
-    console.log(data);
+    const Id = data.matric_id;
+    const name = data.userName;
+    const father = data.father;
+    const address = data.address;
+    const birthplace = data.birthplace;
+    const bloodGroup = data.bloodGroup;
+    const contact = data.contact;
+    const emergencyContact = data.emergencyContact;
+    const maritalStatus = data.maritalStatus;
+    const route = data.route;
+
+    const studentDetails = {
+      Id: Id,
+      name: name,
+      father: father,
+      address: address,
+      birthplace: birthplace,
+      bloodGroup: bloodGroup,
+      contact: contact,
+      emergencyContact: emergencyContact,
+      maritalStatus: maritalStatus,
+      route: route,
+    };
+    console.log(studentDetails);
+    fetch("http://localhost:5000/studentDetails", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(studentDetails),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        toast.success("Your Profile details is updated");
+      });
   };
   return (
     <div>
@@ -30,6 +66,23 @@ const ProfileForm = () => {
           />
           {errors.matric_id && (
             <p className="text-red-600">{errors.matric_id?.message}</p>
+          )}
+        </div>
+
+        <div className="form-control ">
+          <label className="label">
+            <span className="label-text">Email:</span>
+          </label>
+          <input
+            type="text"
+            {...register("email", { required: "Email Id is required" })}
+            name="email"
+            placeholder="Email"
+            className="input input-bordered input-info"
+            required
+          />
+          {errors.email && (
+            <p className="text-red-600">{errors.email?.message}</p>
           )}
         </div>
 
