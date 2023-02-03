@@ -6,11 +6,10 @@ import DashboardNavbar from './dashboardNav/DashboardNavbar';
 
 const index = () => {
     return (
-        <div>
+        <div className='bg-zinc-300'>
             <DashboardNavbar></DashboardNavbar>
             <div className='flex w-full'>
             <Drawer></Drawer>
-            <Dashboardnav></Dashboardnav>
             
             <Dashboard></Dashboard>
             

@@ -15,30 +15,10 @@ const eee = () => {
 
 
     return (
-        <div className='bg-teal-700'>
+        <div className='bg-zinc-300'>
             <DashboardNavbar></DashboardNavbar>
 
-            {/* <div className="App">
-                <h3>GeeksforGeeks - File Downloader</h3>
-                <p>Download is in {isInProgress ?
-                    "in progress" : "stopped"}</p>
-
-                <button onClick={() => download(fileUrl, filename)}>
-                    Click to download the file
-                </button>
-                <button onClick={() => cancel()}>
-                    Cancel the download
-                </button>
-                <p>Download size in bytes {size}</p>
-
-                <label for="file">Downloading progress:</label>
-                <progress id="file" value={percentage} max="100" />
-                <p>Elapsed time in seconds {elapsed}</p>
-                {error && <p>possible error {JSON.stringify(error)}</p>}
-            </div> */}
-
-
-            {/* banner start */}
+           
             <div className=''>
                 <div className="card lg:card-side bg-base-100 shadow-xl">
                     <figure><img src="https://iubat.edu/wp-content/uploads/2019/07/Library-1.jpg" alt="Album" /></figure>
@@ -47,7 +27,7 @@ const eee = () => {
             {/* banner end */}
 
 
-            <h2 className='text-4xl mt-5 text-center text-white'>Books for Department of Electrical Engineering </h2>
+            <h2 className='text-4xl mt-5 text-center text-teal-700 font-serif'>Books for Department of Electrical Engineering </h2>
 
          <div className='w-3/4  mt-10 ml-40'>
                {/* first row */}

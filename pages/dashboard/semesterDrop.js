@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
 import { toast } from "react-hot-toast";
 import Loader from "../../components/Loader";
+import Drawer from "../../components/Dashboard/Drawer";
 
 
 const SemesterDrop = () => {
@@ -65,58 +66,65 @@ const SemesterDrop = () => {
         <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">Semester Drop</h1>
       </div>
 
-      <div className="md:flex mt-10 mx-3 md:mx-40 justify-center">
+      <div className="flex">
         <div>
-          <form className="bg-white rounded p-10" onSubmit={handleSubmit(handleForm)}>
-            <select className="select w-full max-w-xs block bg-slate-200 " {...register("semester")}>
-              <option disabled selected>Pick your Semester</option>
-              <option value="Spring2023">Spring2023</option>
-              <option value="Summer2023">Summer2023</option>
-              <option value="Fall2023">Fall2023</option>
-            </select>
-            <select className="select w-full max-w-xs block bg-slate-200 mt-5" {...register("causes")}>
-              <option disabled selected>Select Causes Of Semester Drop</option>
-              <option value="Temporary Drop">Temporary Drop</option>
-              <option value="Program Transfer">Program Transfer</option>
-              <option value="Permanent Drop">Permanent Drop</option>
-              <option value="Internship Running">Internship Running</option>
-            </select>
-            <textarea {...register("whyDrop")} placeholder="Why you want to drop this semester? What is the Causes?" className="textarea textarea-bordered textarea-xs w-full max-w-xs block bg-slate-200 mt-5" ></textarea>
-            <input className="btn btn-info btn-md md:btn-wide mt-5" type="submit" />
-          </form>
+          <Drawer></Drawer>
         </div>
+        <div className="w-full">
+          <div className="md:flex mt-10 mx-3 md:mx-40 justify-center">
+            <div>
+              <form className="bg-white rounded p-10" onSubmit={handleSubmit(handleForm)}>
+                <select className="select w-full max-w-xs block bg-slate-200 " {...register("semester")}>
+                  <option disabled selected>Pick your Semester</option>
+                  <option value="Spring2023">Spring2023</option>
+                  <option value="Summer2023">Summer2023</option>
+                  <option value="Fall2023">Fall2023</option>
+                </select>
+                <select className="select w-full max-w-xs block bg-slate-200 mt-5" {...register("causes")}>
+                  <option disabled selected>Select Causes Of Semester Drop</option>
+                  <option value="Temporary Drop">Temporary Drop</option>
+                  <option value="Program Transfer">Program Transfer</option>
+                  <option value="Permanent Drop">Permanent Drop</option>
+                  <option value="Internship Running">Internship Running</option>
+                </select>
+                <textarea {...register("whyDrop")} placeholder="Why you want to drop this semester? What is the Causes?" className="textarea textarea-bordered textarea-xs w-full max-w-xs block bg-slate-200 mt-5" ></textarea>
+                <input className="btn btn-info btn-md md:btn-wide mt-5" type="submit" />
+              </form>
+            </div>
 
-        <div className="ml-10">
-          <div className=" mt-3">
-            <h1 className="text-center rounded bg-cyan-400 text-white md:text-xl  py-3 font-serif">Dropped Semester List </h1>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="table w-full">
+            <div className="ml-10">
+              <div className=" mt-3">
+                <h1 className="text-center rounded bg-cyan-400 text-white md:text-xl  py-3 font-serif">Dropped Semester List </h1>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="table w-full">
 
-              <thead>
-                <tr>
-                  <th>Semester</th>
-                  <th>Causes</th>
-                  <th>Date</th>
-                </tr>
-              </thead>
-              <tbody>
-
-              {
-                semesterDrop.map((drop)=>
-                  user?.email==drop.email ?
+                  <thead>
                     <tr>
-                      <td>{drop.semester}</td>
-                      <td>{drop.causes}</td>
-                      <td>{drop.date}</td>
+                      <th>Semester</th>
+                      <th>Causes</th>
+                      <th>Date</th>
                     </tr>
-                    :
-                    <></>
-                )
-              }
+                  </thead>
+                  <tbody>
 
-              </tbody>
-            </table>
+                    {
+                      semesterDrop.map((drop) =>
+                        user?.email == drop.email ?
+                          <tr>
+                            <td>{drop.semester}</td>
+                            <td>{drop.causes}</td>
+                            <td>{drop.date}</td>
+                          </tr>
+                          :
+                          <></>
+                      )
+                    }
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>

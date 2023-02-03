@@ -3,7 +3,7 @@ import DashboardNavbar from '../dashboard/dashboardNav/DashboardNavbar';
 
 const civil = () => {
     return (
-        <div className='bg-teal-700'>
+        <div className='bg-zinc-300'>
             <DashboardNavbar></DashboardNavbar>
             <div className=''>
                 <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -13,7 +13,7 @@ const civil = () => {
             {/* banner end */}
 
 
-            <h2 className='text-4xl mt-5 text-center text-white'>Books for Department of Computer Science Engineering </h2>
+            <h2 className='text-4xl mt-5 text-center text-teal-700 font-serif'>Books for Department of Computer Science Engineering </h2>
 
             <div className='w-3/4  mt-10 ml-40'>
                 {/* first row */}
