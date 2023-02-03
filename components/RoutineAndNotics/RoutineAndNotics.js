@@ -6,7 +6,7 @@ const RoutineAndNotics = () => {
     return (
         <div>
         <DashboardNavbar></DashboardNavbar>
-         <div className='flex bg-white'>
+         <div className='flex bg-zinc-300'>
             {/* <DashboardNavbar */}
 
             <Dashboardnav></Dashboardnav>

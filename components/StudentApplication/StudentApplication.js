@@ -6,89 +6,53 @@ const StudentApplication = () => {
     return (
         <div>
         <DashboardNavbar></DashboardNavbar>
-         <div className='flex bg-teal-800'>
+         <div className='flex bg-zinc-300'>
             {/* <DashboardNavbar */}
 
             <Dashboardnav></Dashboardnav>
 
-            {/* <div className='mt-10 ml-16'>
-                <h2 className='text-2xl font-bold text-white text-center'>Faculty of Engineering</h2>
-                <div class="grid grid-cols-3 gap-5 ml-10 mt-10">
-                    <div className=' bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                        <Link href="/library/eee" className='text-black font-bold text-xl'>Electrical & Electronic Engineering</Link>
-                    </div>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                        <Link href="/library/cse" className='text-black font-bold text-xl' >Computer Science & Engineering</Link>
-                    </div>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                        <Link href="/library/civil" className='text-black font-bold text-xl'>Civil Engineering</Link>
-                    </div>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                        <Link href="/library/ae" className='text-black font-bold text-xl'>Architecture Engineering</Link>
-                    </div>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                        <Link href="/library/te" className='text-black font-bold text-xl'>Textile Engineering</Link>
-                    </div>
-                </div>
-
-              
-
-
-
-
-
-
-
-
-
-
-
+            <div className="form-control text-left w-full max-w-3xl mt-10 ml-40">
+                <label className="label text-center text-white bg-teal-400">
+                    <span className=" text-center text-3xl">Student Application System</span>
+                </label>
                 <div>
-                    <h2 className='mt-10 text-2xl font-bold text-white text-center'>Faculty of Business Administration</h2>
-                    <div class="grid grid-cols-3 gap-5 ml-10 mt-10">
-                        <div className=' bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                            <Link href="/library/ba" className='text-black font-bold text-xl'>Business Administration</Link>
+                <div className="hero min-h-screen bg-base-200 mt-5">
+                    <div className="hero-content  ">
+                        <div className="text-center ">
+                        <h1 className="text-4xl  font-bold text-teal-400">Login Now</h1>
                         </div>
-                        <div className='bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                            <Link href="/library/bs" className='text-black font-bold text-xl' >Business Studies</Link>
+                        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div className="card-body">
+                            <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Email</span>
+                            </label>
+                            <input type="text" placeholder="email" className="input input-bordered" />
+                            </div>
+                            <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Password</span>
+                            </label>
+                            <input type="text" placeholder="password" className="input input-bordered" />
+                            <label className="label">
+                                {/* <a  className="label-text-alt link link-hover">Forgot password?</a> */}
+                            </label>
+                            </div>
+                            <div className="form-control mt-6">
+                            <button className="btn btn-primary">Login</button>
+                            </div>
                         </div>
-                        <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                            <Link href="/library/th" className='text-black font-bold text-xl'>Tourism & Hospitalism</Link>
                         </div>
-
                     </div>
-
+                    </div>
                 </div>
-
-
                 <div>
-                    <h2 className='mt-10 text-2xl font-bold text-white text-center'>Faculty of Allied Health Sciences</h2>
-                    <div class="grid grid-cols-3 gap-5 ml-10 mt-10">
-                        <div className=' bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                            <Link href="/library/pharmacy" className='text-black font-bold text-xl'>Pharmacy </Link>
-                        </div>
-                        <div className='bg-slate-200 w-60 h-20 text-center pt-3 rounded-md'>
-                            <Link href="/library/nfe" className='text-black font-bold text-xl' >Nutrition and Food Engineering</Link>
-                        </div>
-                        <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md'>
-                            <Link href="/library/publich" className='text-black font-bold text-xl'>Public Health</Link>
-                        </div>
-
-                    </div>
+                
                 </div>
 
-                <div>
-                    <h2 className='mt-10 text-2xl font-bold text-white text-center'>Faculty of Law</h2>
-                    <div className='bg-slate-200 w-60 h-20 text-center pt-5 rounded-md ml-10 mt-5'>
-                        <Link href="/library/law" className='text-black font-bold text-xl'>Law</Link>
-                    </div>
-                </div>
+                
 
-
-
-
-
-            </div> */}
+            </div>
 
 
 
