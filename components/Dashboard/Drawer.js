@@ -15,11 +15,10 @@ const Drawer = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-
         
         </div>
-        <div className="drawer-side bg-[#d4d4d8]">
-          <label htmlFor="my-drawer" className="drawer-overlay "></label>
+        <div className="drawer-side bg-[#d4d4d8] w-80">
+          <label htmlFor="my-drawer" className="md:drawer-overlay "></label>
           <ul className="menu p-4 w-80 text-base-content bg-gradient-to-r from-blue-900   to-cyan-500">
 
             <li className="">

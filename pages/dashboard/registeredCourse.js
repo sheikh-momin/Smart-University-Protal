@@ -1,5 +1,7 @@
 import { Cagliostro } from "@next/font/google";
 import { useContext, useEffect, useState } from "react";
+
+
 import Drawer from "../../components/Dashboard/Drawer";
 import Loader from "../../components/Loader";
 import { AuthContext } from "../../Context/AuthProvider";
@@ -11,6 +13,7 @@ const RegisteredCourse = () => {
   const [courses, setCourses] = useState([ ])
   const [semester, setSemester] = useState("")
   const [loading , setLoading] = useState(true)
+
   const handleSemester =(e)=>{
     setSemester(e.target.value)
   }
@@ -31,17 +34,19 @@ const RegisteredCourse = () => {
   }
   return (
     <div className="bg-[#d4d4d8] pb-80">
+
       <DashboardNavbar></DashboardNavbar>
       <div className="bg-slate-200 drop-shadow-lg py-3 ">
-        <h1 className="text-center text-cyan-500 text-3xl font-bold italic font-serif">Registered Course</h1>
+        <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">Registered Course</h1>
       </div>
+      
 
-      <div className="flex">
+      <div className="md:flex">
         <div>
           <Drawer></Drawer>
         </div>
-        <div className="w-full">
-          <div className="md:mx-20 flex justify-center mt-10">
+        <div className="md:w-full mx-5">
+          <div className=" flex justify-center mt-10">
 
             <select onChange={handleSemester} name="semester" className="select md:mr-60 select-bordered w-full max-w-xs">
               <option disabled selected className="text-center">--Select Semester--</option>
@@ -53,12 +58,12 @@ const RegisteredCourse = () => {
           </div>
 
 
-          <div className="mt-10 md:mx-40">
+          <div className="mt-10 ">
             <div className=" mt-3">
               <h1 className="text-center bg-cyan-400 rounded text-white md:text-xl  py-3 font-serif">Registered Course List </h1>
             </div>
             <div className="overflow-x-auto">
-              <table className="table  w-full">
+              <table className="table w-40  md:w-full">
 
                 <thead >
                   <tr >
