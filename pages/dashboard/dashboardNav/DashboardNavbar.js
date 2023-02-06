@@ -6,7 +6,7 @@ import Dashboardnav from './Dashboardnav';
 const DashboardNavbar = () => {
     
     return (
-        <div>
+        
         <div>
         <div>
                     <div className="navbar bg-gradient-to-r from-cyan-500  via-blue-500 to-fuchsia-300">
@@ -17,10 +17,6 @@ const DashboardNavbar = () => {
                 </label>
                 </div>
                 
-
-
-
-                </div>
                 <div className="navbar-center">
                     <a className="btn btn-ghost normal-case text-white md:text-xl">Dreamers University - Student Portal</a>
                 </div>
