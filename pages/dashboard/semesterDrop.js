@@ -57,7 +57,6 @@ const SemesterDrop = () => {
     return <Loader></Loader>;
   }
 
-  
   return (
     <div className="bg-[#d4d4d8] pb-80 ">
       <DashboardNavbar></DashboardNavbar>
@@ -109,16 +108,16 @@ const SemesterDrop = () => {
                   <tbody>
 
                     {
-
-                      user?.email == semesterDrop?.email ?
+                      semesterDrop?.map((semester)=>
+                        user?.email == semester?.email ?
                           <tr>
-                            <td>{semesterDrop.semester}</td>
-                            <td>{semesterDrop.causes}</td>
-                            <td>{semesterDrop.date}</td>
+                            <td>{semester.semester}</td>
+                            <td>{semester.causes}</td>
+                            <td>{semester.date}</td>
                           </tr>
                           :
                           <></>
-                      
+                      )
                     }
 
                   </tbody>
