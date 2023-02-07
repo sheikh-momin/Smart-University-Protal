@@ -4,7 +4,7 @@ import RoutineAndNotics from '../../components/RoutineAndNotics/RoutineAndNotics
 const index = () => {
     return (
         <div>
-            <RoutineAndNotics></RoutineAndNotics>
+            {/* <RoutineAndNotics></RoutineAndNotics> */}
         </div>
     );
 };

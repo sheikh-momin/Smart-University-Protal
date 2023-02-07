@@ -17,10 +17,8 @@ const Certificate = () => {
             </div>
 
             <div className="form-control text-center w-full max-w-3xl mt-6 ml-20">
-                {/* <label className="label text-center text-white bg-teal-400">
-                    <span className=" text-center text-3xl">Certificate Apply</span>
-                </label> */}
-                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-cyan-300 ">
+                
+                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-base-200 ">
                     <div class=" mt-5 flex flex-initial">
                         <label className="input-group input-group-xs ml-5">
                             <span>ID</span>
@@ -36,28 +34,28 @@ const Certificate = () => {
                         </label>    
                     </div>
                     <div>
-                        <div className="form-control w-full max-w-2xl mt-5 ml-10 grid grid-cols-2 gap-5">
+                        <div className="form-control w-full max-w-2xl my-5 ml-10 grid grid-cols-2 gap-5">
                             <div>
                                 <label className="label">
-                                    <span className="label-text bg-cyan-200">Apply Date</span>     
+                                    <span className="label-text bg-base-100">Apply Date</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>    
                             <div>
                                 <label className="label">
-                                    <span className="label-text bg-cyan-200">Delivery Date</span>     
+                                    <span className="label-text bg-base-100">Delivery Date</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>    
                             <div>
                                 <label className="label">
-                                    <span className="label-text bg-cyan-200">Alternative Email</span>     
+                                    <span className="label-text bg-base-100">Alternative Email</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>    
                             <div>
                                 <label className="label">
-                                    <span className="label-text bg-cyan-200">Mobile Number</span>     
+                                    <span className="label-text bg-base-100">Mobile Number</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>    
@@ -74,7 +72,7 @@ const Certificate = () => {
                             </div>    
                             <div>
                                 <label className="label">
-                                    <span className="label-text bg-cyan-200">Paid Amount</span>     
+                                    <span className="label-text bg-base-100">Paid Amount</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>    
@@ -97,16 +95,16 @@ const Certificate = () => {
                             </div>     
                             <div>
                                 <label className="label md-4">
-                                    <span className="label-text bg-cyan-200">Money Receipt No/ Reference No</span>     
+                                    <span className="label-text bg-base-100">Money Receipt No/ Reference No</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>     
                         </div>
                     </div>
                 </div>
-                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-cyan-300 ">
+                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-base-200 ">
                     <div>
-                        <div className="form-control w-full max-w-2xl mt-2 ml-10 grid grid-cols-2 gap-5">   
+                        <div className="form-control w-full max-w-2xl my-5 ml-10 grid grid-cols-2 gap-5">   
                             <div>
                                 <label className=" mt-7 input-group input-group-2xl ">
                                     <span>Document</span>                                  
@@ -129,7 +127,7 @@ const Certificate = () => {
                             </div>    
                             <div>
                                 <label className="label">
-                                    <span className="label-text bg-cyan-200">Number of Copy</span>     
+                                    <span className="label-text bg-base-100">Number of Copy</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>    
@@ -156,30 +154,33 @@ const Certificate = () => {
                             </div>
                             <div>
                             <label className="label">
-                                    <span className="label-text bg-cyan-200">ADD DOCUMENT</span>     
+                                    <span className="label-text bg-base-100">ADD DOCUMENT</span>     
                                 </label>
                                 <input type="file" className="file-input file-input-bordered file-input-primary w-full max-w-xs " /></div>                           
                             </div>
                     </div>                     
                 </div>
 
-                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-cyan-300 ">
+                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-base-200 ">
                     <div>
-                        <div className="form-control w-full max-w-2xl mt-2 ml-10 grid grid-cols-2 gap-5">   
+                        <div className="form-control w-full max-w-2xl my-5  ml-10 grid grid-cols-2 gap-5">   
                                
                                
                             <div>
                                 <label className="label">
-                                    <span className="label-text bg-cyan-200 text-lg">Total Payable</span>     
+                                    <span className="label-text bg-base-100 text-lg">Total Payable</span>     
                                 </label>
-                                <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+                                
+                                
                             </div>  
-
+                            
                             <div>
                                 <div className="form-control">
-                                    <label className="cursor-pointer label  bg-cyan-300 mt-5 ml-10">
-                                        <span className="label-text  bg-cyan-200 accent-content text-lg ">Confirm Adjustment</span>
-                                        <input type="checkbox" checked className="checkbox checkbox-accent" />
+                                    <label className="cursor-pointer label  bg-base-300 mt-5 ml-10">
+                                        <span className="label-text  bg-base-100 accent-content text-lg ">Confirm Adjustment</span>
+                                        <input type="radio" name="radio-1" className="radio radio-success" />
+
+                                        <input type="radio" name="radio-1" className="radio radio-error" checked />
                                     </label>
                                 </div>    
                             </div>  
@@ -190,9 +191,9 @@ const Certificate = () => {
                     </div>                     
                 </div>
 
-                <div>
+                {/* <div>
                 <button className=" text-white mt-5 ml-40 btn btn-xs btn-center  bg-cyan-400 sm:btn-sm md:btn-md lg:btn-lg">Save</button>
-                </div>
+                </div> */}
                
             </div>
 
