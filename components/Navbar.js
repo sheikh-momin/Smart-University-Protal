@@ -1,6 +1,22 @@
 import Link from "next/link";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../Context/AuthProvider";
+
 
 const Navbar = () => {
+
+  const {user} = useContext(AuthContext)
+  const [allUsers, setAllUsers] = useState()
+  useEffect(()=>{
+    if(user?.email){
+      fetch(`https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`)
+      .then(res => res.json())
+      .then(data => {
+        setAllUsers(data)
+      })
+    }
+  },[user])
+
   const menuItems = (
     <>
       <li>
@@ -48,11 +64,44 @@ const Navbar = () => {
 Job Placement        </Link>
       </li>
       <li>
-        <Link href="/signin" className="text-xl font-semibold">
-          Sign In
+        <Link href="/hall" className="text-xl font-semibold">
+        Hall
         </Link>
       </li>
-    
+      <li>
+        {
+          user?.email ? 
+          <>
+              {
+                allUsers?.roll=="Student" ?
+                  <Link href="/dashboard" className="text-xl text-[#facc15] font-bold">
+                    Student Portal
+                  </Link>
+                :
+                <></>
+              }
+          </>
+          :
+            <Link href="/signin" className="text-xl font-semibold">Sign In</Link>
+        }
+        {
+          user?.email ?
+            <>
+              {
+                allUsers?.roll == "Teacher" ?
+                  <Link href="/teacherdashboard" className="text-xl  text-[#facc15] font-bold">
+                    Teachers Dashboard
+                  </Link>
+                  :
+                  <></>
+              }
+            </>
+            :
+            <></>
+        }
+
+      </li>
+      
     </>
   );
   return (

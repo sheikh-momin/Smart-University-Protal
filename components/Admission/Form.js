@@ -40,7 +40,7 @@ const Form = () => {
       transactionID: transactionID,
     }
     console.log(reportedItem);
-    fetch('http://localhost:5000/applyOnline', {
+    fetch('https://smart-university-protal-server-ruby.vercel.app/applyOnline', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
