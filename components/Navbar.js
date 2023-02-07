@@ -1,6 +1,22 @@
 import Link from "next/link";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../Context/AuthProvider";
+
 
 const Navbar = () => {
+
+  const {user} = useContext(AuthContext)
+  const [allUsers, setAllUsers] = useState()
+  useEffect(()=>{
+    if(user?.email){
+      fetch(`https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`)
+      .then(res => res.json())
+      .then(data => {
+        setAllUsers(data)
+      })
+    }
+  },[user])
+
   const menuItems = (
     <>
       <li>
@@ -45,14 +61,47 @@ const Navbar = () => {
       </li>
       <li>
         <Link href="/jobplacement" className="text-xl font-semibold">
-          Jobplacement{" "}
+Job Placement        </Link>
+      </li>
+      <li>
+        <Link href="/hall" className="text-xl font-semibold">
+        Hall
         </Link>
       </li>
       <li>
-        <Link href="/signin" className="text-xl font-semibold">
-          signin
-        </Link>
+        {
+          user?.email ? 
+          <>
+              {
+                allUsers?.roll=="Student" ?
+                  <Link href="/dashboard" className="text-xl text-[#facc15] font-bold">
+                    Student Portal
+                  </Link>
+                :
+                <></>
+              }
+          </>
+          :
+            <Link href="/signin" className="text-xl font-semibold">Sign In</Link>
+        }
+        {
+          user?.email ?
+            <>
+              {
+                allUsers?.roll == "Teacher" ?
+                  <Link href="/teacherdashboard" className="text-xl  text-[#facc15] font-bold">
+                    Teachers Dashboard
+                  </Link>
+                  :
+                  <></>
+              }
+            </>
+            :
+            <></>
+        }
+
       </li>
+      
     </>
   );
   return (
@@ -94,7 +143,7 @@ const Navbar = () => {
             <div>
               <Link
                 href="/home"
-                className="btn btn-ghost normal-case text-md font-serif italic"
+                className="btn btn-ghost normal-case text-md md:text-2xl font-serif italic"
               >
                 Dreamers University
               </Link>

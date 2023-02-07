@@ -1,15 +1,19 @@
 import React from 'react'
 import jobplacement from "../../jobplacement/index";
+import Banner from "../../../components/Institutes/Career/CareerBanner"
+import Navbar from "../../../components/Navbar";
 const careercenter = () => {
   return (
     <>
+      <Navbar></Navbar>
+      <Banner></Banner>
       <div>
         <section className="dark:bg- dark:text-black">
-          <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-            <h2 className="text-2xl font-semibold sm:text-4xl">Careers Tips</h2>
-            <p className="mt-4 mb-8 dark:text-gray-400">
-             
-            </p>
+          <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8 ">
+            <h2 className="text-2xl font-semibold sm:text-4xl  ">
+              Careers Tips
+            </h2>
+            <p className="mt-4 mb-8 dark:text-gray-400"></p>
             <div>
               <p>Functions for Students</p>
             </div>
@@ -75,9 +79,9 @@ const careercenter = () => {
         </section>
 
         <div>
-        <p></p>
+          <p></p>
         </div>
-<jobplacement></jobplacement>
+        <jobplacement></jobplacement>
       </div>
     </>
   );
