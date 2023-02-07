@@ -2,7 +2,9 @@ import Link from 'next/link';
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Context/AuthProvider';
 import NoticeAndRoutie from './NoticeAndRoutie';
+import TeacherChart from './TeacherChart';
 import TeacherCourse from './TeacherCourse';
+import TeacherDashboardProfile from './TeacherDashboardProfile';
 
 const TeacherDashboard = () => {
     const {user, logOut} = useContext(AuthContext)
@@ -48,6 +50,8 @@ const TeacherDashboard = () => {
                     <TeacherCourse></TeacherCourse>
                     <h1 className='text-4xl font-semibold text-center mt-6 mb-4'>Important Notice </h1>
                     <NoticeAndRoutie></NoticeAndRoutie>
+                    <TeacherChart></TeacherChart>
+                    <TeacherDashboardProfile></TeacherDashboardProfile>
                     {/* <label  className="btn btn-primary drawer-button">Open drawer</label> */}
                 </div>
                 <div className="drawer-side">

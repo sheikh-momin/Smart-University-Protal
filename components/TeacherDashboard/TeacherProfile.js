@@ -5,6 +5,7 @@ const TeacherProfile = () => {
     return (
         <div className='container mx-auto w-1/2'>
             
+            
             <form  className='grid grid-cols-1 gap-4 mt-6'>
             
             <p>Name</p><input name='name' type="text" disabled placeholder="Your Name" value="tanvir" className="input input-bordered w-full " />
