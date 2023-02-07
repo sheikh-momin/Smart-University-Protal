@@ -1,21 +1,26 @@
 // import Link from 'next/link';
 import React from 'react';
+import Drawer from "../../components/Dashboard/Drawer";
 import Dashboardnav from '../../pages/dashboard/dashboardNav/Dashboardnav';
 import DashboardNavbar from '../../pages/dashboard/dashboardNav/DashboardNavbar';
 
 const TeachingEvaluation = () => {
     return (
-        <div>
+        <div className="bg-[#d4d4d8] pb-80">
         <DashboardNavbar></DashboardNavbar>
+        <div className="bg-slate-200 drop-shadow-lg py-3 ">
+        <h1 className="text-center text-cyan-500 text-3xl font-bold italic font-serif">Teaching Evaluation</h1>
+        </div>
          <div className='flex bg-zinc-300'>
-            {/* <DashboardNavbar */}
-
-            <Dashboardnav></Dashboardnav>
-            <div className="form-control text-left w-full max-w-3xl mt-10 ml-40">
-                <label className="label text-center text-white bg-teal-400">
+            <div>
+             <Drawer></Drawer>
+            </div>
+            <div className="form-control text-left w-full max-w-3xl mt-10 ml-20 ">
+                {/* <label className="label text-center text-white bg-teal-400">
                     <span className=" text-center text-3xl">Teaching Evaluation</span>
-                </label>
-                <select className="mt-5  bg-teal-200 select select-success w-full max-w-xs">
+                </label> */}
+                <div>
+                    <select className="mt-5 ml-60 bg-cyan-200 select select-success w-full max-w-xs">
                 <option disabled selected>Select Semester</option>
                 <option>Fall-2021</option>
                 <option>Summer-2021</option>
@@ -24,12 +29,14 @@ const TeachingEvaluation = () => {
                 <option>Summer-2022</option>
                 <option>Spring-2023</option>
                 <option>Fall-2023</option>
-                </select>  
+                </select>
+                </div>
+                  
 
                 <div>
-                    <table class="mt-10 w-full border-separate border-2 border-slate-400  ...">
+                    <table class="mt-10 ml-10 w-full border-separate border-2 border-slate-400  ...">
                     <thead className='border-4'>
-                        <tr class=" text-2xl border bg-teal-100  border-info ...">
+                        <tr class=" text-2xl border bg-cyan-200  border-info ...">
                         <th class="">Submit Status</th>
                         <th class="">Course Title</th>
                         <th class="">Course Name</th>
@@ -260,7 +267,7 @@ const TeachingEvaluation = () => {
                                 </label>
                                 </div>
                                 <div className="modal-action">
-                                <label htmlFor="my-modal-5" className="btn">Submit</label>
+                                <label htmlFor="my-modal-5" className="btn bg-cyan-400">Submit</label>
                                 </div>
                             </div>
                             </div>

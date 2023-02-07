@@ -14,7 +14,7 @@ const SemesterDrop = () => {
   const [loading, setLoading] = useState(true)
 
   const handleForm = data => {
-    const email = user.email
+    const email = user?.email
     const semester = data.semester
     const causes = data.causes
     const whyDrop = data.whyDrop
@@ -45,7 +45,7 @@ const SemesterDrop = () => {
   useEffect(() => {
     if (user?.email) {
       fetch(`https://smart-university-protal-server-sigma.vercel.app/drop/${user?.email}`)
-        .then(res => res?.json())
+        .then(res => res.json())
         .then(data => {
           setSemesterDrop(data)
         })
@@ -57,7 +57,6 @@ const SemesterDrop = () => {
     return <Loader></Loader>;
   }
 
-  
   return (
     <div className="bg-[#d4d4d8] pb-80 ">
       <DashboardNavbar></DashboardNavbar>
@@ -109,12 +108,12 @@ const SemesterDrop = () => {
                   <tbody>
 
                     {
-                      semesterDrop.map((drop) =>
-                        user?.email == drop.email ?
+                      semesterDrop?.map((semester)=>
+                        user?.email == semester?.email ?
                           <tr>
-                            <td>{drop.semester}</td>
-                            <td>{drop.causes}</td>
-                            <td>{drop.date}</td>
+                            <td>{semester.semester}</td>
+                            <td>{semester.causes}</td>
+                            <td>{semester.date}</td>
                           </tr>
                           :
                           <></>

@@ -84,7 +84,7 @@ const Charts = () => {
     return (
         <div className='mt-16 ml-10'>
 
-            <h2 className='text-white text-4xl text-center mt-5 font-semibold'>Payment Scheme</h2>
+            <h2 className=' text-4xl text-center mt-5 font-semibold'>Payment Scheme</h2>
 
             <ComposedChart
                 width={900}
