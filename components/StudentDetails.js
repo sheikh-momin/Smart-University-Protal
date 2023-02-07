@@ -21,7 +21,7 @@ const StudentDetails = () => {
     }
   }, [user]);
 
-  console.log(studentDetails);
+  // console.log(studentDetails);
   if (loading) {
     return <progress className="progress text-center w-56"></progress>;
   }

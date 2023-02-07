@@ -58,8 +58,11 @@ const ProfileForm = () => {
   };
   return (
     <div className="bg-zinc-300">
-      <form onSubmit={handleSubmit(handleForm)}>
-        <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1">
+      <form onSubmit={handleSubmit(handleForm)} className="bg-white rounded-lg">
+        <h2 className="bg-sky-400 text-white text-center text-xl font-bold py-4">
+          Student Profile
+        </h2>
+        <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1  p-12 pb-0">
           <div className="form-control ">
             <label className="label">
               <span className="label-text">Matric Id:</span>
@@ -299,7 +302,7 @@ const ProfileForm = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <input type="submit" className="btn btn-primary mt-8 px-8" />
+          <input type="submit" className="btn btn-primary mt-8 px-8 mb-4" />
         </div>
       </form>
     </div>
