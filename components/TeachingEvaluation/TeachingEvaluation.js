@@ -6,21 +6,15 @@ import DashboardNavbar from '../../pages/dashboard/dashboardNav/DashboardNavbar'
 
 const TeachingEvaluation = () => {
     return (
-        <div className="bg-[#d4d4d8] pb-80">
-        <DashboardNavbar></DashboardNavbar>
+        <div className="bg-[#d4d4d8] pb-80 w-full mx-5 md:mx-40 mt-5">
         <div className="bg-slate-200 drop-shadow-lg py-3 ">
-        <h1 className="text-center text-cyan-500 text-3xl font-bold italic font-serif">Teaching Evaluation</h1>
+        <h1 className="text-center text-cyan-500 md:text-3xl font-bold italic font-serif">Teaching Evaluation</h1>
         </div>
-         <div className='flex bg-zinc-300'>
-            <div>
-             <Drawer></Drawer>
-            </div>
-            <div className="form-control text-left w-full max-w-3xl mt-10 ml-20 ">
-                {/* <label className="label text-center text-white bg-teal-400">
-                    <span className=" text-center text-3xl">Teaching Evaluation</span>
-                </label> */}
-                <div>
-                    <select className="mt-5 ml-60 bg-cyan-200 select select-success w-full max-w-xs">
+         <div className='flex justify-center bg-zinc-300'>
+            <div className="form-control text-left w-full max-w-3xl mt-10  ">
+                
+                <div className='flex justify-center'>
+                    <select className="mt-5  bg-cyan-200 select select-success w-full max-w-xs">
                 <option disabled selected>Select Semester</option>
                 <option>Fall-2021</option>
                 <option>Summer-2021</option>
@@ -33,8 +27,8 @@ const TeachingEvaluation = () => {
                 </div>
                   
 
-                <div>
-                    <table class="mt-10 ml-10 w-full border-separate border-2 border-slate-400  ...">
+                    <div className=''>
+                    <table class="mt-10  md:w-full border-separate border-2 border-slate-400  ...">
                     <thead className='border-4'>
                         <tr class=" text-2xl border bg-cyan-200  border-info ...">
                         <th class="">Submit Status</th>
@@ -55,103 +49,287 @@ const TeachingEvaluation = () => {
                                 
                                 <div className="form-control">
                                 <p className="py-4">Teaching Quality</p>
+                                <div className=' '>
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
+                            </div> 
+                                
                                 </div>
 
                                 <div className="form-control">
                                 <p className="py-4">Class Arrangment</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Friendly</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Presenting Quality</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Time Mantaning</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Behavior</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
+                                
                                 <div className="modal-action">
-                                <label htmlFor="my-modal-5" className="btn">Submit</label>
+                                <label htmlFor="my-modal-5" className="btn ">Submit
+                                </label>
                                 </div>
                             </div>
                             </div>
@@ -171,103 +349,285 @@ const TeachingEvaluation = () => {
                                 
                                 <div className="form-control">
                                 <p className="py-4">Teaching Quality</p>
+                                <div className=' '>
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
+                            </div> 
+                                
                                 </div>
 
                                 <div className="form-control">
                                 <p className="py-4">Class Arrangment</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Friendly</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Presenting Quality</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Time Mantaning</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Behavior</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="modal-action">
-                                <label htmlFor="my-modal-5" className="btn bg-cyan-400">Submit</label>
+                                <label htmlFor="my-modal-5" className="btn">Submit</label>
                                 </div>
                             </div>
                             </div>
@@ -287,105 +647,285 @@ const TeachingEvaluation = () => {
                                 
                                 <div className="form-control">
                                 <p className="py-4">Teaching Quality</p>
+                                <div className=' '>
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
+                            </div> 
+                                
                                 </div>
 
                                 <div className="form-control">
                                 <p className="py-4">Class Arrangment</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Friendly</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Presenting Quality</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Time Mantaning</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Behavior</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="modal-action">
-                                <label htmlFor="my-modal-5" className="btn  bg-green-500">
-                                <div id="snackbar">Some text some message..</div>
-                                    Submitted</label>
+                                <label htmlFor="my-modal-5" className="btn">Submit</label>
                                 </div>
                             </div>
                             </div>
@@ -405,101 +945,284 @@ const TeachingEvaluation = () => {
                                 
                                 <div className="form-control">
                                 <p className="py-4">Teaching Quality</p>
+                                <div className=' '>
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
+                            </div> 
+                                
                                 </div>
 
                                 <div className="form-control">
                                 <p className="py-4">Class Arrangment</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Friendly</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Presenting Quality</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Time Mantaning</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
                                 <div className="form-control">
                                 <p className="py-4">Behavior</p>
 
-                                <label className="cursor-pointer label">
-                                    <span className="label-text">Very Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-error" />
-                                    <span className="label-text">Bad</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-secondary" />
-                                    <span className="label-text">Avarage</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-warning" />
-                                    <span className="label-text">Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-primary" />
-                                    <span className="label-text">Very Good</span>
-                                    <input type="checkbox" checked className="checkbox checkbox-success" />
+                                <label className="  input-group input-group-xs ml-5">
+                                    
+                                    <div className="form-control max-w-xs ">
+                                        <label className="label cursor-pointer group-xl  ">
+                                            <span className="label-text ">Very Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
+                                        </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                        <label className="label cursor-pointer">
+                                            <span className="label-text">Bad</span> 
+                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
+                                        </label>
+                                    </div>
+                                    
+                                    
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Avarage</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
+                                    </label>
+
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Very Good</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
+                                    </label>
+                                    </div>
+                                    <div className="form-control ml-10">
+                                    <label className="label cursor-pointer">
+                                        <span className="label-text">Excilent</span> 
+                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
+                                    </label>
+                                    </div>
                                 </label>
                                 </div>
+                                
                                 <div className="modal-action">
                                 <label htmlFor="my-modal-5" className="btn">Submit</label>
                                 </div>

@@ -4,7 +4,6 @@ import DashboardNavbar from '../dashboard/dashboardNav/DashboardNavbar';
 const pharmacy = () => {
     return (
         <div className='bg-zinc-300'>
-        <DashboardNavbar></DashboardNavbar>
         <div className=''>
             <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure><img src="https://iubat.edu/wp-content/uploads/2019/07/Library-1.jpg" alt="Album" /></figure>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Area, Bar, CartesianGrid, ComposedChart, Line, Tooltip, XAxis, YAxis } from 'recharts';
 
-const Charts = () => {
+const StudentChart = () => {
     const data = [
         {
             month: "Jan",
@@ -84,7 +84,7 @@ const Charts = () => {
     return (
         <div className='mt-16 ml-10'>
 
-            <h2 className=' text-4xl text-center mt-5 font-semibold'>Payment Scheme</h2>
+            <h2 className='text-white text-4xl text-center mt-5 font-semibold'>Payment Scheme</h2>
 
             <ComposedChart
                 width={900}
@@ -96,7 +96,6 @@ const Charts = () => {
                     bottom: 20,
                     left: 20
                 }}>
-                
 
 
 
@@ -113,4 +112,4 @@ const Charts = () => {
     );
 };
 
-export default Charts;
+export default StudentChart;
