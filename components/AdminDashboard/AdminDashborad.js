@@ -5,7 +5,7 @@ const AdminDashborad = () => {
     return (
         <div>
             <div>
-            <div className="navbar bg-teal-700">
+            <div className="navbar bg-gradient-to-r from-fuchsia-500  via-blue-500 to-cyan-700">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} htmlFor="my-drawer" className="btn btn-ghost btn-circle">
@@ -43,10 +43,10 @@ const AdminDashborad = () => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80 bg-teal-700 text-white">
+                    <ul className="menu p-4 w-80 bg-gradient-to-r from-fuchsia-500   to-blue-500 text-white">
                         {/* <!-- Sidebar content here --> */}
                         <aside class="w-64" aria-label="Sidebar">
-                <div class="px-3 py-4 overflow-y-auto rounded bg-teal-700 dark:bg-gray-800">
+                <div class="px-3 py-4 overflow-y-auto rounded bg-transparent dark:bg-gray-800">
                     <ul class="space-y-2">
                         <li>
                             <Link href="admindashboard" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">

@@ -4,7 +4,7 @@ import News from '../../pages/News';
 const NoticeAndRoutie = () => {
     return (
         <div>
-            
+            khkhkhkhljlkl
             
         </div>
     );
