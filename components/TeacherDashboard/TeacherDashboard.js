@@ -105,23 +105,6 @@ const TeacherDashboard = () => {
             </div>
 
 
-
-
-
-
-
-
-
-           
-
-
-
-
-
-
-
-
-
         </div>
     );
 };

@@ -5,13 +5,15 @@ const Result = ({ liveResult }) => {
     const { name, details,RegisteredId, email,Semester } = liveResult;
     return (
         <div>
-            <h2 className='text-2xl text-teal-700 text-center mt-10 font-serif'>Dreamers University Result Archive</h2>
+            
             <div className='mt-10 ml-5'>
                 <h2 className='font-serif text-xl'>Name:{name} </h2>
                 <p className='font-serif text-xl'>Registered ID:{RegisteredId}</p>
                 <p className='font-serif text-xl'>Email: {email}</p>
             </div>
-            <h2 className=' mt-5 text-xl text-center font-bold mb-5'>Semester: {Semester}</h2>
+            <div className=" mt-3">
+                <h1 className="text-center rounded bg-cyan-400 text-white md:text-xl  py-3 font-serif">Semester: {Semester}</h1>
+            </div>
             <div className='overflow-x-auto'>
                 <table className="table table-zebra w-full text-xl">
                     <thead>
