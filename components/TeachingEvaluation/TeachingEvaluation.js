@@ -6,19 +6,15 @@ import DashboardNavbar from '../../pages/dashboard/dashboardNav/DashboardNavbar'
 
 const TeachingEvaluation = () => {
     return (
-        <div className="bg-[#d4d4d8] pb-80">
-        <DashboardNavbar></DashboardNavbar>
+        <div className="bg-[#d4d4d8] pb-80 w-full mx-5 md:mx-40 mt-5">
         <div className="bg-slate-200 drop-shadow-lg py-3 ">
-        <h1 className="text-center text-cyan-500 text-3xl font-bold italic font-serif">Teaching Evaluation</h1>
+        <h1 className="text-center text-cyan-500 md:text-3xl font-bold italic font-serif">Teaching Evaluation</h1>
         </div>
-         <div className='flex bg-zinc-300'>
-            <div>
-             <Drawer></Drawer>
-            </div>
-            <div className="form-control text-left w-full max-w-3xl mt-10 ml-20 ">
+         <div className='flex justify-center bg-zinc-300'>
+            <div className="form-control text-left w-full max-w-3xl mt-10  ">
                 
-                <div>
-                    <select className="mt-5 ml-60 bg-cyan-200 select select-success w-full max-w-xs">
+                <div className='flex justify-center'>
+                    <select className="mt-5  bg-cyan-200 select select-success w-full max-w-xs">
                 <option disabled selected>Select Semester</option>
                 <option>Fall-2021</option>
                 <option>Summer-2021</option>
@@ -31,8 +27,8 @@ const TeachingEvaluation = () => {
                 </div>
                   
 
-                <div>
-                    <table class="mt-10 ml-10 w-full border-separate border-2 border-slate-400  ...">
+                    <div className=''>
+                    <table class="mt-10  md:w-full border-separate border-2 border-slate-400  ...">
                     <thead className='border-4'>
                         <tr class=" text-2xl border bg-cyan-200  border-info ...">
                         <th class="">Submit Status</th>

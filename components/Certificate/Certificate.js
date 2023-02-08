@@ -1,26 +1,25 @@
 import React from 'react';
+import { toast } from 'react-hot-toast';
 import Drawer from "../../components/Dashboard/Drawer";
 import Dashboardnav from '../../pages/dashboard/dashboardNav/Dashboardnav';
 import DashboardNavbar from '../../pages/dashboard/dashboardNav/DashboardNavbar';
 
 const Certificate = () => {
+    const handleSubmit = ()=>{
+        toast.success("Successfully Applied")
+    }
     return (
-        <div className="bg-[#d4d4d8] pb-80">
-        <DashboardNavbar></DashboardNavbar>
+        <div className="bg-[#d4d4d8] mt-5 pb-80">
         <div className="bg-slate-200 drop-shadow-lg py-3 ">
-        <h1 className="text-center text-cyan-500 text-3xl font-bold italic font-serif">Certificate Apply</h1>
+        <h1 className="text-center text-cyan-500 md:text-3xl font-bold italic font-serif">Certificate Apply</h1>
         </div>
-         <div className='flex bg-zinc-300'>
-           
-         <div>
-             <Drawer></Drawer>
-            </div>
+        <div className='flex bg-zinc-300 justify-center'>
 
-            <div className="form-control text-center w-full max-w-3xl mt-6 ml-20">
+            <div className="form-control text-center w-full max-w-3xl mt-6 ">
                 
-                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-base-200 ">
-                    <div class=" mt-5 flex flex-initial">
-                        <label className="input-group input-group-xs ml-5">
+                <div className=" flex form-control  w-full max-w-3xl mt-10 pl-10 bg-base-200 ">
+                    <div class=" mt-5 flex flex-initial px-5">
+                        <label className="input-group input-group-xs ">
                             <span>ID</span>
                             <input type="text" placeholder="Type here" className="input input-bordered input-xs" />
                         </label>
@@ -34,7 +33,7 @@ const Certificate = () => {
                         </label>    
                     </div>
                     <div>
-                        <div className="form-control w-full max-w-2xl my-5 ml-10 grid grid-cols-2 gap-5">
+                        <div className="form-control w-full max-w-2xl my-5  grid grid-cols-2 gap-5">
                             <div>
                                 <label className="label">
                                     <span className="label-text bg-base-100">Apply Date</span>     
@@ -102,7 +101,7 @@ const Certificate = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-base-200 ">
+                <div className=" flex form-control  w-full max-w-3xl mt-10  bg-base-200 ">
                     <div>
                         <div className="form-control w-full max-w-2xl my-5 ml-10 grid grid-cols-2 gap-5">   
                             <div>
@@ -161,9 +160,9 @@ const Certificate = () => {
                     </div>                     
                 </div>
 
-                <div className=" flex form-control  w-full max-w-3xl mt-10 ml-10 bg-base-200 ">
-                    <div>
-                        <div className="form-control w-full max-w-2xl my-5  ml-10 grid grid-cols-2 gap-5">   
+                <div className=" flex form-control  w-full max-w-3xl mt-10  bg-base-200 ">
+                    <div >
+                        <div className="form-control w-full max-w-2xl my-5  pl-10 grid grid-cols-2 gap-5">   
                                
                                
                             <div>
@@ -176,7 +175,7 @@ const Certificate = () => {
                             
                             <div>
                                 <div className="form-control">
-                                    <label className="cursor-pointer label  bg-base-300 mt-5 ml-10">
+                                    <label className="cursor-pointer label  bg-base-300 mt-5 ">
                                         <span className="label-text  bg-base-100 accent-content text-lg ">Confirm Adjustment</span>
                                         <input type="radio" name="radio-1" className="radio radio-success" />
 
@@ -195,21 +194,8 @@ const Certificate = () => {
                 <button className=" text-white mt-5 ml-40 btn btn-xs btn-center  bg-cyan-400 sm:btn-sm md:btn-md lg:btn-lg">Save</button>
                 </div> */}
                
+                <button onClick={handleSubmit} className="btn btn-info mt-5 mb-10">Submit</button>
             </div>
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </div>
