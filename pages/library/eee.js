@@ -16,7 +16,6 @@ const eee = () => {
 
     return (
         <div className='bg-zinc-300'>
-            <DashboardNavbar></DashboardNavbar>
 
            
             <div className=''>

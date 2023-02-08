@@ -12,14 +12,12 @@ const LiveResult = () => {
     }, [])
 
     return (
-        <div>
-            <DashboardNavbar></DashboardNavbar>
-            <div className='flex'>
-                <Dashboardnav></Dashboardnav>
-
-
-
-                <div className='w-3/4'>
+        <div className='bg-zinc-300 w-full mx-5 md:mx-40 mt-5'>
+            <div className="bg-slate-200 drop-shadow-lg py-3 ">
+                <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">Result Archive</h1>
+            </div>
+            <div className='flex justify-center'>
+                <div className='w-full'>
                     {
                         liveResult.map(result => <Result
                             key={result._id}
@@ -27,13 +25,6 @@ const LiveResult = () => {
                         ></Result>)
                     }
                 </div>
-
-
-
-
-
-
-
 
             </div>
         </div>
