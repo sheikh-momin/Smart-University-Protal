@@ -27,14 +27,14 @@ const Result = ({ liveResult }) => {
                     </thead>
                     <tbody>
                         
-                      {details.map(detail =>
+                    {details.map(detail =>
                             <tr>
                                 <td>{detail.CourseCode}</td>
                                 <td>{detail.CourseTitle}</td>
                                 <td>{detail.credit}</td>
                                 <td>{detail.Grade}</td>
                                 <td>{detail.Point}</td>
-                           
+                        
                             </tr>
                         )}
                     </tbody>

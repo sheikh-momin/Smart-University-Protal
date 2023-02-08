@@ -111,13 +111,13 @@ const index = () => {
 
                                         </Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link href="/routine&notics" class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700">
                                             <AiOutlineBorderOuter size="25px" className="text-amber-400 ml-1"></AiOutlineBorderOuter>
                                             <span class="flex-1 ml-2 whitespace-nowrap font-bold">Routine & Notice</span>
 
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link href="/studentapplication" class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700">
                                             <FaPager size="20px" className="text-amber-400 ml-1"></FaPager>

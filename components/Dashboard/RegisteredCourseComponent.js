@@ -32,7 +32,7 @@ const RegisteredCourseComponent = () => {
       <div className="bg-slate-200 drop-shadow-lg py-3 ">
         <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">Registered Course</h1>
       </div>
-      <div className="w-full mx-5">
+      <div className="w-full">
         <div className=" flex justify-center mt-10">
 
           <select onChange={handleSemester} name="semester" className="select  select-bordered w-full max-w-xs">

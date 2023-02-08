@@ -60,7 +60,7 @@ const SemesterDropComponent = () => {
       </div>
 
       <div className="w-full">
-        <div className="md:flex mt-10 mx-3 md:mx-40 justify-center">
+        <div className="md:flex mt-10 md:mx-40 justify-center">
           <div>
             <form className="bg-white rounded p-10" onSubmit={handleSubmit(handleForm)}>
               <select className="select w-full max-w-xs block bg-slate-200 " {...register("semester")}>
@@ -81,7 +81,7 @@ const SemesterDropComponent = () => {
             </form>
           </div>
 
-          <div className="ml-10">
+          <div className="md:ml-10 w-full">
             <div className=" mt-3">
               <h1 className="text-center rounded bg-cyan-400 text-white md:text-xl  py-3 font-serif">Dropped Semester List </h1>
             </div>
