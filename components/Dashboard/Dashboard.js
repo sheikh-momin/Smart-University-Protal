@@ -5,7 +5,7 @@ import StudentDetails from "../StudentDetails";
 
 const Dashboard = () => {
   return (
-    <div className="md:w-3/4 w-full bg-white ">
+    <div className="md:w-3/4 w-full bg-zinc-300 ">
       <section className="">
         <h2></h2>
         <div>

@@ -3,7 +3,7 @@ import React from 'react';
 const TeacherCourse = () => {
     return (
         <div>
-            <div className="overflow-x-auto w-1/2 mx-auto">
+            <div className="overflow-x-auto w-1/2 mx-auto mt-10">
   <table className="table w-full">
 
 
@@ -14,10 +14,10 @@ const TeacherCourse = () => {
             <input type="checkbox" className="checkbox" />
           </label>
         </th> */}
-        <th>Name</th>
-        <th>Subject Code</th>
-        <th>Enrolled Student</th>
-        <th></th>
+        <th className='bg-blue-500 text-white'>Name</th>
+                <th className='bg-blue-500 text-white'>Subject Code</th>
+                <th className='bg-blue-500 text-white'>Enrolled Student</th>
+                <th className='bg-blue-500 text-white'></th>
       </tr>
     </thead>
     <tbody>

@@ -30,9 +30,9 @@ const Blog = () => {
                 university students where groups of students must come up with
                 innovative solutions.
               </p>
-              <div className="card-actions justify-end">
+              {/* <div className="card-actions justify-end">
                 <button className="btn btn-primary">Read More</button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -59,9 +59,9 @@ const Blog = () => {
                 also be addressed by TU Vice-Chancellor Prof. Dr. Dharma K.
                 Baskota.
               </p>
-              <div className="card-actions justify-end">
+              {/* <div className="card-actions justify-end">
                 <button className="btn btn-primary">Read More</button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -87,9 +87,9 @@ const Blog = () => {
                 ERC On-site edition 2022 will take place from September 9 to
                 September 11, 2022.
               </p>
-              <div className="card-actions justify-end">
+              {/* <div className="card-actions justify-end">
                 <button className="btn btn-primary">Read More</button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -114,9 +114,9 @@ const Blog = () => {
                 World Vision. Despite the Covid-19 pandemic, a total of 42
                 innovative ideas were submitted through the participants
               </p>
-              <div className="card-actions justify-end mt-3">
+              {/* <div className="card-actions justify-end mt-3">
                 <button className="btn btn-primary">Read More</button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -142,9 +142,9 @@ const Blog = () => {
                 the final round, which is the best result by any Bangladeshi
                 team in this competition?
               </p>
-              <div className="card-actions justify-end mt-3">
+              {/* <div className="card-actions justify-end mt-3">
                 <button className="btn btn-primary">Read More</button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
