@@ -1,11 +1,7 @@
-import { Cagliostro } from "@next/font/google";
-import Link from "next/link";
-import { useContext, useEffect, useState } from "react";
-
+import React, { useContext } from "react";
+import AlumniComponent from "../../components/Dashboard/AlumniComponent";
+import AlumniForm from "../../components/Dashboard/AlumniForm";
 import Drawer from "../../components/Dashboard/Drawer";
-import RegisteredCourseComponent from "../../components/Dashboard/RegisteredCourseComponent";
-import Loader from "../../components/Loader";
-import { AuthContext } from "../../Context/AuthProvider";
 import DashboardNavbar from "./dashboardNav/DashboardNavbar";
 import { ImProfile } from "react-icons/im";
 import { FaSearchDollar } from "react-icons/fa";
@@ -21,15 +17,16 @@ import { TbCertificate } from "react-icons/tb";
 import { ImLibrary } from "react-icons/im";
 import { SlLogout } from "react-icons/sl";
 import { CiUser } from "react-icons/ci";
+import Link from "next/link";
+import { AuthContext } from "../../Context/AuthProvider";
 
-const RegisteredCourse = () => {
+const AlumniInfo = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleSingOut = () => {
     logOut()
       .then(() => {})
       .catch((error) => console.error(error));
   };
-
   return (
     <div className="bg-zinc-300">
       <div className="navbar bg-gradient-to-r from-blue-900   to-cyan-500">
@@ -71,7 +68,7 @@ const RegisteredCourse = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content w-full flex justify-center">
-          <RegisteredCourseComponent></RegisteredCourseComponent>
+          <AlumniComponent></AlumniComponent>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
@@ -302,4 +299,4 @@ const RegisteredCourse = () => {
   );
 };
 
-export default RegisteredCourse;
+export default AlumniInfo;

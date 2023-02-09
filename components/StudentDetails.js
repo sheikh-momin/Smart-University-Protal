@@ -22,7 +22,7 @@ const StudentDetails = () => {
     }
   }, [user]);
 
-  console.log(studentDetails);
+  // console.log(studentDetails);
   if (loading) {
     return <Loader></Loader>;
   }

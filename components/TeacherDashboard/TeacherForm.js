@@ -1,55 +1,44 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
-import { AuthContext } from "../Context/AuthProvider";
+import { AuthContext } from "../../Context/AuthProvider";
 
-const ProfileForm = () => {
+const TeacherForm = () => {
   const { user } = useContext(AuthContext);
-  console.log(user);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const handleForm = (data) => {
-    const Id = data.matric_id;
-    const name = data.userName;
-    const father = data.father;
-    const address = data.address;
-    const birthplace = data.birthplace;
-    const bloodGroup = data.bloodGroup;
-    const contact = data.contact;
-    const emergencyContact = data.emergencyContact;
-    const maritalStatus = data.maritalStatus;
-    const route = data.route;
     const email = user.email;
     const img = data.imgURL;
+    const bloodGroup = data.bloodGroup;
+    const contact = data.contact;
+    const maritalStatus = data.maritalStatus;
+    const name = data.userName;
+    const department = data.department;
+    const designation = data.designation;
 
-    const studentDetails = {
+    const TeacherDetails = {
       img: img,
       email: email,
-      Id: Id,
       name: name,
-      father: father,
-      address: address,
-      birthplace: birthplace,
       bloodGroup: bloodGroup,
       contact: contact,
-      emergencyContact: emergencyContact,
       maritalStatus: maritalStatus,
-      route: route,
+      department: department,
+      designation: designation,
     };
-    console.log(studentDetails);
-    fetch(
-      "https://smart-university-protal-server-sigma.vercel.app/studentDetails",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(studentDetails),
-      }
-    )
+    console.log(TeacherDetails);
+
+    fetch("http://localhost:5000/teacherDetails", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(TeacherDetails),
+    })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -57,29 +46,12 @@ const ProfileForm = () => {
       });
   };
   return (
-    <div className="bg-zinc-300">
+    <div>
       <form onSubmit={handleSubmit(handleForm)} className="bg-white rounded-lg">
-        <h2 className="bg-sky-400 text-white text-center text-xl font-bold py-4">
-          Student Profile
+        <h2 className="bg-green-200 text-white text-center text-xl font-bold py-4">
+          Teacher Profile
         </h2>
         <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1  p-12 pb-0">
-          <div className="form-control ">
-            <label className="label">
-              <span className="label-text">Matric Id:</span>
-            </label>
-            <input
-              type="text"
-              {...register("matric_id", { required: "Matric Id is required" })}
-              name="matric_id"
-              placeholder="Matric_id"
-              className="input input-bordered input-info"
-              required
-            />
-            {errors.matric_id && (
-              <p className="text-red-600">{errors.matric_id?.message}</p>
-            )}
-          </div>
-
           <div className="form-control ">
             <label className="label">
               <span className="label-text">Email:</span>
@@ -106,7 +78,7 @@ const ProfileForm = () => {
               name="userName"
               {...register("userName", { required: "Name is required" })}
               type="text"
-              placeholder="Enter Your Full Name"
+              placeholder="Enter Your Name"
               className="input input-bordered input-info w-full max-w-xs"
             />
             {errors.userName && (
@@ -116,37 +88,37 @@ const ProfileForm = () => {
 
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Father's name</span>
+              <span className="label-text">Designation</span>
             </label>
             <input
-              name="father"
-              {...register("father", {
-                required: "Father's Name  is required",
+              name="designation"
+              {...register("designation", {
+                required: "Designation  is required",
               })}
               type="text"
-              placeholder="Father's Name"
+              placeholder="Designation"
               className="input input-bordered w-full max-w-xs input-info"
             />
-            {errors.father && (
-              <p className="text-red-600">{errors.father?.message}</p>
+            {errors.designation && (
+              <p className="text-red-600">{errors.designation?.message}</p>
             )}
           </div>
 
           <div className="form-control ">
             <label className="label">
-              <span className="label-text">Permanent Address</span>
+              <span className="label-text">Department</span>
             </label>
             <input
-              name="address"
-              {...register("address", {
-                required: "Permanent Address is required",
+              name="department"
+              {...register("department", {
+                required: "Department is required",
               })}
               type="text"
-              placeholder="Permanent Address"
+              placeholder="Department"
               className="input input-bordered w-full max-w-xs input-info"
             />
-            {errors.address && (
-              <p className="text-red-600">{errors.address?.message}</p>
+            {errors.department && (
+              <p className="text-red-600">{errors.department?.message}</p>
             )}
           </div>
 
@@ -171,57 +143,7 @@ const ProfileForm = () => {
               <p className="text-red-600">{errors.maritalStatus?.message}</p>
             )}
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text">Route</span>
-            </label>
-            <select
-              name="route"
-              {...register("route", { required: "route is required" })}
-              required
-              className="select select-bordered w-full max-w-xs select-info"
-            >
-              <option disabled selected>
-                Select Routes
-              </option>
-              <option>Gec</option>
-              <option>Chawak Bazar</option>
-              <option>Jamal Khan</option>
-              <option>Khulsi</option>
-            </select>
-            {errors.route && (
-              <p className="text-red-600">{errors.route?.message}</p>
-            )}
-          </div>
-
-          <div className="form-control ">
-            <label className="label">
-              <span className="label-text">Birth Place</span>
-            </label>
-            <select
-              name="birthPlace"
-              {...register("birthPlace", {
-                required: "Birth Place is required",
-              })}
-              className="select select-bordered w-full max-w-xs px-20 select-info"
-            >
-              <option disabled selected>
-                --Select--
-              </option>
-              <option>Dhaka</option>
-              <option>Chittagong</option>
-              <option>Comilla</option>
-              <option>Khulna</option>
-              <option>Jessore</option>
-              <option>Narail</option>
-              <option>Others</option>
-            </select>
-            {errors.birthPlace && (
-              <p className="text-red-600">{errors.birthPlace?.message}</p>
-            )}
-          </div>
-
-          <div className="form-control ">
+          <div className="form-control text-black">
             <label className="label">
               <span className="label-text">Blood Group</span>
             </label>
@@ -266,24 +188,6 @@ const ProfileForm = () => {
               <p className="text-red-600">{errors.contact?.message}</p>
             )}
           </div>
-
-          <div className="form-control ">
-            <label className="label">
-              <span className="label-text">Emergency Contact No.</span>
-            </label>
-            <input
-              name="emergencyContact"
-              {...register("emergencyContact", {
-                required: "Emergency Contact No. is required",
-              })}
-              type="text"
-              placeholder="+88----"
-              className="input input-bordered w-full max-w-xs px-5 input-info"
-            />
-            {errors.emergencyContact && (
-              <p className="text-red-600">{errors.emergencyContact?.message}</p>
-            )}
-          </div>
           <div className="form-control ">
             <label className="label">
               <span className="label-text">Image URL:</span>
@@ -309,4 +213,4 @@ const ProfileForm = () => {
   );
 };
 
-export default ProfileForm;
+export default TeacherForm;

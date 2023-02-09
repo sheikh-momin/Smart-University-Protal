@@ -3,20 +3,20 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Context/AuthProvider";
 import image from '../Assets/logo.png'
 
-
 const Navbar = () => {
-
-  const {user} = useContext(AuthContext)
-  const [allUsers, setAllUsers] = useState()
-  useEffect(()=>{
-    if(user?.email){
-      fetch(`https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`)
-      .then(res => res.json())
-      .then(data => {
-        setAllUsers(data)
-      })
+  const { user } = useContext(AuthContext);
+  const [allUsers, setAllUsers] = useState();
+  useEffect(() => {
+    if (user?.email) {
+      fetch(
+        `https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          setAllUsers(data);
+        });
     }
-  },[user])
+  }, [user]);
 
   const menuItems = (
     <>
@@ -62,77 +62,82 @@ const Navbar = () => {
       </li>
       <li>
         <Link href="/jobplacement" className="text-xl font-semibold">
-Job Placement        </Link>
-      </li>
-      <li>
-        <Link href="/hall" className="text-xl font-semibold">
-        Hall
+          Job Placement{" "}
         </Link>
       </li>
       <li>
-        {
-          user?.email ? 
-          <>
-              {
-                allUsers?.roll=="Student" ?
-                  <Link href="/dashboard" className="text-xl text-[#facc15] font-bold">
-                    Student Portal
-                  </Link>
-                :
-                <></>
-              }
-          </>
-          :
-            <Link href="/signin" className="text-xl font-semibold">Sign In</Link>
-        }
-        {
-          user?.email ?
-            <>
-              {
-                allUsers?.roll == "Teacher" ?
-                  <Link href="/teacherdashboard" className="text-xl  text-[#facc15] font-bold">
-                    Teachers Dashboard
-                  </Link>
-                  :
-                  <></>
-              }
-            </>
-            :
-            <></>
-        }
-        {
-          user?.email ?
-            <>
-              {
-                allUsers?.roll == "admin" ?
-                  <Link href="/admindashboard" className="text-xl  text-[#facc15] font-bold">
-                    Admin Dashboard
-                  </Link>
-                  :
-                  <></>
-              }
-            </>
-            :
-            <></>
-        }
-        {
-          user?.email ?
-            <>
-              {
-                allUsers?.roll == "Employee" ?
-                  <Link href="/employeeDashboard" className="text-xl  text-[#facc15] font-bold">
-                    Employee Dashboard
-                  </Link>
-                  :
-                  <></>
-              }
-            </>
-            :
-            <></>
-        }
-
+        <Link href="/hall" className="text-xl font-semibold">
+          Hall
+        </Link>
       </li>
-      
+      <li>
+        {user?.email ? (
+          <>
+            {allUsers?.roll == "Student" ? (
+              <Link
+                href="/dashboard"
+                className="text-xl text-[#facc15] font-bold"
+              >
+                Student Portal
+              </Link>
+            ) : (
+              <></>
+            )}
+          </>
+        ) : (
+          <Link href="/signin" className="text-xl font-semibold">
+            Sign In
+          </Link>
+        )}
+        {user?.email ? (
+          <>
+            {allUsers?.roll == "Teacher" ? (
+              <Link
+                href="/teacherdashboard"
+                className="text-xl  text-[#facc15] font-bold"
+              >
+                Teachers Dashboard
+              </Link>
+            ) : (
+              <></>
+            )}
+          </>
+        ) : (
+          <></>
+        )}
+        {user?.email ? (
+          <>
+            {allUsers?.roll == "admin" ? (
+              <Link
+                href="/admindashboard"
+                className="text-xl  text-[#facc15] font-bold"
+              >
+                Admin Dashboard
+              </Link>
+            ) : (
+              <></>
+            )}
+          </>
+        ) : (
+          <></>
+        )}
+        {user?.email ? (
+          <>
+            {allUsers?.roll == "Employee" ? (
+              <Link
+                href="/employeeDashboard"
+                className="text-xl  text-[#facc15] font-bold"
+              >
+                Employee Dashboard
+              </Link>
+            ) : (
+              <></>
+            )}
+          </>
+        ) : (
+          <></>
+        )}
+      </li>
     </>
   );
   return (
