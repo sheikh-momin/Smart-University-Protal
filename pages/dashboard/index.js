@@ -8,12 +8,7 @@ const index = () => {
     return (
         <div className='bg-zinc-300'>
             <DashboardNavbar></DashboardNavbar>
-            <div className='flex w-full'>
-            <Drawer></Drawer>
             
-            <Dashboard></Dashboard>
-            
-            </div>
         </div>
     );
 };

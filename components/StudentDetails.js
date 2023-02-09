@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Context/AuthProvider";
+import Loader from "./Loader";
 
 const StudentDetails = () => {
   const { user } = useContext(AuthContext);
@@ -23,7 +24,7 @@ const StudentDetails = () => {
 
   // console.log(studentDetails);
   if (loading) {
-    return <progress className="progress text-center w-56"></progress>;
+    return <Loader></Loader>;
   }
 
   return (
@@ -33,10 +34,10 @@ const StudentDetails = () => {
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={studentDetails.img}
-              className="max-w-sm rounded-lg shadow-2xl hover:scale-90 ease-in duration-500"
+              className="md:max-w-sm rounded-lg shadow-2xl hover:scale-90 ease-in duration-500"
             />
             <div>
-              <h1 className="text-2xl font-bold ">
+              <h1 className="md:text-2xl font-bold ">
                 Name: {studentDetails.name}
               </h1>
               <p className="py-2">Student ID: {studentDetails.Id}</p>
