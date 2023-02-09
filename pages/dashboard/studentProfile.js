@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Drawer from "../../components/Dashboard/Drawer";
 import ProfileForm from "../../components/ProfileForm";
 import DashboardNavbar from "./dashboardNav/DashboardNavbar";
@@ -15,6 +15,7 @@ import { GiTeacher } from "react-icons/gi";
 import { TbCertificate } from "react-icons/tb";
 import { ImLibrary } from "react-icons/im";
 import { SlLogout } from "react-icons/sl";
+import { AuthContext } from "../../Context/AuthProvider";
 
 const StudentProfile = () => {
   const { user, logOut } = useContext(AuthContext);
