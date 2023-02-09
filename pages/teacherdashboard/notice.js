@@ -5,7 +5,7 @@ import NoticeAndRoutie from '../../components/TeacherDashboard/NoticeAndRoutie';
 const notice = () => {
     return (
         <div>
-            <div className="navbar bg-teal-700">
+            <div className="navbar bg-gradient-to-r from-indigo-900 via-purple-600 to-blue-600">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} htmlFor="my-drawer" className="btn btn-ghost btn-circle">
@@ -17,7 +17,7 @@ const notice = () => {
                     <Link href='/' className="btn btn-ghost normal-case text-white text-xl">Dreamers University - Teacher Portal</Link>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn btn-ghost btn-circle">
+                    {/* <button className="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </button>
                     <button className="btn btn-ghost btn-circle">
@@ -25,7 +25,7 @@ const notice = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
                             <span className="badge badge-xs badge-primary indicator-item"></span>
                         </div>
-                    </button>
+                    </button> */}
                 </div>
             </div>
 
@@ -41,10 +41,10 @@ const notice = () => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80 bg-teal-700 text-white">
+                    <ul className="menu p-4 w-80 bg-gradient-to-r from-blue-700 text-white">
                         {/* <!-- Sidebar content here --> */}
                         <aside class="w-64" aria-label="Sidebar">
-                <div class="px-3 py-4 overflow-y-auto rounded bg-teal-700 dark:bg-gray-800">
+                <div class="px-3 py-4 overflow-y-auto rounded bg-transparent dark:bg-gray-800">
                     <ul class="space-y-2">
                         <li>
                             <Link href="/teacherdashboard" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
