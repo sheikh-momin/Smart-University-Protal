@@ -1,10 +1,48 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
 
 const RegisteredCourse = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const handleSignUp = data => {
-        console.log(data)
+
+        const category = data.category;
+    const email = data.email;
+    const courseName = data.courseName;
+    const courseCode = data.courseCode;
+    const courseCredit = data.courseCredit;
+    const courseSection = data.courseSection;
+    const courseAdvise = data.courseAdvise;
+    const courseClearence = data.courseClearence;
+    
+
+    const registeredDetails = {
+      category,
+      email,
+      courseName,
+      courseCode,
+
+      courseCredit,
+      courseSection,
+      courseAdvise,
+      courseClearence
+    };
+    console.log(registeredDetails);
+    fetch(
+      "http://localhost:5000/registeredDetails",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(registeredDetails),
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        toast.success("Your Profile details is updated");
+      });
 
     }
     return (
@@ -16,9 +54,9 @@ const RegisteredCourse = () => {
                     <p>Semister</p>
                         <select {...register("category", { required: true })}>
                         
-                            <option value="user">Spring</option>
-                            <option value="seller">Summer</option>
-                            <option value="seller">Fall</option>
+                            <option value="Spring">Spring</option>
+                            <option value="Summer">Summer</option>
+                            <option value="Fall">Fall</option>
                             
 
                         </select>
