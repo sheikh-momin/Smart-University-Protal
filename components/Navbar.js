@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Context/AuthProvider";
+import image from '../Assets/logo.png'
 
 
 const Navbar = () => {
@@ -132,20 +133,21 @@ Job Placement        </Link>
               {menuItems}
             </ul>
           </div>
-          <div className="mx-auto flex">
-            <div>
+          <div className="w-52 flex">
+            <div className="w-18 h-10 mt-3">
               <img
-                src="https://lirp.cdn-website.com/1f50fc79/dms3rep/multi/opt/US+Dream+Academy+favicon+logo-1920w.png"
+                src="https://www.linkpicture.com/q/images-removebg-preview-4.png"
                 alt=""
-                className="lg:w-16 lg:h-12 sm:h-20"
+                className="w-12 h-10"
               />
+             
             </div>
-            <div>
+            <div className="w-2/3">
               <Link
                 href="/home"
-                className="btn btn-ghost normal-case text-md md:text-2xl font-serif italic"
+                className="btn btn-ghost normal-case text-md md:text-xl font-serif italic"
               >
-                Dreamers University
+                Dreamers University 
               </Link>
             </div>
           </div>

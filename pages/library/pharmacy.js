@@ -4,11 +4,11 @@ import DashboardNavbar from '../dashboard/dashboardNav/DashboardNavbar';
 const pharmacy = () => {
     return (
         <div className='bg-zinc-300'>
-        <div className=''>
-            <div className="card lg:card-side bg-base-100 shadow-xl">
-                <figure><img src="https://iubat.edu/wp-content/uploads/2019/07/Library-1.jpg" alt="Album" /></figure>
+         <div className='pt-5'>
+                <div className="card lg:card-side bg-zinc-300">
+                    <figure><img className='w-3/4 rounded-3xl' src="https://iubat.edu/wp-content/uploads/2019/07/Library-1.jpg" alt="Album" /></figure>
+                </div>
             </div>
-        </div>
         {/* banner end */}
 
 
