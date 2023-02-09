@@ -87,7 +87,7 @@ const ResultForm = () => {
 
   }
   return (
-    <section className="p-5">
+    <section className="p-5 mx-5 md:mx-40">
       <div className="flex justify-center">
         <div className="card shadow p-12 py-12 bg-base-200  w-full">
           <h2 className="text-primary text-2xl mb-5">Publish Result</h2>
