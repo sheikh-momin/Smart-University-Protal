@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Context/AuthProvider";
 import Loader from "../Loader";
 
@@ -9,13 +10,15 @@ const SemesterDropComponent = () => {
   const { user } = useContext(AuthContext)
   const [semesterDrop, setSemesterDrop] = useState([])
   const [loading, setLoading] = useState(true)
+  let today = new Date();
+  let date = today.toLocaleString();
 
   const handleForm = data => {
     const email = user?.email
     const semester = data.semester
     const causes = data.causes
     const whyDrop = data.whyDrop
-    const date = new Date();
+
 
     const reportedItem = {
       email: email,

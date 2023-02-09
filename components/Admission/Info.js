@@ -6,7 +6,7 @@ const Info = () => {
           Admission Information
         </h1>
       </div>
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">Admission Schedule</h1>
         <h3>
           Dreamers University admits students every semester. Admission schedule
@@ -21,7 +21,7 @@ const Info = () => {
         </h3>
       </div>
 
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">
           There are three intakes at DU
         </h1>
@@ -32,7 +32,7 @@ const Info = () => {
         </h3>
       </div>
 
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">Admission Test:</h1>
         <h3>
           One hour Admission Test consisting of English Grammar, General
@@ -42,7 +42,7 @@ const Info = () => {
         </h3>
       </div>
 
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">Provisional Admission</h1>
         <h3>
           Students who have appeared at the last required examination for
@@ -56,7 +56,7 @@ const Info = () => {
         </h3>
       </div>
 
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">Non-degree Students</h1>
         <h3>
           Student of another university or equivalent educational institution
@@ -79,7 +79,7 @@ const Info = () => {
         </h3>
       </div>
 
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">
           Student Identification Card
         </h1>
@@ -96,7 +96,7 @@ const Info = () => {
         </h3>
       </div>
 
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">Orientation</h1>
         <h3>
           All new students must participate in the orientation program at the
@@ -108,14 +108,14 @@ const Info = () => {
         </h3>
       </div>
 
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">Admission Office :</h1>
         <h3>
           The Admission Office is located on Campus Building of the University &
           at the following addresses :
         </h3>
       </div>
-      <div className="ml-20 my-5 text-lg">
+      <div className="mx-5 my-5 text-lg">
         <h1 className="mb-3 text-teal-600 font-bold">Dreamers University</h1>
         <h3>
           Road 6, Block B, Ashulia Model Town, Akran, Savar Dhaka. <br />

@@ -245,7 +245,9 @@ const Form = () => {
         </div>
 
         
-        <input type="submit" className="btn btn-primary mt-5 w-full" />
+        <div className="flex justify-center">
+          <input type="submit" className="btn btn-primary mt-5 px-10" />
+        </div>
       </form>
     </div>
   );

@@ -21,7 +21,6 @@ const RegisteredCourse = () => {
       email,
       courseName,
       courseCode,
-
       courseCredit,
       courseSection,
       courseAdvise,

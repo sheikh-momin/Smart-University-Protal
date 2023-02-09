@@ -1,12 +1,12 @@
-import Link from "next/link";
-import { useContext } from "react";
-import EmployeeDashboard from "../../components/EmployeeDashboard/EmployeeDashboard";
 import { AuthContext } from "../../Context/AuthProvider";
 import { SlLogout } from 'react-icons/sl';
 import { AiFillDashboard } from 'react-icons/ai';
 import { ImProfile } from 'react-icons/im';
+import Link from "next/link";
+import { useContext } from "react";
+import EmployeeProfile from "../../components/EmployeeDashboard/EmployeeProfile";
 
-const index = () => {
+const Profile = () => {
   const { user, logOut } = useContext(AuthContext)
   const handleSingOut = () => {
     logOut()
@@ -14,7 +14,6 @@ const index = () => {
       .catch(error => console.error(error))
 
   }
-
   return (
     <div className="bg-zinc-300">
       <div className="navbar bg-teal-500">
@@ -37,7 +36,7 @@ const index = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content w-full flex justify-center">
-          <EmployeeDashboard></EmployeeDashboard>
+          <EmployeeProfile></EmployeeProfile>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
@@ -53,7 +52,7 @@ const index = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employeeDashboard/profile" class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700">
+                    <Link href="/employeeDashboard/employeeProfile" class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700">
                       <ImProfile size="20px" className="text-amber-400 ml-2"></ImProfile>
                       <span class="flex-1 ml-2 whitespace-nowrap font-bold">Profile</span>
 
@@ -77,4 +76,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Profile;
