@@ -2,8 +2,8 @@
 
 const Loader = () => {
   return (
-    <div className="text-center ">
-      <div class="container space-y-10 relative flex justify-center">
+    <div className="text-center  flex justify-center items-center">
+      <div class="container space-y-10 relative flex justify-center items-center">
         
 
         <div class="flex flex-col">

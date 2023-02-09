@@ -66,7 +66,7 @@ const RegisteredCourseComponent = () => {
               <tbody>
 
                 {
-                  user.email == courses.email ?
+                  user?.email == courses?.email ?
                     courses?.subject?.map((course) =>
                       <tr key={course.CourseCode}>
                         <th className="text-blue-600">{course.CourseCode}</th>

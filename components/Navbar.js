@@ -99,6 +99,36 @@ Job Placement        </Link>
             :
             <></>
         }
+        {
+          user?.email ?
+            <>
+              {
+                allUsers?.roll == "admin" ?
+                  <Link href="/admindashboard" className="text-xl  text-[#facc15] font-bold">
+                    Admin Dashboard
+                  </Link>
+                  :
+                  <></>
+              }
+            </>
+            :
+            <></>
+        }
+        {
+          user?.email ?
+            <>
+              {
+                allUsers?.roll == "Employee" ?
+                  <Link href="/employeeDashboard" className="text-xl  text-[#facc15] font-bold">
+                    Employee Dashboard
+                  </Link>
+                  :
+                  <></>
+              }
+            </>
+            :
+            <></>
+        }
 
       </li>
       
