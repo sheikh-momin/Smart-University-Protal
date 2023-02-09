@@ -115,10 +115,10 @@ const RegisteredCourse = () => {
 
     }
     return (
-        <div >
+        <div  className='container mx-auto'>
            <form onSubmit={handleSubmit(handleSignUp)}>
 
-           <div className='lg:flex gap-10'>
+           <div className='container mx-auto lg:flex gap-10'>
            <div className="form-control w-full max-w-xs my-5 container">
                     <p>Semister</p>
                         <select {...register("category", { required: true })}>
@@ -416,7 +416,7 @@ const RegisteredCourse = () => {
                     
                     </div>
                     
-                    <input className='container btn btn-accent w-1/4 mx-auto mt-4' value="Submit" type="submit" />
+                    <input className='btn bg-gradient-to-r from-blue-700 w-1/4 mx-auto mt-4' value="Submit" type="submit" />
                     {/* {signUpError && <p className='text-red-600'>{signUpError}</p>} */}
                 </form>
         </div>
