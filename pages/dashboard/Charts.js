@@ -88,6 +88,7 @@ const Charts = () => {
 
             <ComposedChart
                 width={900}
+                
                 height={450}
                 data={data}
                 margin={{

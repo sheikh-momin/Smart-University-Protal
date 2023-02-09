@@ -1,5 +1,4 @@
-
-import Result from "../../components/TeacherDashboard/ResultForm";
+import DropListComponent from "../../components/TeacherDashboard/DropListComponent";
 import Link from "next/link";
 import { RiProfileFill } from 'react-icons/ri';
 import { SiCoursera } from 'react-icons/si';
@@ -9,7 +8,7 @@ import { BsFillFileSpreadsheetFill } from 'react-icons/bs';
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
 
-const liveResult = () => {
+const dropList = () => {
   const { user, logOut } = useContext(AuthContext)
   const handleSingOut = () => {
     logOut()
@@ -48,7 +47,7 @@ const liveResult = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <Result></Result>
+          <DropListComponent></DropListComponent>
         </div>
 
 
@@ -130,4 +129,4 @@ const liveResult = () => {
   );
 };
 
-export default liveResult;
+export default dropList;

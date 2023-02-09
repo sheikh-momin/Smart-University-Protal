@@ -120,8 +120,8 @@ const RegisteredCourse = () => {
 
            <div className='container mx-auto lg:flex gap-10'>
            <div className="form-control w-full max-w-xs my-5 container">
-                    <p>Semister</p>
-                        <select {...register("category", { required: true })}>
+                        
+                        <select className='select select-bordered w-full max-w-xs md:mt-5' {...register("category", { required: true })}>
                         
                             <option value="Spring">Spring</option>
                             <option value="Summer">Summer</option>
@@ -132,9 +132,9 @@ const RegisteredCourse = () => {
 
                     </div>
                     
-                    <div className="form-control w-full max-w-xs">
-                        <label className="label"> <span className="label-text">Student Email</span></label>
-                        <input type="email" {...register("email", {
+                    <div className="form-control w-full max-w-xs md:mt-10">
+                        
+                        <input  placeholder='Student Email' type="email" {...register("email", {
                             required: "email required"
                         })} className="input input-bordered w-full max-w-xs" />
                         {errors.email && <p className='text-red-500'>{errors.email.message}</p>}
@@ -416,7 +416,9 @@ const RegisteredCourse = () => {
                     
                     </div>
                     
+                    <div className='flex justify-center'>
                     <input className='btn bg-gradient-to-r from-blue-700 w-1/4 mx-auto mt-4' value="Submit" type="submit" />
+                    </div>
                     {/* {signUpError && <p className='text-red-600'>{signUpError}</p>} */}
                 </form>
         </div>
