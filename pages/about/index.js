@@ -10,9 +10,10 @@ const About = () => {
       {/* testing  */}
       <Navbar></Navbar>
       <div className="bg-zinc-300">
-        <div>
-          <img src="https://wallpaperaccess.com/full/1209573.jpg"
-            className="w-3/4 h-2/4 pl-64 ml-5 pt-5 rounded-3xl"/> </div>
+        <div className="h-1/2">
+          <img src="https://img.freepik.com/free-photo/harvard-university-cambridge-usa_1268-14363.jpg"
+            className="w-full h-full"/>
+             </div>
 
         <div className="flex mt-10">
           <div className="w-1/3 h-96">
@@ -22,29 +23,30 @@ const About = () => {
                 type="checkbox"
                 className="drawer-toggle"
               />
-              <div className="drawer-content flex flex-col items-center justify-center">
+              {/* <div className="drawer-content flex flex-col items-center justify-center"> */}
                 {/* <!-- Page content here --> */}
-                <label
+                {/* <label
                   htmlFor="my-drawer-2"
                   className="btn btn-primary drawer-button lg:hidden"
                 >
                   Open drawer
-                </label>
-              </div>
-              <div className="drawer-side">
-                <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-80  bg-zinc-300  text-white">
+                </label> */}
+              {/* </div> */}
+              {/* drawer-side */}
+              <div className="">
+                {/* <label htmlFor="my-drawer-2" className="drawer-overlay"></label> */}
+                <ul className="menu p-4 w-80   bg-zinc-300  text-black font-bold ">
                   {/* <!-- Sidebar content here --> */}
-                  <li><a className="ml-10 text-md">Objective Of Dreamers University</a></li>
-                  <li><a className="ml-10 text-md">History of Dreamers University</a></li>
-                  <li><a className="ml-10 text-md">Structure of Dreamers University</a></li>
-                  <li><a className="ml-10 text-md">Member States</a></li>
+                  <li><a className="ml-10  text-md" href="#objective">Objective Of Dreamers University</a></li>
+                  <li><a className="ml-10  text-md" href="#history">History of Dreamers University</a></li>
+                  <li><a className="ml-10  text-md" href="#structure">Structure of Dreamers University</a></li>
+                  {/* <li><a className="ml-10 text-md">Member States</a></li> */}
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="w-2/3">
+          <div className="w-2/3" id="about">
             <h2 className="text-black text-4xl">About Dreamers University</h2>
             <p className="text-black text-md mt-3">
               Islamic University of Technology (Dreamers University) is an
@@ -59,7 +61,7 @@ const About = () => {
               was designed by Turkish architect Pamir Mehmet, an MIT graduate
             </p>
 
-            <h2 className="text-black text-4xl mt-12">
+            <h2 className="text-black text-4xl mt-12" id="objective">
               Objective of Dreamers University
             </h2>
             <p className="text-black text-md mt-3">
@@ -121,7 +123,7 @@ const About = () => {
               </li>
             </ul>
 
-            <h3 className="text-black text-4xl mt-12">
+            <h3 className="text-black text-4xl mt-12" id="history">
               {" "}
               History of Dreamers University
             </h3>
@@ -204,7 +206,7 @@ const About = () => {
             <p className="text-black text-md mt-3">The renaming of IIT as Dreamers University is an important milestone in the annals of this unique educational institution, only of its kind under the umbrella of the OIC which has been emerging as the most visible demonstration of the Islamic Solidarity and Joint Islamic Action under the Makkah - Al - Mukarramah Declaration.</p>
             <p className="text-black text-md mt-3">Dreamers University is basically an educational and research institution offering a wide range of undergraduate and postgraduate academic programmes conducted in the fields of engineering and vocational education. It also offers knowledge and skill updating and upgrading short and special courses as needed by the Member States. International and regional seminars and workshops are also arranged regularly by Dreamers University to provide forums and to keep abreast of the latest technological developments. It also undertakes technological and industrial research projects, promotes technical cooperation, exchanges technical know-how and disseminates basic information of development of human resources as co-focal point under UN-OIC collaboration among the Member States of the OIC. Dreamers University ensures coordination between its objectives with other national and regional institutions of the Islamic countries as well as with international institutions. It also undertakes advisory and consultancy services for Government, International Bodies, Foundations and allied Organisations.</p>
 
-            <h3 className="text-black text-4xl mt-12">Structure of Dreamers University</h3>
+            <h3 className="text-black text-4xl mt-12" id="structure">Structure of Dreamers University</h3>
             <p className="text-black text-md mt-3">The structure of the University comprises the Joint General Assembly, the Governing Board, Syndicate and the Vice Chancellor. The internal setup and working conditions of the University are governed by its Internal Rules and Regulations as approved by the ICFM as well as by the provisions of the Personnel and Financial Regulations of the OIC.</p>
             <p className="text-black text-md mt-3">The Vice Chancellor of the University is the chief executive in charge of the overall management of the University and takes measures necessary for realizing the objectives of the University. The Member States cooperate in every possible manner to assist the University in pursuing its objectives. The budget of the University is financed by mandatory contributions of the Government of the Member States in proportion to their contribution to the budget of the General Secretariat of the Organization of the Islamic Conference.</p>
 
