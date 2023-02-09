@@ -1,6 +1,8 @@
+import Link from "next/link";
 import React from "react";
 import { AiFillCaretDown } from "react-icons/ai";
-import { Link } from "react-router-dom";
+
+
 
 const FacultyCategory = () => {
   return (
@@ -17,22 +19,22 @@ const FacultyCategory = () => {
               className="dropdown-content menu p-2 shadow bg-base-100 rounded-box "
             >
               <li>
-                <a href="/faculty/eee">
+                <Link href="/faculty/eee">
                   {" "}
                   Electrical and Electronic Engineering
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/faculty/cse">Computer Science and Engineering</a>
+                <Link href="/faculty/cse">Computer Science and Engineering</Link>
               </li>
               <li>
-                <a href="/faculty/textile">Textile Engineering</a>
+                <Link href="/faculty/textile">Textile Engineering</Link>
               </li>
               <li>
-                <a href="/faculty/civil">Civil Engineering</a>
+                <Link href="/faculty/civil">Civil Engineering</Link>
               </li>
               <li>
-                <a href="/faculty/architecture">Architecture</a>
+                <Link href="/faculty/architecture">Architecture</Link>
               </li>
             </ul>
           </div>
@@ -48,15 +50,15 @@ const FacultyCategory = () => {
               className="dropdown-content menu p-2 shadow bg-base-100 rounded-box "
             >
               <li>
-                <a href="/faculty/pharmacy"> Pharmacy</a>
+                <Link href="/faculty/pharmacy"> Pharmacy</Link>
               </li>
               <li>
-                <a href="/faculty/foodEngineering">
+                <Link href="/faculty/foodEngineering">
                   Nutrition and Food Engineering
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/faculty/publicHealth">Public Health</a>
+                <Link href="/faculty/publicHealth">Public Health</Link>
               </li>
             </ul>
           </div>
@@ -72,12 +74,12 @@ const FacultyCategory = () => {
               className="dropdown-content menu p-2 shadow bg-base-100 rounded-box "
             >
               <li>
-                <a href="/faculty/business">
+                <Link href="/faculty/business">
                   Bachelor of Business Administration
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/faculty/tourism"> Tourism & Hospitality Management</a>
+                <Link href="/faculty/tourism"> Tourism & Hospitality Management</Link>
               </li>
             </ul>
           </div>
@@ -93,7 +95,7 @@ const FacultyCategory = () => {
               className="dropdown-content menu p-2 shadow bg-base-100 rounded-box "
             >
               <li>
-                <a href="/faculty/law">Department of Law</a>
+                <Link href="/faculty/law">Department of Law</Link>
               </li>
             </ul>
           </div>
@@ -109,7 +111,7 @@ const FacultyCategory = () => {
               className="dropdown-content menu p-2 shadow bg-base-100 rounded-box "
             >
               <li>
-                <a href="/faculty/english"> B.A. (Hons.) In English</a>
+                <Link href="/faculty/english"> B.A. (Hons.) In English</Link>
               </li>
             </ul>
           </div>

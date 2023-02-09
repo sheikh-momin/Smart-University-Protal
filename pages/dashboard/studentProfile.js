@@ -16,6 +16,8 @@ import { TbCertificate } from "react-icons/tb";
 import { ImLibrary } from "react-icons/im";
 import { SlLogout } from "react-icons/sl";
 import { AuthContext } from "../../Context/AuthProvider";
+import Link from "next/link";
+import StudentProfileComponent from "../../components/Dashboard/StudentProfileComponent";
 
 const StudentProfile = () => {
   const { user, logOut } = useContext(AuthContext);
