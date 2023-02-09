@@ -7,11 +7,12 @@ const Eligibility = () => {
     <div>
       <Navbar></Navbar>
       <div className="md:grid grid-cols-12 gap-4 my-20">
+        <div className="col-span-3 mt-16"><Category></Category></div>
         <div className="col-span-9">
           <div className="border-y border-slate-400 py-2">
-            <h1 className="text-center text-teal-700 text-3xl font-bold italic font-serif">Admission Eligibility</h1>
+            <h1 className="text-center text-teal-700 md:text-3xl font-bold italic font-serif">Admission Eligibility</h1>
           </div>
-          <div className="md:ml-20 my-5 text-lg">
+          <div className="mx-5 my-5 text-lg">
             <h1 className="mb-3 text-teal-600 font-bold">Undergraduate Admission Requirements:</h1>
             <h3 className="">1. Minimum GPA of 2.5 each in SSC and HSC or equivalent public examinations. <br />
               2. Candidates with GPA 2.00 in any examination must have minimum GPA 6.00 combined.<br />
@@ -20,7 +21,7 @@ const Eligibility = () => {
               5. For EEE/CSE programs, students must have had Physics and Mathematics in HSC/A-Level or equivalent level with fulfilling the above criteria.<br />
               6. Acceptable score in EU Admission Test.</h3>
           </div>
-          <div className="md:ml-20 my-5 text-lg">
+          <div className="mx-5 my-5 text-lg">
             <h1 className="mb-3 text-teal-600 font-bold">Graduate Admission Requirements:</h1>
             <h3>1. The candidates applying for Master programs must have minimum GPA 2.00 or equivalent results at the Bachelor level and must fulfill the admission requirement for Bachelor program as per UGC’s set criteria. <br />
               2. A relevant undergraduate degree from a recognized university with a GPA of 2.00 (in a scale of 4.0) or 40% marks in graduation level out of 1000 marks. <br />
@@ -28,7 +29,7 @@ const Eligibility = () => {
           </div>
           
       </div>
-        <div className="col-span-3 mt-16"><Category></Category></div>
+        
       </div>
       <Footer></Footer>
     </div>

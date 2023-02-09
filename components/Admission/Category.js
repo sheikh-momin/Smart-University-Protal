@@ -3,7 +3,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 
 const Category = () => {
   return (
-    <div className="border-t-8 bg-slate-200 border-emerald-800  ">
+    <div className="border-t-8 bg-slate-200 border-emerald-800 w-72 ml-10 md:ml-0 md:w-full">
       <div className="border-b border-slate-700 text-lg w-full  ">
         <div className="dropdown dropdown-hover w-full my-3 ml-2">
           <label tabIndex={0} className=" m-1">Admission Overview <AiFillCaretDown className="inline-block ml-2"></AiFillCaretDown></label>

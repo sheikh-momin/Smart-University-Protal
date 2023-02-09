@@ -1,5 +1,6 @@
 import React from "react";
 import Charts from "../../pages/dashboard/Charts";
+import ProtalFooter from "../ProtalFooter/ProtalFooter";
 import StudentDetails from "../StudentDetails";
 
 const Dashboard = () => {
@@ -30,6 +31,7 @@ const Dashboard = () => {
           <Charts></Charts>
         </div>
       </section>
+      
     </div>
   );
 };
