@@ -16,6 +16,9 @@ import { TbCertificate } from "react-icons/tb";
 import { ImLibrary } from "react-icons/im";
 import { SlLogout } from "react-icons/sl";
 import { AuthContext } from "../../Context/AuthProvider";
+import Link from "next/link";
+import StudentProfileComponent from "../../components/Dashboard/StudentProfileComponent";
+import { CiUser } from "react-icons/ci";
 
 const StudentProfile = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -26,20 +29,29 @@ const StudentProfile = () => {
   };
   return (
     <div className="bg-zinc-300">
-      <div className="border-y border-slate-400 py-2">
-        <h1 className="text-center text-blue-500 text-3xl font-bold italic font-serif">
-          Student Profile
-        </h1>
-      </div>
-
-      <div>
-        <div className="flex w-full">
-          <Drawer></Drawer>
-
-          <div className="flex justify-center lg:ml-12">
-            <div className="grid grid-cols-1 gap-4 my-20">
-              <ProfileForm></ProfileForm>
-            </div>
+      <div className="navbar bg-gradient-to-r from-blue-900   to-cyan-500">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <label
+              tabIndex={0}
+              htmlFor="my-drawer"
+              className="btn text-white btn-ghost btn-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
           </div>
         </div>
         <div className="navbar-center">
@@ -52,7 +64,6 @@ const StudentProfile = () => {
         </div>
         <div className="navbar-end"></div>
       </div>
-
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content w-full flex justify-center">
@@ -243,6 +254,20 @@ const StudentProfile = () => {
                       ></ImLibrary>
                       <span class="flex-1 ml-3 whitespace-nowrap font-bold">
                         Library
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/dashboard/AlumniInfo"
+                      class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700"
+                    >
+                      <CiUser
+                        size="20px"
+                        className="text-amber-400 ml-1"
+                      ></CiUser>
+                      <span class="flex-1 ml-3 whitespace-nowrap font-bold">
+                        Alumni Info
                       </span>
                     </Link>
                   </li>
