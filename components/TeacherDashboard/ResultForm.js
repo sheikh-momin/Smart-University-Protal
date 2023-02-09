@@ -289,7 +289,7 @@ const ResultForm = () => {
             </div>
            </div>
             <input
-                className="btn btn-primary w-full  mb-5"
+              className="btn text-white bg-gradient-to-r from-indigo-900 via-purple-600 to-blue-600 w-full  mb-5"
                 type="submit"
                 value="Publish"
               />

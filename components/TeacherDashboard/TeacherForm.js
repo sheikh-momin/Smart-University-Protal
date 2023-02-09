@@ -48,7 +48,7 @@ const TeacherForm = () => {
   return (
     <div>
       <form onSubmit={handleSubmit(handleForm)} className="bg-white rounded-lg">
-        <h2 className="bg-green-200 text-white text-center text-xl font-bold py-4">
+        <h2 className="bg-blue-600 text-white text-center text-xl font-bold py-4">
           Teacher Profile
         </h2>
         <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1  p-12 pb-0">

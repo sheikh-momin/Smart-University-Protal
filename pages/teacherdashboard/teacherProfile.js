@@ -29,7 +29,7 @@ const teacherProfile = () => {
                         </label>
                     </div>
                 </div>
-                <div className="navbar-start">
+                <div className="navbar-center">
                     <Link href='/' className="btn btn-ghost normal-case text-white text-xl">Dreamers University - Teacher Portal</Link>
                 </div>
                 <div className="navbar-end">
