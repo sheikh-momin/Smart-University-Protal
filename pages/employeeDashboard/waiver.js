@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
 import { SlLogout } from 'react-icons/sl';
 import { AiFillDashboard } from 'react-icons/ai';
@@ -5,11 +6,11 @@ import { ImProfile } from 'react-icons/im';
 import { CgCalendarDue } from 'react-icons/cg';
 import { MdOutlineRequestPage } from 'react-icons/md';
 import { BsFillBarChartLineFill } from 'react-icons/bs';
+import WaiverComponent from "../../components/EmployeeDashboard/WaiverComponent";
 import Link from "next/link";
-import { useContext } from "react";
-import EmployeeProfile from "../../components/EmployeeDashboard/EmployeeProfile";
 
-const Profile = () => {
+
+const Waiver = () => {
   const { user, logOut } = useContext(AuthContext)
   const handleSingOut = () => {
     logOut()
@@ -18,8 +19,8 @@ const Profile = () => {
 
   }
   return (
-    <div className="bg-zinc-300">
-      <div className="navbar bg-gradient-to-r from-teal-600   to-stone-600">
+    <div>
+      <div className="navbar  bg-gradient-to-r from-teal-600   to-stone-600">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} htmlFor="my-drawer" className="btn text-black btn-ghost btn-circle">
@@ -39,7 +40,7 @@ const Profile = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content w-full flex justify-center">
-          <EmployeeProfile></EmployeeProfile>
+          <WaiverComponent></WaiverComponent>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
@@ -100,4 +101,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Waiver;
