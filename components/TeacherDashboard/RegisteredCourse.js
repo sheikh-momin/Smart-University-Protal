@@ -137,10 +137,13 @@ const RegisteredCourse = () => {
 
     }
     return (
-        <div  className='container mx-auto'>
+        <div  className='container mx-auto bg-slate-200 px-5 pb-3'>
+            <div className=" mt-5">
+                <h1 className="text-center rounded bg-blue-600 text-white md:text-xl  py-3 font-serif">Make Student Courses</h1>
+            </div>
            <form onSubmit={handleSubmit(handleSignUp)}>
 
-           <div className='container mx-auto lg:flex gap-10'>
+           <div className='container mx-auto lg:flex justify-center gap-10'>
            <div className="form-control w-full max-w-xs my-5 container">
                         
                         <select className='select select-bordered w-full max-w-xs md:mt-5' {...register("category", { required: true })}>

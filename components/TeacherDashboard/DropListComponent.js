@@ -1,12 +1,17 @@
 import { useContext, useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Context/AuthProvider";
 import Loader from "../Loader";
+import DeleteRegistarCourse from "./DeleteRegistarCourse";
 
 
 const DropListComponent = () => {
   const [semesterDrop, setSemesterDrop] = useState([])
   const [loading, setLoading] = useState(true)
   const { user } = useContext(AuthContext)
+  
+
+  
 
   useEffect(() => {
     if (user?.email) {
@@ -39,18 +44,23 @@ const DropListComponent = () => {
               <th>Date</th>
               <th>Causes</th>
               <th>Why Drop</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
 
           {
-              semesterDrop?.map((drop => <tr>
+              semesterDrop?.map((drop) => <tr>
                 <td>{drop.email}</td>
                 <td>{drop.semester}</td>
                 <td>{drop.date}</td>
                 <td>{drop.causes}</td>
                 <td>{drop.whyDrop}</td>
-              </tr>))
+                <td ><DeleteRegistarCourse
+                  semester={drop.semester}
+                  email={drop.email}
+                ></DeleteRegistarCourse></td>
+              </tr>)
           }
 
             
