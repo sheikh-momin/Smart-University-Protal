@@ -8,8 +8,7 @@ const Navbar = () => {
   const [allUsers, setAllUsers] = useState();
   useEffect(() => {
     if (user?.email) {
-      fetch(
-        `https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
+      fetch(`https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
       )
         .then((res) => res.json())
         .then((data) => {

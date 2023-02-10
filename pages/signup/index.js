@@ -81,6 +81,7 @@ const index = () => {
                 <option defaultValue="Student">Student</option>
                 <option>Teacher</option>
                 <option>Administration</option>
+                <option>admin</option>
               </select>
               <input
                 type="password"

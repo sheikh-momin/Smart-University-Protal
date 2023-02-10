@@ -8,7 +8,7 @@ const EmployeeDetails = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/employeeDetails`)
+      fetch(`https://smart-university-protal-server-coral.vercel.app/employeeDetails`)
         .then((res) => res.json())
         .then((data) => {
           data.map((s) => {
