@@ -31,7 +31,7 @@ const AlumniForm = () => {
     };
     // console.log(alumniDetails);
 
-    fetch("http://localhost:5000/alumniDetails", {
+    fetch("https://smart-university-protal-server-coral.vercel.app/alumniDetails", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -47,7 +47,7 @@ const AlumniForm = () => {
 
   //   useEffect(() => {
   //     if (user?.email) {
-  //       fetch(`http://localhost:5000/alumniDetails`)
+  //       fetch(`https://smart-university-protal-server-coral.vercel.app/alumniDetails`)
   //         .then((res) => res.json())
   //         .then((data) => {
   //           data.map((s) => {
