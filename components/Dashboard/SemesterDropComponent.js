@@ -28,7 +28,7 @@ const SemesterDropComponent = () => {
       whyDrop: whyDrop
     }
 
-    fetch('https://smart-university-protal-server-l33i.vercel.app/drop', {
+    fetch('https://smart-university-protal-server-qyf2.vercel.app/drop', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -44,7 +44,7 @@ const SemesterDropComponent = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://smart-university-protal-server-sigma.vercel.app/drop/${user?.email}`)
+      fetch(`https://smart-university-protal-server-coral.vercel.app/drop/${user?.email}`)
         .then(res => res.json())
         .then(data => {
           setSemesterDrop(data)

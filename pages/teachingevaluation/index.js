@@ -16,6 +16,7 @@ import { TbCertificate } from 'react-icons/tb';
 import { ImLibrary } from 'react-icons/im';
 import { SlLogout } from 'react-icons/sl';
 import Link from 'next/link';
+import { CiUser } from 'react-icons/ci';
 // import '../../components/Library/Library.css'
 
 const index = () => {
@@ -143,6 +144,20 @@ const index = () => {
                                         <Link href="/library" class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700">
                                             <ImLibrary size="20px" className="text-amber-400 ml-1"></ImLibrary>
                                             <span class="flex-1 ml-3 whitespace-nowrap font-bold">Library</span>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="/dashboard/AlumniInfo"
+                                            class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700"
+                                        >
+                                            <CiUser
+                                                size="20px"
+                                                className="text-amber-400 ml-1"
+                                            ></CiUser>
+                                            <span class="flex-1 ml-3 whitespace-nowrap font-bold">
+                                                Alumni Info
+                                            </span>
                                         </Link>
                                     </li>
                                     <li>

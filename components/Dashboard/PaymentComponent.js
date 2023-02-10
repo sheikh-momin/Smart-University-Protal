@@ -16,7 +16,7 @@ const PaymentComponent = () => {
   useEffect(() => {
     if (user?.email) {
       fetch(
-        `https://smart-university-protal-server-sigma.vercel.app/payment/${semester}`
+        `https://smart-university-protal-server-coral.vercel.app/payment/${semester}`
       )
         .then((res) => res.json())
         .then((data) => {

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { AuthContext } from '../../Context/AuthProvider';
 import Dashboardnav from '../../pages/dashboard/dashboardNav/Dashboardnav';
 import DashboardNavbar from '../../pages/dashboard/dashboardNav/DashboardNavbar';
 import Result from './Result';
 
 const LiveResult = () => {
     const [liveResult, setliveResult] = useState([]);
+    
     useEffect(() => {
         fetch('result.json')
             .then(res => res.json())

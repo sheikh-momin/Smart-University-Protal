@@ -10,7 +10,7 @@ const ClearanceClearence = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://smart-university-protal-server-sigma.vercel.app/clearance/${user?.email}`)
+      fetch(`https://smart-university-protal-server-coral.vercel.app/clearance/${user?.email}`)
         .then(res => res.json())
         .then(data => {
           setClearance(data)

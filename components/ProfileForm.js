@@ -41,7 +41,7 @@ const ProfileForm = () => {
     };
     console.log(studentDetails);
     fetch(
-      "https://smart-university-protal-server-sigma.vercel.app/studentDetails",
+      "https://smart-university-protal-server-coral.vercel.app/studentDetails",
       {
         method: "POST",
         headers: {

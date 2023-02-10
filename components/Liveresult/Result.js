@@ -1,11 +1,45 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { AuthContext } from '../../Context/AuthProvider';
+import Loader from '../Loader';
 
 const Result = ({ liveResult }) => {
-    // console.log(liveResult);
-    const { name, details,RegisteredId, email,Semester } = liveResult;
+    const { user } = useContext(AuthContext)
+    const [courses, setCourses] = useState([])
+    const [semester, setSemester] = useState("")
+    const [loading, setLoading] = useState(true)
+    const { name, details, RegisteredId, email, Semester } = liveResult;
+    
+    const handleSemester = (e) => {
+        setSemester(e.target.value)
+    }
+
+    useEffect(() => {
+        if (user?.email) {
+            fetch(`https://smart-university-protal-server-coral.vercel.app/liveResult/${semester}`)
+                .then(res => res?.json())
+                .then(data => {
+                    setCourses(data)
+                })
+            setLoading(false)
+        }
+
+    }, [user, semester])
+    if (loading) {
+        return <Loader></Loader>;
+    }
+    console.log(courses);
     return (
         <div>
-            
+            <div className=" flex justify-center mt-10">
+
+                <select onChange={handleSemester} name="semester" className="select  select-bordered w-full max-w-xs">
+                    <option disabled selected className="text-center">--Select Semester--</option>
+                    <option className="text-center">Spring2023</option>
+                    <option className="text-center">Summer2023</option>
+                    <option className="text-center">Fall2023</option>
+                </select>
+
+            </div>
             <div className='mt-10 ml-5'>
                 <h2 className='font-serif text-xl'>Name:{name} </h2>
                 <p className='font-serif text-xl'>Registered ID:{RegisteredId}</p>
@@ -27,13 +61,13 @@ const Result = ({ liveResult }) => {
                     </thead>
                     <tbody>
                         
-                    {details.map(detail =>
+                        {courses?.subject?.map(detail =>
                             <tr>
-                                <td>{detail.CourseCode}</td>
-                                <td>{detail.CourseTitle}</td>
+                                <td>{detail.courseTitle}</td>
+                                <td>{detail.courseCode}</td>
                                 <td>{detail.credit}</td>
-                                <td>{detail.Grade}</td>
-                                <td>{detail.Point}</td>
+                                <td>{detail.grade}</td>
+                                <td>{detail.point}</td>
                         
                             </tr>
                         )}

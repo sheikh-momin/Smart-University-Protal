@@ -6,7 +6,6 @@ import toast from "react-hot-toast";
 const ResultForm = () => {
   const { register, handleSubmit } = useForm();
   const handleResultPublish = (data) => {
-
     const email = data.email;
     const courseTitle = data.courseTitle;
     const courseCode = data.courseCode;
@@ -61,16 +60,19 @@ const ResultForm = () => {
     const result = {
       email,
       date: now,
-      sub1: { courseTitle, courseCode, credit, grade, point, semester },
-      sub2: { courseTitle2, courseCode2, credit2, grade2, point2, semester2 },
-      sub3: { courseTitle3, courseCode3, credit3, grade3, point3, semester3 },
-      sub4: { courseTitle4, courseCode4, credit4, grade4, point4, semester4 },
-      sub5: { courseTitle5, courseCode5, credit5, grade5, point5, semester5 },
-      sub6: { courseTitle6, courseCode6, credit6, grade6, point6, semester6 },
+      semester: semester,
+      subject:[
+        { courseTitle: courseTitle, courseCode: courseCode, credit: credit, grade: grade, point:point },
+        { courseTitle: courseTitle2, courseCode: courseCode2, credit: credit2, grade:grade2, point:point2 },
+        { courseTitle: courseTitle3, courseCode: courseCode3, credit: credit3, grade:grade3, point:point3 },
+        { courseTitle: courseTitle4, courseCode: courseCode4, credit: credit4, grade:grade4, point:point4 },
+        { courseTitle: courseTitle5, courseCode: courseCode5, credit: credit5, grade:grade5, point:point5 },
+        { courseTitle: courseTitle6, courseCode: courseCode6, credit: credit6, grade:grade6, point:point6 }
+      ]
     };
     
 
-    fetch(`http://localhost:5000/publish`,
+    fetch(`https://smart-university-protal-server-qyf2.vercel.app/liveResult`,
       {
       method: "POST",
       headers: {
@@ -81,7 +83,7 @@ const ResultForm = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        toast("Result Successfully Published");
+        toast.success("Result Successfully Published");
       });
 
 
@@ -99,9 +101,9 @@ const ResultForm = () => {
                 className="select select-bordered w-full select-primary mb-5"
               >
                 <option>Select Semester</option>
-                <option>Spring-2023</option>
-                <option>Summer-2023</option>
-                <option>Fall-2023</option>
+                <option>Spring2023</option>
+                <option>Summer2023</option>
+                <option>Fall2023</option>
               </select>
               <input
                 {...register("email", { required: true })}

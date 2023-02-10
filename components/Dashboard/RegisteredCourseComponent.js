@@ -15,7 +15,7 @@ const RegisteredCourseComponent = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://smart-university-protal-server-sigma.vercel.app/registeredCourseList/${semester}`)
+      fetch(`https://smart-university-protal-server-coral.vercel.app/registeredCourseList/${semester}`)
         .then(res => res?.json())
         .then(data => {
           setCourses(data)

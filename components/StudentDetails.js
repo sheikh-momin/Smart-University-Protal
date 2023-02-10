@@ -10,7 +10,7 @@ const StudentDetails = () => {
   useEffect(() => {
     if (user?.email) {
       fetch(
-        `https://smart-university-protal-server-sigma.vercel.app/studentDetails`
+        `https://smart-university-protal-server-coral.vercel.app/studentDetails`
       )
         .then((res) => res.json())
         .then((data) => {
