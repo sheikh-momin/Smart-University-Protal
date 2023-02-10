@@ -169,12 +169,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="w-52 flex">
-            <div className="w-18 md:w-40  mt-3">
+            <div className="">
               <img
               
-                src="https://www.linkpicture.com/q/images-removebg-preview-4.png"
+                src="/navIMG.png"
                 alt=""
-                className="w-18 h-10"
+                className="md:w-40 md:h-20 w-18 h-12"
               />
              
             </div>
