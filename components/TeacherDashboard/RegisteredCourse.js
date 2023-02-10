@@ -6,7 +6,7 @@ const RegisteredCourse = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const handleSignUp = data => {
 
-        const category = data.category;
+    const category = data.category;
     const email = data.email;
     const courseName = data.courseName;
     const courseCode = data.courseCode;
@@ -14,6 +14,7 @@ const RegisteredCourse = () => {
     const courseSection = data.courseSection;
     const courseAdvise = data.courseAdvise;
     const courseClearence = data.courseClearence;
+    const courseTeacher = data.courseTeacher;
 
     const courseName2 = data.courseName2;
     const courseCode2 = data.courseCode2;
@@ -21,6 +22,7 @@ const RegisteredCourse = () => {
     const courseSection2 = data.courseSection2;
     const courseAdvise2 = data.courseAdvise2;
     const courseClearence2 = data.courseClearence2;
+    const courseTeacher2 = data.courseTeacher2;
     
 
     const courseName3 = data.courseName3;
@@ -29,6 +31,7 @@ const RegisteredCourse = () => {
     const courseSection3 = data.courseSection3;
     const courseAdvise3 = data.courseAdvise3;
     const courseClearence3 = data.courseClearence3;
+    const courseTeacher3 = data.courseTeacher3;
 
     const courseName4 = data.courseName4;
     const courseCode4 = data.courseCode4;
@@ -36,6 +39,7 @@ const RegisteredCourse = () => {
     const courseSection4 = data.courseSection4;
     const courseAdvise4 = data.courseAdvise4;
     const courseClearence4= data.courseClearence4;
+    const courseTeacher4 = data.courseTeacher4;
 
     const courseName5 = data.courseName5;
     const courseCode5 = data.courseCode5;
@@ -43,6 +47,7 @@ const RegisteredCourse = () => {
     const courseSection5 = data.courseSection5;
     const courseAdvise5 = data.courseAdvise5;
     const courseClearence5 = data.courseClearence5;
+    const courseTeacher5 = data.courseTeacher5;
 
     const courseName6 = data.courseName6;
     const courseCode6 = data.courseCode6;
@@ -50,55 +55,72 @@ const RegisteredCourse = () => {
     const courseSection6 = data.courseSection6;
     const courseAdvise6 = data.courseAdvise6;
     const courseClearence6 = data.courseClearence6;
+    const courseTeacher6 = data.courseTeacher6;
 
     const registeredDetails = {
-      category,
       email,
-      courseName,
-      courseCode,
-      courseCredit,
-      courseSection,
-      courseAdvise,
-      courseClearence,
+      semester:category,
+      subject:[
+        {
+            CourseTitle:courseName,
+            CourseCode:courseCode,
+            credit:courseCredit,
+            section:courseSection,
+            advise:courseAdvise,
+            clearance:courseClearence,
+            courseTeacher: courseTeacher
+        },
+        {
+            CourseTitle:courseName2,
+            CourseCode:courseCode2,
+            credit:courseCredit2,
+            section:courseSection2,
+            advise:courseAdvise2,
+            clearance:courseClearence2,
+            courseTeacher: courseTeacher2
+        },
+        {
+            CourseTitle:courseName3,
+            CourseCode:courseCode3,
+            credit:courseCredit3,
+            section:courseSection3,
+            advise:courseAdvise3,
+            clearance:courseClearence3,
+            courseTeacher: courseTeacher3
+        },
+        {
+            CourseTitle:courseName4,
+            CourseCode:courseCode4,
+            credit:courseCredit4,
+            section:courseSection4,
+            advise:courseAdvise4,
+            clearance:courseClearence4,
+            courseTeacher: courseTeacher4
+        },
+        {
+            CourseTitle:courseName5,
+            CourseCode:courseCode5,
+            credit:courseCredit5,
+            section:courseSection5,
+            advise:courseAdvise5,
+            clearance:courseClearence5,
+            courseTeacher: courseTeacher5
+        },
+        {
+            CourseTitle:courseName6,
+            CourseCode:courseCode6,
+            credit:courseCredit6,
+            section:courseSection6,
+            advise:courseAdvise6,
+            clearance:courseClearence6,
+            courseTeacher: courseTeacher6
+        }
+      ],
 
-      courseName2,
-      courseCode2,
-      courseCredit2,
-      courseSection2,
-      courseAdvise2,
-      courseClearence2,
-
-      courseName3,
-      courseCode3,
-      courseCredit3,
-      courseSection3,
-      courseAdvise3,
-      courseClearence3,
-
-      courseName4,
-      courseCode4,
-      courseCredit4,
-      courseSection4,
-      courseAdvise4,
-      courseClearence4,
-
-      courseName5,
-      courseCode5,
-      courseCredit5,
-      courseSection5,
-      courseAdvise5,
-      courseClearence5,
-
-      courseName6,
-      courseCode6,
-      courseCredit6,
-      courseSection6,
-      courseAdvise6,
-      courseClearence6,
     };
     console.log(registeredDetails);
     fetch(
-      "http://localhost:5000/registeredDetails",
+      "https://smart-university-protal-server-coral.vercel.app/registeredCourseList",
       {
         method: "POST",
         headers: {
@@ -123,9 +145,9 @@ const RegisteredCourse = () => {
                         
                         <select className='select select-bordered w-full max-w-xs md:mt-5' {...register("category", { required: true })}>
                         
-                            <option value="Spring">Spring</option>
-                            <option value="Summer">Summer</option>
-                            <option value="Fall">Fall</option>
+                            <option value="Spring2023">Spring2023</option>
+                            <option value="Summer2023">Summer2023</option>
+                            <option value="Fall2023">Fall2023</option>
                             
 
                         </select>
@@ -141,7 +163,7 @@ const RegisteredCourse = () => {
                     </div>
                     
                     </div>
-                    <div className='grid lg:grid-cols-6 md:grid-cols-6 gap-4 grid-cols-1'>
+                    <div className='grid lg:grid-cols-7 md:grid-cols-7 gap-4 grid-cols-1'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Name</span></label>
                         <input type="text" {...register("courseName", {
@@ -171,6 +193,13 @@ const RegisteredCourse = () => {
                         {errors.courseSection && <p className='text-red-500'>{errors.courseSection.message}</p>}
                     </div>
                     <div className="form-control w-full max-w-xs">
+                        <label className="label"> <span className="label-text">Course Teacher</span></label>
+                        <input type="text" {...register("courseTeacher", {
+                            required: "Name is Required"
+                        })} className="input input-bordered w-full max-w-xs" />
+                        {errors.courseTeacher && <p className='text-red-500'>{errors.courseTeacher.message}</p>}
+                    </div>
+                    <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Advise</span></label>
                         <input type="text" {...register("courseAdvise", {
                             required: "Name is Required"
@@ -186,7 +215,7 @@ const RegisteredCourse = () => {
                     </div>
                     
                     </div>
-                    <div className='grid lg:grid-cols-6 md:grid-cols-6 gap-4 grid-cols-1'>
+                    <div className='grid lg:grid-cols-7 md:grid-cols-7 gap-4 grid-cols-1'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Name</span></label>
                         <input type="text" {...register("courseName2", {
@@ -216,6 +245,13 @@ const RegisteredCourse = () => {
                         {errors.courseSection2 && <p className='text-red-500'>{errors.courseSection2.message}</p>}
                     </div>
                     <div className="form-control w-full max-w-xs">
+                        <label className="label"> <span className="label-text">Course Teacher</span></label>
+                        <input type="text" {...register("courseTeacher2", {
+                            required: "Name is Required"
+                        })} className="input input-bordered w-full max-w-xs" />
+                        {errors.courseTeacher && <p className='text-red-500'>{errors.courseTeacher.message}</p>}
+                    </div>
+                    <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Advise</span></label>
                         <input type="text" {...register("courseAdvise2", {
                             required: "Name is Required"
@@ -232,7 +268,7 @@ const RegisteredCourse = () => {
                     
                     </div>
 
-                    <div className='grid lg:grid-cols-6 md:grid-cols-6 gap-4 grid-cols-1'>
+                    <div className='grid lg:grid-cols-7 md:grid-cols-7 gap-4 grid-cols-1'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Name</span></label>
                         <input type="text" {...register("courseName3", {
@@ -262,6 +298,13 @@ const RegisteredCourse = () => {
                         {errors.courseSection3 && <p className='text-red-500'>{errors.courseSection3.message}</p>}
                     </div>
                     <div className="form-control w-full max-w-xs">
+                        <label className="label"> <span className="label-text">Course Teacher</span></label>
+                        <input type="text" {...register("courseTeacher3", {
+                            required: "Name is Required"
+                        })} className="input input-bordered w-full max-w-xs" />
+                        {errors.courseTeacher && <p className='text-red-500'>{errors.courseTeacher.message}</p>}
+                    </div>
+                    <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Advise</span></label>
                         <input type="text" {...register("courseAdvise3", {
                             required: "Name is Required"
@@ -278,7 +321,7 @@ const RegisteredCourse = () => {
                     
                     </div>
 
-                    <div className='grid lg:grid-cols-6 md:grid-cols-6 gap-4 grid-cols-1'>
+                    <div className='grid lg:grid-cols-7 md:grid-cols-7 gap-4 grid-cols-1'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Name</span></label>
                         <input type="text" {...register("courseName4", {
@@ -308,6 +351,13 @@ const RegisteredCourse = () => {
                         {errors.courseSection4 && <p className='text-red-500'>{errors.courseSection4.message}</p>}
                     </div>
                     <div className="form-control w-full max-w-xs">
+                        <label className="label"> <span className="label-text">Course Teacher</span></label>
+                        <input type="text" {...register("courseTeacher4", {
+                            required: "Name is Required"
+                        })} className="input input-bordered w-full max-w-xs" />
+                        {errors.courseTeacher && <p className='text-red-500'>{errors.courseTeacher.message}</p>}
+                    </div>
+                    <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Advise</span></label>
                         <input type="text" {...register("courseAdvise4", {
                             required: "Name is Required"
@@ -324,7 +374,7 @@ const RegisteredCourse = () => {
                     
                     </div>
 
-                    <div className='grid lg:grid-cols-6 md:grid-cols-6 gap-4 grid-cols-1'>
+                    <div className='grid lg:grid-cols-7 md:grid-cols-7 gap-4 grid-cols-1'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Name</span></label>
                         <input type="text" {...register("courseName5", {
@@ -354,6 +404,13 @@ const RegisteredCourse = () => {
                         {errors.courseSection5 && <p className='text-red-500'>{errors.courseSection5.message}</p>}
                     </div>
                     <div className="form-control w-full max-w-xs">
+                        <label className="label"> <span className="label-text">Course Teacher</span></label>
+                        <input type="text" {...register("courseTeacher5", {
+                            required: "Name is Required"
+                        })} className="input input-bordered w-full max-w-xs" />
+                        {errors.courseTeacher && <p className='text-red-500'>{errors.courseTeacher.message}</p>}
+                    </div>
+                    <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Advise</span></label>
                         <input type="text" {...register("courseAdvise5", {
                             required: "Name is Required"
@@ -370,7 +427,7 @@ const RegisteredCourse = () => {
                     
                     </div>
 
-                    <div className='grid lg:grid-cols-6 md:grid-cols-6 gap-4 grid-cols-1'>
+                    <div className='grid lg:grid-cols-7 md:grid-cols-7 gap-4 grid-cols-1'>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Name</span></label>
                         <input type="text" {...register("courseName6", {
@@ -398,6 +455,13 @@ const RegisteredCourse = () => {
                             required: "Name is Required"
                         })} className="input input-bordered w-full max-w-xs" />
                         {errors.courseSection6 && <p className='text-red-500'>{errors.courseSection6.message}</p>}
+                    </div>
+                    <div className="form-control w-full max-w-xs">
+                        <label className="label"> <span className="label-text">Course Teacher</span></label>
+                        <input type="text" {...register("courseTeacher6", {
+                            required: "Name is Required"
+                        })} className="input input-bordered w-full max-w-xs" />
+                        {errors.courseTeacher && <p className='text-red-500'>{errors.courseTeacher.message}</p>}
                     </div>
                     <div className="form-control w-full max-w-xs">
                         <label className="label"> <span className="label-text">Course Advise</span></label>

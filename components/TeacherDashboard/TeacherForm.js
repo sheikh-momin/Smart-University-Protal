@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Context/AuthProvider";
 
 const TeacherForm = () => {
   const { user } = useContext(AuthContext);
+  
   const {
     register,
     handleSubmit,
@@ -32,7 +33,7 @@ const TeacherForm = () => {
     };
     console.log(TeacherDetails);
 
-    fetch("http://localhost:5000/teacherDetails", {
+    fetch("https://smart-university-protal-server-coral.vercel.app/teacherDetails", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -44,7 +45,9 @@ const TeacherForm = () => {
         console.log(data);
         toast.success("Your Profile details is updated");
       });
+    
   };
+  
   return (
     <div>
       <form onSubmit={handleSubmit(handleForm)} className="bg-white rounded-lg">
