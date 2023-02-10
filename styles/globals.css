@@ -118,9 +118,9 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: green;    /* color of the scroll thumb */
+  background-color: rgb(49, 88, 49);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid greenyellow;  /* creates padding around scroll thumb */
+  border: 3px solid rgb(47, 189, 255);  /* creates padding around scroll thumb */
 }
 
 .notice::-webkit-scrollbar {
