@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Context/AuthProvider";
-import image from '../Assets/logo.png'
+import image from "../Assets/logo.png";
 
 const Navbar = () => {
   const { user } = useContext(AuthContext);
@@ -123,12 +123,12 @@ const Navbar = () => {
         )}
         {user?.email ? (
           <>
-            {allUsers?.roll == "Employee" ? (
+            {allUsers?.roll == "Administration" ? (
               <Link
                 href="/employeeDashboard"
                 className="text-xl  text-[#facc15] font-bold"
               >
-                Employee Dashboard
+                Administration Dashboard
               </Link>
             ) : (
               <></>
@@ -176,14 +176,13 @@ const Navbar = () => {
                 alt=""
                 className="md:w-40 md:h-20 w-18 h-12"
               />
-             
             </div>
             <div className="w-2/3">
               <Link
                 href="/home"
                 className="btn btn-ghost normal-case text-md md:text-xl font-serif italic"
               >
-                Dreamers University 
+                Dreamers University
               </Link>
             </div>
           </div>
