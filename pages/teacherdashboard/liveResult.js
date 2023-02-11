@@ -27,7 +27,7 @@ const liveResult = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <Link href='/' className="btn btn-ghost normal-case text-white text-xl">Dreamers University - Teacher Portal</Link>
+          <Link href='/' className="btn btn-ghost normal-case text-white md:text-xl">Dreamers University - Teacher Portal</Link>
         </div>
         <div className="navbar-end">
           {/* <button className="btn btn-ghost btn-circle">

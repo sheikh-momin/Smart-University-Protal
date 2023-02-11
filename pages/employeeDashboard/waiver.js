@@ -8,6 +8,7 @@ import { MdOutlineRequestPage } from 'react-icons/md';
 import { BsFillBarChartLineFill } from 'react-icons/bs';
 import WaiverComponent from "../../components/EmployeeDashboard/WaiverComponent";
 import Link from "next/link";
+import { FaWpforms } from "react-icons/fa";
 
 
 const Waiver = () => {
@@ -81,6 +82,20 @@ const Waiver = () => {
                       <BsFillBarChartLineFill size="20px" className="text-amber-400 ml-2"></BsFillBarChartLineFill>
                       <span class="flex-1 ml-2 whitespace-nowrap font-bold">Student Waiver</span>
 
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/employeeDashboard/studentApplication"
+                      class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700"
+                    >
+                      <FaWpforms
+                        size="20px"
+                        className="text-amber-400 ml-2"
+                      ></FaWpforms>
+                      <span class="flex-1 ml-2 whitespace-nowrap font-bold">
+                        Student Application
+                      </span>
                     </Link>
                   </li>
 

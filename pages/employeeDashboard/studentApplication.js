@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { useContext } from "react";
-import EmployeeDashboard from "../../components/EmployeeDashboard/EmployeeDashboard";
 import { AuthContext } from "../../Context/AuthProvider";
 import { SlLogout } from "react-icons/sl";
 import { AiFillDashboard } from "react-icons/ai";
@@ -9,15 +7,18 @@ import { CgCalendarDue } from "react-icons/cg";
 import { MdOutlineRequestPage } from "react-icons/md";
 import { BsFillBarChartLineFill } from "react-icons/bs";
 import { FaWpforms } from "react-icons/fa";
+import StudentApplicationShow from "../../components/EmployeeDashboard/StudentApplicationShow";
+import Link from "next/link";
 
-const index = () => {
+
+
+const StudentApplication = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleSingOut = () => {
     logOut()
-      .then(() => {})
+      .then(() => { })
       .catch((error) => console.error(error));
   };
-
   return (
     <div className="bg-zinc-200">
       <div className="navbar  bg-gradient-to-r from-teal-600   to-stone-600">
@@ -59,7 +60,7 @@ const index = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content w-full flex justify-center">
-          <EmployeeDashboard></EmployeeDashboard>
+          <StudentApplicationShow></StudentApplicationShow>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
@@ -178,4 +179,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default StudentApplication;
