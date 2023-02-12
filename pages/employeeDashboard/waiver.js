@@ -20,7 +20,7 @@ const Waiver = () => {
 
   }
   return (
-    <div>
+    <div className="bg-zinc-300">
       <div className="navbar  bg-gradient-to-r from-teal-600   to-stone-600">
         <div className="navbar-start">
           <div className="dropdown">
@@ -30,7 +30,7 @@ const Waiver = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <Link href='/dashboard' className="btn btn-ghost normal-case text-black  md:text-2xl">Dreamers University - Employee Portal</Link>
+          <Link href='/dashboard' className="btn btn-ghost normal-case text-black  md:text-2xl">Dreamers University - Administration Portal</Link>
         </div>
         <div className="navbar-end">
 

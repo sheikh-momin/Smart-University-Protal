@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 
 const WaiverForm = () => {
   const {
@@ -8,7 +9,39 @@ const WaiverForm = () => {
     formState: { errors },
   } = useForm();
   const handleForm = (data) => {
-    console.log(data);
+    const semester = data.semester
+    const email = data.email
+    const userName = data.userName
+    const gpa = data.GPA
+    const phc = data.PCH
+    const cgpa = data.CGPA
+    const cch = data.CCH
+    const contact = data.contact
+
+
+    const reportedItem = {
+      email: email,
+      semester: semester,
+      userName: userName,
+      gpa: gpa,
+      phc: phc,
+      cgpa: cgpa,
+      cch: cch,
+      contact: contact,
+    }
+
+    fetch('https://smart-university-protal-server-qyf2.vercel.app/waiver', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(reportedItem)
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log("data", data)
+        toast.success('Thanks for your response..We saved your form');
+      })
   };
   return (
     <div>
@@ -19,18 +52,18 @@ const WaiverForm = () => {
         <div className="grid lg:grid-cols-2 gap-x-8 md:grid-cols-2 grid-cols-1 px-24">
           <div className="form-control w-full max-w-xs">
             <label className="label">
-              <span className="label-text">ID No</span>
+              <span className="label-text">Email</span>
             </label>
             <input
               type="text"
-              {...register("matric_id", { required: "ID is required" })}
-              name="matric_id"
-              placeholder="ID No"
+              {...register("email", { required: "ID is required" })}
+              
+              placeholder="Email"
               className="input input-bordered input-info"
               required
             />
-            {errors.matric_id && (
-              <p className="text-red-600">{errors.matric_id?.message}</p>
+            {errors.email && (
+              <p className="text-red-600">{errors.email?.message}</p>
             )}
           </div>
           <div className="form-control">
@@ -38,7 +71,7 @@ const WaiverForm = () => {
               <span className="label-text">Name</span>
             </label>
             <input
-              name="userName"
+              
               {...register("userName", { required: "Name is required" })}
               type="text"
               placeholder="Enter Your Full Name"
@@ -56,7 +89,7 @@ const WaiverForm = () => {
               {...register("semester", {
                 required: "Semester is required",
               })}
-              name="semester"
+              
               className="select select-bordered w-full max-w-xs px-20 select-info"
             >
               <option disabled selected>
@@ -80,7 +113,7 @@ const WaiverForm = () => {
               <span className="label-text">GPA</span>
             </label>
             <input
-              name="GPA"
+              
               {...register("GPA", {
                 required: "Emergency Contact No. is required",
               })}
@@ -97,7 +130,7 @@ const WaiverForm = () => {
               <span className="label-text">Previous Semester CH</span>
             </label>
             <input
-              name="PCH"
+              
               {...register("PCH", { required: "Previous CH is required" })}
               type="text"
               placeholder="Previous Semester CH"
@@ -112,7 +145,7 @@ const WaiverForm = () => {
               <span className="label-text">CGPA</span>
             </label>
             <input
-              name="CGPA"
+              
               {...register("CGPA", {
                 required: "CGPA is required",
               })}
@@ -129,7 +162,7 @@ const WaiverForm = () => {
               <span className="label-text">Current Semester CH</span>
             </label>
             <input
-              name="CCH"
+              
               {...register("CCH", { required: "Current CH is required" })}
               type="text"
               placeholder="Current Semester CH"
@@ -144,7 +177,7 @@ const WaiverForm = () => {
               <span className="label-text">Contact</span>
             </label>
             <input
-              name="contact"
+              
               {...register("contact", { required: "Contact is required" })}
               type="text"
               placeholder="Contact"
