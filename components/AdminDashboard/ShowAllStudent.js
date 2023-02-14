@@ -1,21 +1,41 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import Loader from '../Loader';
 
 const ShowAllStudent = () => {
   const [showAllStudent, setShowAllStudent] = useState([]);
+  const [studentDetails, setStudentDetails] = useState([]);
+  const [loading, setLoading] = useState([]);
     
     useEffect(() => {
         fetch('http://localhost:5000/studentDetails')
             .then(res => res.json())
             .then(data => setShowAllStudent(data))
+            setLoading(false);
     }, [])
+
+
+    if (loading) {
+      return <Loader></Loader>;
+    }
+    const itsClicked= (_id)=>{
+      console.log('its clicked',_id)
+      
+        fetch(`http://localhost:5000/studentDetails/${_id}`)
+            .then(res => res.json())
+            .then(data => setStudentDetails(data))
+            console.log(studentDetails)
+           
+    
+
+    }
 
     return (
         <div>
             {
               console.log(showAllStudent)
             }
-            <div className="overflow-x-auto w-1/2 mx-auto">
+            <div className="overflow-x-auto ">
   <table className="table w-full">
 
 
@@ -55,7 +75,29 @@ const ShowAllStudent = () => {
           </td>
           
           <th>
-          <Link href={`studentDetails/${student._id}`}><button className="btn btn-ghost btn-xs">details</button></Link>
+          <label onClick={()=>itsClicked(student._id)} htmlFor="my-modal" className="btn btn-ghost btn-xs">details</label>
+          {/* The button to open modal */}
+{/* <label htmlFor="my-modal" className="btn">open modal</label> */}
+
+{/* Put this part before </body> tag */}
+<input type="checkbox" id="my-modal" className="modal-toggle" />
+<div className="modal">
+  <div className="modal-box">
+  <div className="card   ">
+  <figure><img className='h-48' src={studentDetails.img} alt="Movie"/></figure>
+  <div className="card-body">
+    <h2 className="card-title">Name:{studentDetails.name}</h2>
+    <p>Contact :{studentDetails.contact}</p>
+    <p>Address :{studentDetails.address}</p>
+    <p>BloodGroup :{studentDetails.bloodGroup}</p>
+    
+  </div>
+</div>
+    <div className="modal-action">
+      <label htmlFor="my-modal" className="btn">Done</label>
+    </div>
+  </div>
+</div>
 
             
           </th>

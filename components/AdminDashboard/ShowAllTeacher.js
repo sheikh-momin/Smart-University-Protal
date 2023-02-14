@@ -91,7 +91,7 @@ const ShowAllTeacher = () => {
   </div>
 </div>
     <div className="modal-action">
-      <label htmlFor="my-modal" className="btn">Yay!</label>
+      <label htmlFor="my-modal" className="btn">Done</label>
     </div>
   </div>
 </div>
