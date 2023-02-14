@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Context/AuthProvider";
-import image from '../Assets/logo.png'
 
 const Navbar = () => {
   const { user } = useContext(AuthContext);

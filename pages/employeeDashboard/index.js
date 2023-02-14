@@ -5,6 +5,7 @@ import { AuthContext } from "../../Context/AuthProvider";
 import { SlLogout } from 'react-icons/sl';
 import { AiFillDashboard } from 'react-icons/ai';
 import { ImProfile } from 'react-icons/im';
+import StudentDue from "../../components/EmployeeDashboard/StudentDue";
 
 const index = () => {
   const { user, logOut } = useContext(AuthContext)
@@ -38,6 +39,7 @@ const index = () => {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content w-full flex justify-center">
           <EmployeeDashboard></EmployeeDashboard>
+          {/* <StudentDue></StudentDue> */}
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
@@ -56,6 +58,13 @@ const index = () => {
                     <Link href="/employeeDashboard/profile" class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700">
                       <ImProfile size="20px" className="text-amber-400 ml-2"></ImProfile>
                       <span class="flex-1 ml-2 whitespace-nowrap font-bold">Profile</span>
+
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/employeeDashboard/studentdue" class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700">
+                      <ImProfile size="20px" className="text-amber-400 ml-2"></ImProfile>
+                      <span class="flex-1 ml-2 whitespace-nowrap font-bold">Student Due</span>
 
                     </Link>
                   </li>

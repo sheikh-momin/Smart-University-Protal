@@ -10,8 +10,8 @@ const About = () => {
       {/* testing  */}
       <Navbar></Navbar>
       <div className="bg-zinc-300">
-        <div className="h-1/2">
-          <img src="https://img.freepik.com/free-photo/harvard-university-cambridge-usa_1268-14363.jpg"
+        <div className=" w-full lg:h-[600px]">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/University_of_Otago.jpg"
             className="w-full h-full"/>
              </div>
 

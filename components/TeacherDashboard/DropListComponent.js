@@ -3,7 +3,7 @@
 const DropListComponent = () => {
   return (
     <div>
-      <h1>dro</h1>
+      <h1>drop list</h1>
     </div>
   );
 };
