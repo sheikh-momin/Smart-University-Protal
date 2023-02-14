@@ -1,9 +1,20 @@
-import React from 'react';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
 const ShowAllStudent = () => {
+  const [showAllStudent, setShowAllStudent] = useState([]);
+    
+    useEffect(() => {
+        fetch('http://localhost:5000/studentDetails')
+            .then(res => res.json())
+            .then(data => setShowAllStudent(data))
+    }, [])
+
     return (
         <div>
-            
+            {
+              console.log(showAllStudent)
+            }
             <div className="overflow-x-auto w-1/2 mx-auto">
   <table className="table w-full">
 
@@ -22,6 +33,34 @@ const ShowAllStudent = () => {
       </tr>
     </thead>
     <tbody>
+
+
+      {
+        showAllStudent.map(student=><tr>
+        
+          <td>
+            <div className="flex items-center space-x-3">
+              
+               
+              </div>
+              <div>
+                <div className="font-bold">{student.email}</div>
+                
+              </div>
+           
+          </td>
+          <td>
+            
+            <span className="">{student.name}</span>
+          </td>
+          
+          <th>
+          <Link href={`studentDetails/${student._id}`}><button className="btn btn-ghost btn-xs">details</button></Link>
+
+            
+          </th>
+        </tr>)
+      }
 
 
       <tr>
