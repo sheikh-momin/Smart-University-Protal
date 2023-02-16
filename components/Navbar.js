@@ -141,9 +141,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-teal-800 text-white py-12">
-        <div className="navbar-start">
+    <div className="">
+      <div className="navbar bg-teal-800 text-white ">
+        <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -163,23 +163,23 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-black"
+              className="menu menu-compact dropdown-content shadow bg-base-100 rounded-box w-52 text-black"
             >
               {menuItems}
             </ul>
           </div>
-          <div className="w-52 flex">
+          <div className=" flex">
             <div className="">
               <img
                 src="/navIMG.png"
                 alt=""
-                className="md:w-40 md:h-20 w-18 h-12"
+                className="md:w-40 md:h-20 w-18 h-12 md:hidden"
               />
             </div>
             <div className="w-2/3">
               <Link
                 href="/home"
-                className="btn btn-ghost normal-case text-md md:text-xl font-serif italic"
+                className="btn btn-ghost normal-case text-md md:text-xl font-serif italic md:hidden"
               >
                 Dreamers University
               </Link>

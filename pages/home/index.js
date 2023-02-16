@@ -8,10 +8,12 @@ import Notice from "../Notice";
 import News from "../News";
 import CampusLife from "../../components/CampusLife";
 import FacultyHome from "../../components/facultyHome";
+import MiddleNav from "../../components/MiddleNav";
 
 const HomePage = () => {
   return (
     <div>
+      <MiddleNav></MiddleNav>
       <Navbar></Navbar>
       <Carusol></Carusol>
       <News></News>
