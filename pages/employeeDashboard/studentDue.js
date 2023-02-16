@@ -7,6 +7,7 @@ import { CgCalendarDue } from 'react-icons/cg';
 import { MdOutlineRequestPage } from 'react-icons/md';
 import { BsFillBarChartLineFill } from 'react-icons/bs';
 import StudentDueComponent from "../../components/EmployeeDashboard/StudentDueComponent";
+// import semesterdue from "../../components/EmployeeDashboard/StudentDue";
 import Link from "next/link";
 import { FaWpforms } from "react-icons/fa";
 
@@ -42,6 +43,7 @@ const StudentDue = () => {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content w-full flex justify-center">
           <StudentDueComponent></StudentDueComponent>
+          
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
