@@ -1,6 +1,34 @@
-import React from 'react';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import Loader from '../Loader';
 
 const ShowAllTeacher = () => {
+  const [showAllTeacher, setShowAllTeacher] = useState([]);
+  const [teacherDetails,setTeacherDetails]=useState([]);
+  const [loading, setLoading] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/teacherDetails')
+            .then(res => res.json())
+            .then(data => setShowAllTeacher(data))
+            setLoading(false);
+    }, [])
+
+    if (loading) {
+      return <Loader></Loader>;
+    }
+
+    const itsClicked= (_id)=>{
+      console.log('its clicked',_id)
+      
+        fetch(`http://localhost:5000/teacherDetails/${_id}`)
+            .then(res => res.json())
+            .then(data => setTeacherDetails(data))
+            console.log(teacherDetails)
+           
+    
+
+    }
+
     return (
         <div>
             
@@ -22,6 +50,55 @@ const ShowAllTeacher = () => {
   </tr>
 </thead>
 <tbody>
+
+
+{
+        showAllTeacher.map(teacher=><tr>
+        
+          <td>
+            <div className="flex items-center space-x-3">
+              
+               
+              </div>
+              <div>
+                <div className="font-bold">{teacher.email}</div>
+                
+              </div>
+           
+          </td>
+          <td>
+            
+            <span className="">{teacher.name}</span>
+          </td>
+          
+          <th>
+          <label onClick={()=>itsClicked(teacher._id)} htmlFor="my-modal" className="btn btn-ghost btn-xs">details</label>
+          {/* The button to open modal */}
+{/* <label htmlFor="my-modal" className="btn">open modal</label> */}
+
+{/* Put this part before </body> tag */}
+<input type="checkbox" id="my-modal" className="modal-toggle" />
+<div className="modal">
+  <div className="modal-box">
+  <div className="card   ">
+  <figure><img className='h-48' src={teacherDetails.img} alt="Movie"/></figure>
+  <div className="card-body">
+    <h2 className="card-title">Name:{teacherDetails.name}</h2>
+    <p>Contact :{teacherDetails.contact}</p>
+    <p>Designation :{teacherDetails.designation}</p>
+    <p>Department :{teacherDetails.department}</p>
+    
+  </div>
+</div>
+    <div className="modal-action">
+      <label htmlFor="my-modal" className="btn">Done</label>
+    </div>
+  </div>
+</div>
+            
+          </th>
+        </tr>)
+      }
 
 
   <tr>
