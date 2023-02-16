@@ -1,11 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Context/AuthProvider";
 
-const TeacherForm = () => {
+const EmployeeForm = () => {
   const { user } = useContext(AuthContext);
-  
   const {
     register,
     handleSubmit,
@@ -21,7 +20,7 @@ const TeacherForm = () => {
     const department = data.department;
     const designation = data.designation;
 
-    const TeacherDetails = {
+    const EmployeeDetails = {
       img: img,
       email: email,
       name: name,
@@ -31,28 +30,26 @@ const TeacherForm = () => {
       department: department,
       designation: designation,
     };
-    console.log(TeacherDetails);
+    console.log(EmployeeDetails);
 
-    fetch("https://smart-university-protal-server-coral.vercel.app/teacherDetails", {
+    fetch("http://localhost:5000/employeeDetails", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(TeacherDetails),
+      body: JSON.stringify(EmployeeDetails),
     })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         toast.success("Your Profile details is updated");
       });
-    
   };
-  
   return (
     <div>
       <form onSubmit={handleSubmit(handleForm)} className="bg-white rounded-lg">
-        <h2 className="bg-blue-600 text-white text-center text-xl font-bold py-4">
-          Teacher Profile
+        <h2 className="bg-teal-400 text-white text-center text-xl font-bold py-4">
+          Employee Profile
         </h2>
         <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1  p-12 pb-0">
           <div className="form-control ">
@@ -216,4 +213,4 @@ const TeacherForm = () => {
   );
 };
 
-export default TeacherForm;
+export default EmployeeForm;

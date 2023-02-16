@@ -1,23 +1,28 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
+import Loader from "../Loader";
 
 const TeacherDashboardProfile = () => {
   const { user } = useContext(AuthContext);
   const [teacherDetails, setTeacherDetails] = useState([]);
-  const [loading, setLoading] = useState([]);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/teacherDetails`)
+      fetch(`https://smart-university-protal-server-coral.vercel.app/teacherDetails`)
         .then((res) => res.json())
         .then((data) => {
           data.map((s) => {
             setTeacherDetails(s);
           });
-          setLoading(false);
+          
+          setLoading(false)
         });
     }
   }, [user]);
+  if (loading) {
+    return <Loader></Loader>;
+  }
 
   return (
     <div className="mx-5 md:mx-40">

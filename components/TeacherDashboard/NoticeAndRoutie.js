@@ -24,11 +24,7 @@ const NoticeAndRoutie = () => {
     return (
         <div>
 
-            {/* <div className="bg-slate-200 drop-shadow-lg py-3 mt-5 w-2/3 ml-48">
-                <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">
-                    Important Notice 
-                </h1>
-            </div> */}
+       
 
 
             <div className='w-full'>
@@ -44,6 +40,10 @@ const NoticeAndRoutie = () => {
         
 
         </div>
+
+        
+
+    
     );
 };
 

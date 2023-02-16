@@ -7,8 +7,7 @@ const Navbar = () => {
   const [allUsers, setAllUsers] = useState();
   useEffect(() => {
     if (user?.email) {
-      fetch(
-        `https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
+      fetch(`https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
       )
         .then((res) => res.json())
         .then((data) => {
@@ -122,12 +121,12 @@ const Navbar = () => {
         )}
         {user?.email ? (
           <>
-            {allUsers?.roll == "Employee" ? (
+            {allUsers?.roll == "Administration" ? (
               <Link
                 href="/employeeDashboard"
                 className="text-xl  text-[#facc15] font-bold"
               >
-                Employee Dashboard
+                Administration Dashboard
               </Link>
             ) : (
               <></>
@@ -168,20 +167,20 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="w-52 flex">
-            <div className="w-18 h-10 mt-3">
+            <div className="">
               <img
-                src="https://www.linkpicture.com/q/images-removebg-preview-4.png"
+              
+                src="/navIMG.png"
                 alt=""
-                className="w-12 h-10"
+                className="md:w-40 md:h-20 w-18 h-12"
               />
-             
             </div>
             <div className="w-2/3">
               <Link
                 href="/home"
                 className="btn btn-ghost normal-case text-md md:text-xl font-serif italic"
               >
-                Dreamers University 
+                Dreamers University
               </Link>
             </div>
           </div>
