@@ -268,7 +268,7 @@ const index = () => {
                         className="text-amber-400 ml-1"
                       ></CiUser>
                       <span class="flex-1 ml-3 whitespace-nowrap font-bold">
-                        Alumni Info
+                        Alumni INFO
                       </span>
                     </Link>
                   </li>
