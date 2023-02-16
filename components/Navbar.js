@@ -8,7 +8,8 @@ const Navbar = () => {
   const [allUsers, setAllUsers] = useState();
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
+      fetch(
+        `https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
       )
         .then((res) => res.json())
         .then((data) => {
@@ -170,7 +171,6 @@ const Navbar = () => {
           <div className="w-52 flex">
             <div className="">
               <img
-              
                 src="/navIMG.png"
                 alt=""
                 className="md:w-40 md:h-20 w-18 h-12"
