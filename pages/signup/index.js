@@ -1,4 +1,7 @@
 import React, { useContext } from "react";
+import Lottie from "lottie-react";
+import login from "../../public/Login.json";
+import success from "../../public/success.json";
 import { AuthContext } from "../../Context/AuthProvider";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
@@ -39,7 +42,13 @@ const index = () => {
     createUser(data.email, data.password, data.accountType)
       .then((result) => {
         const user = result.user;
-        toast.success("User Created Successfully");
+        toast(`Successfulluy SignUp`, {
+          icon: (
+            <div className="w-10 ">
+              <Lottie animationData={circle} loop={true} />
+            </div>
+          ),
+        });
         console.log("User", user);
 
         const userInfo = {
@@ -58,7 +67,15 @@ const index = () => {
     <>
       <Navbar></Navbar>
       <section className="p-5">
-        <div className="flex justify-center">
+        <div className="hero ">
+          <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="inset-y-0 right-0">
+              <div className="w-9/12 float-right">
+                <Lottie animationData={login} loop={true} />
+              </div>
+            </div>
+            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+             <div className="flex justify-center">
           <div className="card shadow p-12 py-12 bg-base-200  w-96">
             <h2 className="text-primary text-2xl mb-5">Sign Up</h2>
 
@@ -101,6 +118,11 @@ const index = () => {
             </p>
           </div>
         </div>
+            </div>
+          </div>
+        </div>
+
+        
       </section>
     </>
   );
