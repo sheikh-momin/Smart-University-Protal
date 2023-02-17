@@ -11,7 +11,7 @@ const adminnotice = () => {
       .catch((error) => console.error(error));
   };
   return (
-    <div>
+    <div className="bg-slate-200">
       <div className=" navbar bg-gradient-to-r from-[#43cea2]  to-[#185a9d]">
         <div className="navbar-start">
           <div className="dropdown">

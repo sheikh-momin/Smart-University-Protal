@@ -45,13 +45,13 @@ const AdminNotice = () => {
 
   }
   return (
-    <div>
+    <div className='bg-slate-200'>
       <div className="bg-slate-200 drop-shadow-lg py-3 mt-5">
         <h1 className="text-center text-[#43cea2] md:text-3xl text-lg font-bold italic font-serif">
            Important Notice For Teachers
           </h1>
         </div>
-      <form onSubmit={handleSubmit(handleForm)} className="bg-white">
+      <form onSubmit={handleSubmit(handleForm)} className="bg-slate-200">
         <div className="pt-8 px-48">
           <div className="flex justify-center">
             <div className="form-control mr-5">
