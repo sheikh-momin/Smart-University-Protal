@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const index = () => {
   return (
@@ -170,6 +171,7 @@ const index = () => {
           </li>
         </ul>
       </section>
+      <Footer></Footer>
     </>
   );
 };
