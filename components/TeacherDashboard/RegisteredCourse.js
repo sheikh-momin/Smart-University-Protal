@@ -139,7 +139,7 @@ const RegisteredCourse = () => {
     return (
         <div  className='container mx-auto bg-slate-200 px-5 pb-3'>
             <div className=" mt-5">
-                <h1 className="text-center rounded bg-blue-600 text-white md:text-xl  py-3 font-serif">Make Student Courses</h1>
+                <h1 className="text-center rounded bg-blue-600 text-white md:text-xl  py-3 font-serif">Register Student Courses</h1>
             </div>
            <form onSubmit={handleSubmit(handleSignUp)}>
 
