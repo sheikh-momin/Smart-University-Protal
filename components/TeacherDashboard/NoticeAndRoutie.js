@@ -26,7 +26,7 @@ const NoticeAndRoutie = () => {
 
        
 
-
+{/* .. */}
             <div className='w-full'>
                     {
                         allNotices.map(n => <Notice
