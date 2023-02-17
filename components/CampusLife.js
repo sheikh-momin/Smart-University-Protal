@@ -41,13 +41,9 @@ const CampusLife = () => {
         </PhotoProvider>
 
         <PhotoProvider>
-          <PhotoView
-          
-            src="https://images.unsplash.com/photo-1519664993241-d7c8f0ae7b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVuaXZlcnNpdHklMjBsaWZlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-          >
+          <PhotoView src="https://images.unsplash.com/photo-1519664993241-d7c8f0ae7b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVuaXZlcnNpdHklMjBsaWZlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
             <img
               className="h-60 w-full"
-              
               src="https://images.unsplash.com/photo-1519664993241-d7c8f0ae7b39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVuaXZlcnNpdHklMjBsaWZlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
             />
@@ -55,33 +51,23 @@ const CampusLife = () => {
         </PhotoProvider>
 
         <PhotoProvider>
-          <PhotoView
-          
-            src="https://images.unsplash.com/photo-1588865198054-c83788106132?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-          >
+          <PhotoView src="https://images.unsplash.com/photo-1588865198054-c83788106132?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80">
             <img
               className="h-60 w-full"
-              
               src="https://images.unsplash.com/photo-1588865198054-c83788106132?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
               alt=""
             />
           </PhotoView>
         </PhotoProvider>
         <PhotoProvider>
-          <PhotoView
-          
-            src="https://media.istockphoto.com/id/1453679166/photo/embracing-after-graduation.jpg?b=1&s=170667a&w=0&k=20&c=ZOIQyLeh0ZziAvWHh-5WEN3SToy0cExvGNZHGFVs4xE="
-          >
+          <PhotoView src="https://media.istockphoto.com/id/1453679166/photo/embracing-after-graduation.jpg?b=1&s=170667a&w=0&k=20&c=ZOIQyLeh0ZziAvWHh-5WEN3SToy0cExvGNZHGFVs4xE=">
             <img
               className="h-60 w-full"
-              
               src="https://media.istockphoto.com/id/1453679166/photo/embracing-after-graduation.jpg?b=1&s=170667a&w=0&k=20&c=ZOIQyLeh0ZziAvWHh-5WEN3SToy0cExvGNZHGFVs4xE="
               alt=""
             />
           </PhotoView>
         </PhotoProvider>
-
-        
       </div>
     </div>
   );
