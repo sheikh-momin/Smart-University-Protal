@@ -104,7 +104,7 @@ const MakeCourse = () => {
   return (
     <div className="container mx-auto bg-slate-200 px-5 pb-3">
       <div className=" mt-5">
-        <h1 className="text-center rounded bg-blue-600 text-white md:text-xl  py-3 font-serif">
+        <h1 className="text-center rounded bg-[#43cea2] text-white md:text-xl  py-3 font-serif">
           Make Teacher Courses
         </h1>
       </div>
@@ -553,7 +553,7 @@ const MakeCourse = () => {
 
         <div className="flex justify-center">
           <input
-            className="btn bg-gradient-to-r from-blue-700 w-1/4 mx-auto mt-4"
+            className="btn bg-[#43cea2] w-1/4 mx-auto mt-4"
             value="Submit"
             type="submit"
           />

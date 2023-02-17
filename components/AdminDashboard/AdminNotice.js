@@ -47,7 +47,7 @@ const AdminNotice = () => {
   return (
     <div>
       <div className="bg-slate-200 drop-shadow-lg py-3 mt-5">
-          <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">
+        <h1 className="text-center text-[#43cea2] md:text-3xl text-lg font-bold italic font-serif">
            Important Notice For Teachers
           </h1>
         </div>
@@ -157,7 +157,7 @@ const AdminNotice = () => {
         <div className="flex justify-center">
           <input
             type="submit"
-            className="btn btn-info text-white  mt-8 px-8 mb-4"
+            className="btn bg-[#43cea2] text-white  mt-8 px-8 mb-4"
           />
         </div>
       </form>
