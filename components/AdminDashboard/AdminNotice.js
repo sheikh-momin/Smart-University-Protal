@@ -90,65 +90,67 @@ const AdminNotice = () => {
 
 
 
-          <div className='ml-40'>
-            <div className="form-control mt-10">
-              <label className="label">
-                <span className="label-text">Title:</span>
-              </label>
-              <input
-                name="subject"
-                {...register("subject", {
-                  required: "subject is required",
-                })}
-                type="text"
-                placeholder="Title"
-                className="input input-bordered input-info w-80 "
-              />
-              {errors.subject && (
-                <p className="text-red-600">{errors.subject?.message}</p>
-              )}
-            </div>
+          <div className='flex justify-center'>
+            <div className=''>
+              <div className="form-control mt-10">
+                <label className="label">
+                  <span className="label-text">Title:</span>
+                </label>
+                <input
+                  name="subject"
+                  {...register("subject", {
+                    required: "subject is required",
+                  })}
+                  type="text"
+                  placeholder="Title"
+                  className="input input-bordered input-info w-80 "
+                />
+                {errors.subject && (
+                  <p className="text-red-600">{errors.subject?.message}</p>
+                )}
+              </div>
 
 
 
 
 
-            <div className="form-control mt-5">
-              <label className="label">
-                <span className="label-text">Notice</span>
-              </label>
+              <div className="form-control mt-5">
+                <label className="label">
+                  <span className="label-text">Notice</span>
+                </label>
 
-              <textarea
-                name="notice"
-                {...register("notice", {
-                  required: "notice is required",
-                })}
-                type="text"
-                placeholder="Notice"
-                className="textarea textarea-info  w-80 h-44"
-              />
-              {errors.notice && (
-                <p className="text-red-600">{errors.notice?.message}</p>
-              )}
-            </div>
+                <textarea
+                  name="notice"
+                  {...register("notice", {
+                    required: "notice is required",
+                  })}
+                  type="text"
+                  placeholder="Notice"
+                  className="textarea textarea-info  w-80 h-44"
+                />
+                {errors.notice && (
+                  <p className="text-red-600">{errors.notice?.message}</p>
+                )}
+              </div>
 
 
-            <div className="form-control ">
-              <label className="label">
-                <span className="label-text">From:</span>
-              </label>
-              <input
-                name="from"
-                {...register("from", {
-                  required: "from is required",
-                })}
-                type="text"
-                placeholder="From"
-                className="input input-bordered input-info w-80"
-              />
-              {errors.from && (
-                <p className="text-red-600">{errors.from?.message}</p>
-              )}
+              <div className="form-control ">
+                <label className="label">
+                  <span className="label-text">From:</span>
+                </label>
+                <input
+                  name="from"
+                  {...register("from", {
+                    required: "from is required",
+                  })}
+                  type="text"
+                  placeholder="From"
+                  className="input input-bordered input-info w-80"
+                />
+                {errors.from && (
+                  <p className="text-red-600">{errors.from?.message}</p>
+                )}
+              </div>
             </div>
           </div>
         </div>
