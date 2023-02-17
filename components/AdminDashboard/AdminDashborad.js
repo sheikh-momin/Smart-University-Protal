@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
+import Admins from "./Admins";
 
 const AdminDashborad = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -52,7 +53,7 @@ const AdminDashborad = () => {
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
             <h1 className="text-4xl font-semibold text-center mt-6 mb-4">
-              Taken Course for test{" "}
+              <Admins></Admins>
             </h1>
           </div>
           <div className="drawer-side">
