@@ -7,7 +7,7 @@ const ShowAllTeacher = () => {
   const [teacherDetails,setTeacherDetails]=useState([]);
   const [loading, setLoading] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/teacherDetails')
+        fetch('https://smart-university-protal-server-coral.vercel.app/teacherDetails')
             .then(res => res.json())
             .then(data => setShowAllTeacher(data))
             setLoading(false);
@@ -20,7 +20,7 @@ const ShowAllTeacher = () => {
     const itsClicked= (_id)=>{
       console.log('its clicked',_id)
       
-        fetch(`http://localhost:5000/teacherDetails/${_id}`)
+        fetch(`https://smart-university-protal-server-coral.vercel.app/teacherDetails/${_id}`)
             .then(res => res.json())
             .then(data => setTeacherDetails(data))
             console.log(teacherDetails)

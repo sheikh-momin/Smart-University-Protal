@@ -96,7 +96,7 @@ const MakeCourse = () => {
     console.log(registeredDetails);
 
     fetch(
-      "http://localhost:5000/teacherCourse",
+      "https://smart-university-protal-server-coral.vercel.app/teacherCourse",
       {
         method: "POST",
         headers: {

@@ -24,7 +24,7 @@ const studentapplicationform = () => {
     };
     console.log(StudentApplication);
 
-    fetch("http://localhost:5000/studentApplication", {
+    fetch("https://smart-university-protal-server-coral.vercel.app/studentApplication", {
       method: "POST",
       headers: {
         "content-type": "application/json",

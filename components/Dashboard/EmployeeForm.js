@@ -32,7 +32,7 @@ const EmployeeForm = () => {
     };
     console.log(EmployeeDetails);
 
-    fetch("http://localhost:5000/employeeDetails", {
+    fetch("https://smart-university-protal-server-coral.vercel.app/employeeDetails", {
       method: "POST",
       headers: {
         "content-type": "application/json",
