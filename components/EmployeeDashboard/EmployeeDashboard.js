@@ -8,7 +8,6 @@ const EmployeeDashboard = () => {
         <h2></h2>
         <div>
           <EmployeeDetails></EmployeeDetails>
-
           <div className="grid grid-cols-3 gap-4 md:w-9/12 md:mx-auto mx-5 text-black mt-24 mb-24">
             <div className="bg-white md:p-8 p-2 rounded-xl">
               <h2 className="md:text-xl">11000</h2>
