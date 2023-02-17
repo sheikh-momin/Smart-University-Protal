@@ -9,10 +9,12 @@ import News from "../News";
 import CampusLife from "../../components/CampusLife";
 import FacultyHome from "../../components/facultyHome";
 import MiddleNav from "../../components/MiddleNav";
+import TopNav from "../../components/TopNav";
 
 const HomePage = () => {
   return (
     <div>
+      <TopNav></TopNav>
       <MiddleNav></MiddleNav>
       <Navbar></Navbar>
       <Carusol></Carusol>
