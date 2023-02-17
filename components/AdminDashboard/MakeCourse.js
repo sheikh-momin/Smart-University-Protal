@@ -85,7 +85,6 @@ const MakeCourse = () => {
     };
     console.log(registeredDetails);
 
-<<<<<<< HEAD
     fetch(
       "https://smart-university-protal-server-coral.vercel.app/teacherCourse",
       {
@@ -96,15 +95,6 @@ const MakeCourse = () => {
         body: JSON.stringify(registeredDetails),
       }
     )
-=======
-    fetch("http://localhost:5000/teacherCourse", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(registeredDetails),
-    })
->>>>>>> origin/Nishi
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

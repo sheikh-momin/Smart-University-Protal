@@ -31,11 +31,11 @@ const ShowAllStudent = () => {
     }
 
     return (
-        <div>
+        <div className='flex justify-center'>
             {
               console.log(showAllStudent)
             }
-            <div className="overflow-x-auto ">
+        <div className="overflow-x-auto md:w-1/2">
   <table className="table w-full">
 
 

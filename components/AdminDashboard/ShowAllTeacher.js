@@ -32,7 +32,7 @@ const ShowAllTeacher = () => {
     return (
         <div>
             
-        <div className="overflow-x-auto w-1/2 mx-auto">
+        <div className="overflow-x-auto md:w-1/2 mx-auto">
 <table className="table w-full">
 
 
