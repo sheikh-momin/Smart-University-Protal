@@ -69,6 +69,14 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
+        <Link href="//admission/applyOnline" className="text-xl text-yellow-400 zoom-in-out-box font-bold">
+          Apply Online
+        </Link>
+      </li>
+
+
+
+      <li>
         {user?.email ? (
           <>
             {allUsers?.roll == "Student" ? (
