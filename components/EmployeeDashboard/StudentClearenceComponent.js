@@ -50,7 +50,7 @@ const StudentClearenceComponent = () => {
         <div className="flex justify-center ">
           <div className="grid grid-cols-1 gap-4 my-20">
             <form onSubmit={handleSubmit(handleForm)} className="bg-white rounded-lg">
-              <h2 className="bg-sky-400 text-white text-center text-xl font-bold py-4">
+              <h2 className="bg-teal-400 text-white text-center text-xl font-bold py-4">
                 Update Clearance
               </h2>
               <div className="grid lg:grid-cols-2 gap-x-8 md:grid-cols-2 grid-cols-1 px-24">
@@ -131,7 +131,7 @@ const StudentClearenceComponent = () => {
               <div className="flex justify-center">
                 <input
                   type="submit"
-                  className="btn btn-info text-white  mt-8 px-8 mb-4"
+                  className="btn bg-teal-400 text-white  mt-8 px-8 mb-4"
                 />
               </div>
             </form>

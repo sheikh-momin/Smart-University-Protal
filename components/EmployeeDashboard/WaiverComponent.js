@@ -26,22 +26,22 @@ const WaiverComponent = () => {
   return (
     <div className="bg-zinc-300 pb-80 md:mx-40 mx-5 w-full mt-5">
       <div className="bg-slate-200 drop-shadow-lg py-3 ">
-        <h1 className="text-center text-cyan-500 md:text-3xl text-lg font-bold italic font-serif">Students Waiver</h1>
+        <h1 className="text-center text-teal-600 md:text-3xl text-lg font-bold italic font-serif">Students Waiver</h1>
       </div>
       <div className="overflow-x-auto mt-20  w-full">
         <table className="table w-full">
 
           <thead className="">
             <tr >
-              <th className="bg-cyan-500">
+              <th className="bg-teal-400">
                 UserName</th>
-              <th className="bg-cyan-500">Email</th>
-              <th className="bg-cyan-500">Semester</th>
-              <th className="bg-cyan-500">GPA</th>
-              <th className="bg-cyan-500">PCH</th>
-              <th className="bg-cyan-500">CGAP</th>
-              <th className="bg-cyan-500">CCH</th>
-              <th className="bg-cyan-500">Contact</th>
+              <th className="bg-teal-400">Semester</th>
+              <th className="bg-teal-400">Email</th>
+              <th className="bg-teal-400">GPA</th>
+              <th className="bg-teal-400">PCH</th>
+              <th className="bg-teal-400">CGAP</th>
+              <th className="bg-teal-400">CCH</th>
+              <th className="bg-teal-400">Contact</th>
             </tr>
           </thead>
           <tbody>
