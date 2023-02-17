@@ -149,13 +149,7 @@ const Profile = () => {
                       </span>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/employeeDashboard/semesterdue" class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700">
-                      <ImProfile size="20px" className="text-amber-400 ml-2"></ImProfile>
-                      <span class="flex-1 ml-2 whitespace-nowrap font-bold">Semester Due</span>
-
-                    </Link>
-                  </li>
+                  
 
                   <li>
                     <Link

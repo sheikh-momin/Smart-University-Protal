@@ -154,7 +154,7 @@ const index = () => {
                   </li>
                   <li>
                     <Link
-                      href="/employeeDashboard/studentdue"
+                      href="/employeeDashboard/studentDue"
                       class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700"
                     >
                       <ImProfile

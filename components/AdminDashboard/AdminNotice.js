@@ -27,7 +27,7 @@ const AdminNotice = () => {
       from: from,
     };
 
-    fetch("http://localhost:5000/notice", {
+    fetch("https://smart-university-protal-server-coral.vercel.app/notice", {
       method: "POST",
       headers: {
         "content-type": "application/json",
