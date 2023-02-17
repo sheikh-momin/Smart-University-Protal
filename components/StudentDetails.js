@@ -34,7 +34,7 @@ const StudentDetails = () => {
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={studentDetails.img}
-              className="md:max-w-sm rounded-lg shadow-2xl hover:scale-90 ease-in duration-500"
+              className="md:max-w-sm rounded-lg shadow-2xl hover:scale-90 ease-in duration-500 w-48 h-48"
             />
             <div>
               <h1 className="md:text-2xl font-bold ">

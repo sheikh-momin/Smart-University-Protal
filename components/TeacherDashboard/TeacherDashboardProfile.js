@@ -5,18 +5,20 @@ import Loader from "../Loader";
 const TeacherDashboardProfile = () => {
   const { user } = useContext(AuthContext);
   const [teacherDetails, setTeacherDetails] = useState([]);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://smart-university-protal-server-coral.vercel.app/teacherDetails`)
+      fetch(
+        `https://smart-university-protal-server-coral.vercel.app/teacherDetails`
+      )
         .then((res) => res.json())
         .then((data) => {
           data.map((s) => {
             setTeacherDetails(s);
           });
-          
-          setLoading(false)
+
+          setLoading(false);
         });
     }
   }, [user]);
@@ -31,7 +33,7 @@ const TeacherDashboardProfile = () => {
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={teacherDetails.img}
-              className="md:max-w-sm rounded-lg shadow-2xl hover:scale-90 ease-in duration-500"
+              className="md:max-w-sm rounded-lg shadow-2xl hover:scale-90 ease-in duration-500 w-48 h-48"
             />
             <div>
               <h1 className="md:text-2xl font-bold ">
@@ -43,7 +45,7 @@ const TeacherDashboardProfile = () => {
               <p className="py-2">
                 Marital Status: {teacherDetails.maritalStatus}
               </p>
-              <p className="py-2">Contact No: {teacherDetails.contact}</p>
+              {/* <p className="py-2">Contact No: {teacherDetails.contact}</p> */}
             </div>
           </div>
         </div>

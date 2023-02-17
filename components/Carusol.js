@@ -1,74 +1,63 @@
-import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+import { useRef } from "react";
 
 const Carusol = () => {
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty("--progress", 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
+
   return (
-    <div>
-      <div className="carousel w-full lg:h-[500px]">
-        <div id="slide1" className="carousel-item relative w-full">
+    <div className="w-full">
+      <Swiper
+        className=""
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+      >
+        <SwiperSlide>
           <img
             src="https://wallpaperaccess.com/full/1209573.jpg"
-            className="w-full "
+            className="w-full lg:h-[500px]"
           />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide2" className="carousel-item relative w-full">
+        </SwiperSlide>
+        <SwiperSlide>
           <img
             src="https://c4.wallpaperflare.com/wallpaper/485/65/161/stanford-university-hd-wallpaper-wallpaper-preview.jpg"
-            className="w-full "
+            className="w-full lg:h-[500px]"
           />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          {/* <img
-            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            className="w-full "
-          /> */}
-          <img
-            src="https://images.unsplash.com/photo-1496469888073-80de7e952517?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
-            className="w-full"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          {/* <img
-            src="https://images.unsplash.com/photo-1496469888073-80de7e952517?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
-            className="w-full"
-          /> */}
+        </SwiperSlide>
+        <SwiperSlide>
           <img
             src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            className="w-full "
+            className="w-full lg:h-[500px]"
           />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-      </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://images.unsplash.com/photo-1496469888073-80de7e952517?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+            className="w-full lg:h-[500px]"
+          />
+        </SwiperSlide>
+        {/* <div className="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48" ref={progressCircle}>
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span ref={progressContent}></span>
+        </div> */}
+      </Swiper>
     </div>
   );
 };
