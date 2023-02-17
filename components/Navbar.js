@@ -70,6 +70,10 @@ const Navbar = () => {
           Hall
         </Link>
       </li>
+      
+
+
+
       <li>
         {user?.email ? (
           <>
@@ -138,6 +142,11 @@ const Navbar = () => {
           <></>
         )}
       </li>
+      <li>
+        <Link href="//admission/applyOnline" className="text-xl text-yellow-400 zoom-in-out-box font-bold">
+          Apply Online
+        </Link>
+      </li>
     </>
   );
   return (
@@ -186,7 +195,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex md:mr-60">
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
       </div>

@@ -7,8 +7,8 @@ import { FaFacebook } from "react-icons/fa";
 
 const TopNav = () => {
   return (
-    <div>
-      <div class="flex flex-row gap-3">
+    <div className="md:block hidden">
+      <div class="flex flex-row gap-3 ">
         <div className="basis-2/6 font-bold text-[#facc15]">
           <marquee>
             Admission also opens in Holidays . Payment Through bKash Form
