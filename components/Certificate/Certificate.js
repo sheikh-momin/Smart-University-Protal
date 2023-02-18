@@ -33,7 +33,7 @@ const Certificate = () => {
                         </label>     */}
                     </div>
                     <div>
-                        <div className="form-control w-full max-w-2xl my-5  grid grid-cols-2 gap-5">
+                        <div className="form-control w-full max-w-2xl my-5  grid grid-cols-1 gap-5">
                             {/* <div>
                                 <label className="label">
                                     <span className="label-text bg-base-100">Apply Date</span>     
@@ -76,15 +76,15 @@ const Certificate = () => {
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>     */}
                             <div className=' '>
-                                <label className=" mt-5 input-group input-group-xs ml-20">
+                                <label className=" mt-5 input-group input-group-xs ">
                                     <span className=''>Payment Type</span>
                                     <div className="form-control max-w-xs ml-10">
-                                        <label className="label cursor-pointer group-xl mr-5 ">
+                                        <label className="label cursor-pointer group-xl  ">
                                             <span className="label-text ">Payment Cash</span> 
                                             <input type="radio" name="radio-10" className="radio bg-zinc-300 checked:bg-red-500" checked />
                                         </label>
                                     </div>
-                                    <div className="form-control ml-10">
+                                    <div className="form-control ">
                                         <label className="label cursor-pointer">
                                             <span className="label-text">Payment Online</span> 
                                             <input type="radio" name="radio-10" className="radio bg-zinc-300 checked:bg-blue-500" checked />
@@ -103,7 +103,7 @@ const Certificate = () => {
                 </div>
                 <div className=" flex form-control  w-full max-w-3xl mt-10  bg-base-200 ">
                     <div>
-                        <div className="form-control w-full max-w-2xl my-5  grid grid-cols-2 gap-5">   
+                        <div className="form-control w-full max-w-2xl   grid grid-cols-1 gap-5">   
                             <div>
                                 <label className=" mt-7 input-group input-group-2xl ">
                                     <span>Document</span>                                  
