@@ -23,32 +23,32 @@ const Certificate = () => {
                             <span>ID</span>
                             <input type="text" placeholder="Type here" className="input input-bordered input-xs" />
                         </label>
-                        <label className="input-group input-group-xs">
+                        {/* <label className="input-group input-group-xs">
                             <span>Name</span>
                             <input type="text" placeholder="Type here" className="input input-bordered input-xs" />
-                        </label>
-                        <label className="input-group input-group-xs">
+                        </label> */}
+                        {/* <label className="input-group input-group-xs">
                             <span>Program</span>
                             <input type="text" placeholder="Type here" className="input input-bordered input-xs" />
-                        </label>    
+                        </label>     */}
                     </div>
                     <div>
                         <div className="form-control w-full max-w-2xl my-5  grid grid-cols-2 gap-5">
-                            <div>
+                            {/* <div>
                                 <label className="label">
                                     <span className="label-text bg-base-100">Apply Date</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                            </div>    
-                            <div>
+                            </div>     */}
+                            {/* <div>
                                 <label className="label">
                                     <span className="label-text bg-base-100">Delivery Date</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                            </div>    
+                            </div>     */}
                             <div>
                                 <label className="label">
-                                    <span className="label-text bg-base-100">Alternative Email</span>     
+                                    <span className="label-text bg-base-100">Email</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>    
@@ -58,7 +58,7 @@ const Certificate = () => {
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
                             </div>    
-                            <div>
+                            {/* <div>
                                 <label className=" mt-7 input-group input-group-xl ml-2">
                                     <span>Paid Date</span>
                                     <select className="select select-accent w-50% max-w-xs">
@@ -68,23 +68,23 @@ const Certificate = () => {
                                         <option>Date</option>
                                     </select>
                                 </label>
-                            </div>    
-                            <div>
+                            </div>     */}
+                            {/* <div>
                                 <label className="label">
                                     <span className="label-text bg-base-100">Paid Amount</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                            </div>    
+                            </div>     */}
                             <div className=' '>
-                                <label className=" mt-5 input-group input-group-xs ml-2">
+                                <label className=" mt-5 input-group input-group-xs ml-20">
                                     <span className=''>Payment Type</span>
-                                    <div className="form-control max-w-xs ">
+                                    <div className="form-control max-w-xs ml-10">
                                         <label className="label cursor-pointer group-xl mr-5 ">
                                             <span className="label-text ">Payment Cash</span> 
                                             <input type="radio" name="radio-10" className="radio bg-zinc-300 checked:bg-red-500" checked />
                                         </label>
                                     </div>
-                                    <div className="form-control">
+                                    <div className="form-control ml-10">
                                         <label className="label cursor-pointer">
                                             <span className="label-text">Payment Online</span> 
                                             <input type="radio" name="radio-10" className="radio bg-zinc-300 checked:bg-blue-500" checked />
@@ -92,18 +92,18 @@ const Certificate = () => {
                                     </div>
                                 </label>
                             </div>     
-                            <div>
+                            {/* <div>
                                 <label className="label md-4">
                                     <span className="label-text bg-base-100">Money Receipt No/ Reference No</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                            </div>     
+                            </div>      */}
                         </div>
                     </div>
                 </div>
                 <div className=" flex form-control  w-full max-w-3xl mt-10  bg-base-200 ">
                     <div>
-                        <div className="form-control w-full max-w-2xl my-5 ml-10 grid grid-cols-2 gap-5">   
+                        <div className="form-control w-full max-w-2xl my-5  grid grid-cols-2 gap-5">   
                             <div>
                                 <label className=" mt-7 input-group input-group-2xl ">
                                     <span>Document</span>                                  
@@ -124,13 +124,13 @@ const Certificate = () => {
                                     </select>
                                 </label>
                             </div>    
-                            <div>
+                            {/* <div>
                                 <label className="label">
                                     <span className="label-text bg-base-100">Number of Copy</span>     
                                 </label>
                                 <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-                            </div>    
-                            <div>
+                            </div>     */}
+                            {/* <div>
                                 <label className=" mt-7 input-group input-group-xl ml-2">
                                     <span>Document Version</span>
                                     <select className="select select-accent w-3/4 max-w-xs">
@@ -139,7 +139,7 @@ const Certificate = () => {
                                         <option>Select</option>                                       
                                     </select>
                                 </label>
-                            </div>
+                            </div> */}
 
                             <div>
                                 <label className=" mt-7 input-group input-group-xl ">
@@ -151,16 +151,17 @@ const Certificate = () => {
                                     </select>
                                 </label>
                             </div>
-                            <div>
-                            <label className="label">
+                            {/* <div>
+                                <label className="label">
                                     <span className="label-text bg-base-100">ADD DOCUMENT</span>     
                                 </label>
-                                <input type="file" className="file-input file-input-bordered file-input-primary w-full max-w-xs " /></div>                           
+                                <input type="file" className="file-input file-input-bordered file-input-primary w-full max-w-xs " />
+                            </div>                            */}
                             </div>
                     </div>                     
                 </div>
 
-                <div className=" flex form-control  w-full max-w-3xl mt-10  bg-base-200 ">
+                {/* <div className=" flex form-control  w-full max-w-3xl mt-10  bg-base-200 ">
                     <div >
                         <div className="form-control w-full max-w-2xl my-5  pl-10 grid grid-cols-2 gap-5">   
                                
@@ -188,11 +189,9 @@ const Certificate = () => {
                            
                             
                     </div>                     
-                </div>
-
-                {/* <div>
-                <button className=" text-white mt-5 ml-40 btn btn-xs btn-center  bg-cyan-400 sm:btn-sm md:btn-md lg:btn-lg">Save</button>
                 </div> */}
+
+                
                
                 <button onClick={handleSubmit} className="btn btn-info mt-5 mb-10">Submit</button>
             </div>

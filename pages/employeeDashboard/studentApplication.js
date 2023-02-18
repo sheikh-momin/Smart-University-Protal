@@ -1,26 +1,26 @@
-import Link from "next/link";
 import { useContext } from "react";
-import EmployeeDashboard from "../../components/EmployeeDashboard/EmployeeDashboard";
 import { AuthContext } from "../../Context/AuthProvider";
+import { SlLogout } from "react-icons/sl";
 import { AiFillDashboard } from "react-icons/ai";
 import { ImProfile } from "react-icons/im";
-import { SlLogout } from "react-icons/sl";
-import StudentDue from "../../components/EmployeeDashboard/StudentDue";
 import { CgCalendarDue } from "react-icons/cg";
 import { MdOutlineRequestPage } from "react-icons/md";
 import { BsFillBarChartLineFill } from "react-icons/bs";
 import { FaWpforms } from "react-icons/fa";
+import StudentApplicationShow from "../../components/EmployeeDashboard/StudentApplicationShow";
+import Link from "next/link";
 
-const index = () => {
+
+
+const StudentApplication = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleSingOut = () => {
     logOut()
-      .then(() => {})
+      .then(() => { })
       .catch((error) => console.error(error));
   };
-
   return (
-    <div className="bg-zinc-200">
+    <div className="bg-zinc-300">
       <div className="navbar  bg-gradient-to-r from-teal-600   to-stone-600">
         <div className="navbar-start">
           <div className="dropdown">
@@ -60,8 +60,7 @@ const index = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content w-full flex justify-center">
-          <EmployeeDashboard></EmployeeDashboard>
-          {/* <StudentDue></StudentDue> */}
+          <StudentApplicationShow></StudentApplicationShow>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
@@ -152,20 +151,6 @@ const index = () => {
                       </span>
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/employeeDashboard/studentDue"
-                      class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700"
-                    >
-                      <ImProfile
-                        size="20px"
-                        className="text-amber-400 ml-2"
-                      ></ImProfile>
-                      <span class="flex-1 ml-2 whitespace-nowrap font-bold">
-                        Student Due
-                      </span>
-                    </Link>
-                  </li>
 
                   <li>
                     <Link
@@ -194,4 +179,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default StudentApplication;

@@ -45,12 +45,23 @@ const TeachingEvaluation = () => {
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
                             <div className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
-                                <h3 className="font-bold text-lg">Give your Teacher feedback</h3>
+                                <h3 className="font-bold text-lg text-center">Give your Teacher feedback</h3>
                                 
                                 <div className="form-control">
-                                <p className="py-4">Teaching Quality</p>
+                                <p className="py-4 text-center">Teaching Quality</p>
                                 <div className=' '>
-                                <label className="  input-group input-group-xs ml-5">
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
+                                {/* <label className="  input-group input-group-xs ml-5">
                                     
                                     <div className="form-control max-w-xs ">
                                         <label className="label cursor-pointer group-xl  ">
@@ -91,240 +102,80 @@ const TeachingEvaluation = () => {
                                         <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
                                     </label>
                                     </div>
-                                </label>
+                                </label> */}
                             </div> 
                                 
                                 </div>
 
                                 <div className="form-control">
-                                <p className="py-4">Class Arrangment</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Class Arrangment</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Friendly</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Friendly</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2 bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Presenting Quality</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Presenting Quality</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Time Mantaning</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Time Mantaning</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Behavior</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Behavior</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 
                                 <div className="modal-action">
@@ -335,9 +186,9 @@ const TeachingEvaluation = () => {
                             </div>
                             
                         </td>
-                        <td class="">Indianapolis</td>
-                        <td class="">Indianapolis</td>
-                        <td class="">Indianapolis</td>
+                        <td class="">CSE-322</td>
+                        <td class="">Cloud Computing</td>
+                        <td class="">Mominul Islam</td>
                         </tr>
                         <tr class="text-xl border bg-blue-200 border-primary ...">
                         <td class=""> 
@@ -345,297 +196,109 @@ const TeachingEvaluation = () => {
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
                             <div className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
-                                <h3 className="font-bold text-lg">Give your Teacher feedback</h3>
+                                <h3 className="font-bold text-lg text-center">Give your Teacher feedback</h3>
                                 
                                 <div className="form-control">
-                                <p className="py-4">Teaching Quality</p>
+                                <p className="py-4 text-center">Teaching Quality</p>
                                 <div className=' '>
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
+                                
                             </div> 
                                 
                                 </div>
 
                                 <div className="form-control">
-                                <p className="py-4">Class Arrangment</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Class Arrangment</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Friendly</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Friendly</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2 bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Presenting Quality</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Presenting Quality</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Time Mantaning</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Time Mantaning</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Behavior</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Behavior</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
                                 </div>
+                                </div>
+                                
                                 <div className="modal-action">
-                                <label htmlFor="my-modal-5" className="btn">Submit</label>
+                                <label htmlFor="my-modal-5" className="btn ">Submit
+                                </label>
                                 </div>
                             </div>
                             </div>
                             
                         </td>
-                        <td class="">Columbus</td>
-                        <td class="">Columbus</td>
-                        <td class="">Columbus</td>
+                        <td class="">CSE-420</td>
+                        <td class="">Network Security</td>
+                        <td class="">Afnan Sheikh</td>
                         </tr>
                         <tr class="text-xl border bg-green-300 border-green-900 ...">
                         <td class=""> 
@@ -643,297 +306,109 @@ const TeachingEvaluation = () => {
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
                             <div className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
-                                <h3 className="font-bold text-lg">Give your Teacher feedback</h3>
+                                <h3 className="font-bold text-lg text-center">Give your Teacher feedback</h3>
                                 
                                 <div className="form-control">
-                                <p className="py-4">Teaching Quality</p>
+                                <p className="py-4 text-center">Teaching Quality</p>
                                 <div className=' '>
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
+                                
                             </div> 
                                 
                                 </div>
 
                                 <div className="form-control">
-                                <p className="py-4">Class Arrangment</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Class Arrangment</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Friendly</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Friendly</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2 bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Presenting Quality</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Presenting Quality</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Time Mantaning</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Time Mantaning</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Behavior</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Behavior</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
                                 </div>
+                                </div>
+                                
                                 <div className="modal-action">
-                                <label htmlFor="my-modal-5" className="btn">Submit</label>
+                                <label htmlFor="my-modal-5" className="btn ">Submit
+                                </label>
                                 </div>
                             </div>
                             </div>
                             
                         </td>
-                        <td class="">Detroit</td>
-                        <td class="">Detroit</td>
-                        <td class="">Detroit</td>
+                        <td class="">CSE-125</td>
+                        <td class="">DATA MINING</td>
+                        <td class="">Tanvirul Islam</td>
                         </tr>
                         <tr class=" text-xl border bg-blue-300 border-blue-900 ...">
                         <td class=""> 
@@ -941,298 +416,109 @@ const TeachingEvaluation = () => {
                             <input type="checkbox" id="my-modal-5" className="modal-toggle" />
                             <div className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
-                                <h3 className="font-bold text-lg">Give your Teacher feedback</h3>
+                                <h3 className="font-bold text-lg text-center">Give your Teacher feedback</h3>
                                 
                                 <div className="form-control">
-                                <p className="py-4">Teaching Quality</p>
+                                <p className="py-4 text-center">Teaching Quality</p>
                                 <div className=' '>
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
+                               
                             </div> 
                                 
                                 </div>
 
                                 <div className="form-control">
-                                <p className="py-4">Class Arrangment</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Class Arrangment</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Friendly</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Friendly</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2 bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Presenting Quality</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Presenting Quality</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Time Mantaning</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Time Mantaning</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 <div className="form-control">
-                                <p className="py-4">Behavior</p>
-
-                                <label className="  input-group input-group-xs ml-5">
-                                    
-                                    <div className="form-control max-w-xs ">
-                                        <label className="label cursor-pointer group-xl  ">
-                                            <span className="label-text ">Very Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-red-500" checked />
-                                        </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                        <label className="label cursor-pointer">
-                                            <span className="label-text">Bad</span> 
-                                            <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-secondary" checked />
-                                        </label>
-                                    </div>
-                                    
-                                    
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Avarage</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-warning" checked />
-                                    </label>
-
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-primary" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Very Good</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-blue-500" checked />
-                                    </label>
-                                    </div>
-                                    <div className="form-control ml-10">
-                                    <label className="label cursor-pointer">
-                                        <span className="label-text">Excilent</span> 
-                                        <input type="radio" name="radio-10" className="radio bg-zinc-100 checked:bg-success" checked />
-                                    </label>
-                                    </div>
-                                </label>
+                                <p className="py-4 text-center">Behavior</p>
+                                <div className='flex justify-center'>
+                                    <select className="mt-2  bg-cyan-400 select select-success w-full max-w-xs">
+                                        <option disabled selected>Select here</option>
+                                        <option>Very Bad</option>
+                                        <option>Bad</option>
+                                        <option>Average</option>
+                                        <option>Good</option>
+                                        <option>Very Good</option>
+                                        <option>Excilent</option>
+                                    </select>
+                                </div>
                                 </div>
                                 
                                 <div className="modal-action">
-                                <label htmlFor="my-modal-5" className="btn">Submit</label>
+                                <label htmlFor="my-modal-5" className="btn ">Submit
+                                </label>
                                 </div>
                             </div>
                             </div>
                             
                         </td>
-                        <td class="">Detroit</td>
-                        <td class="">Detroit</td>
-                        <td class="">Detroit</td>
+                        <td class="">CSE-221</td>
+                        <td class="">Ecomerce</td>
+                        <td class="">Nishi IIWU</td>
                         </tr>
                     </tbody>
                     </table>

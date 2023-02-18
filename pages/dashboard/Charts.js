@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, Bar, CartesianGrid, ComposedChart, Line, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, Bar, CartesianGrid, ComposedChart, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Charts = () => {
     const data = [
@@ -82,13 +82,14 @@ const Charts = () => {
 
 
     return (
-        <div className='mt-16 ml-10'>
+        <div className='mt-16 ml-10' style={{ width: "100%", height: 450 }}>
 
             <h2 className=' text-4xl text-center mt-5 font-semibold'>Payment Scheme</h2>
 
-            <ComposedChart
-                width={900}
-                
+          {/* <div > */}
+        <ResponsiveContainer>
+        <ComposedChart
+                width={900}                
                 height={450}
                 data={data}
                 margin={{
@@ -110,7 +111,9 @@ const Charts = () => {
                 <Bar dataKey="payment" barSize={20} fill="#008080" />
                 {/* <CartesianGrid strokeDasharray="3 3" /> */}
             </ComposedChart>
-        </div>
+        </ResponsiveContainer>
+          </div>
+        // </div>
     );
 };
 

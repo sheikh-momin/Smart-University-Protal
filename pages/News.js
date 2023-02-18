@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import vu from "../Assets/vu.jpg";
+import NewsSlide from "../components/News/News"
 
 const News = () => {
   const [tabSelected, setTabSelected] = useState({
@@ -206,55 +207,10 @@ const News = () => {
               <div className="">
                 <h4 className="text-3xl text-primary mb-5">News</h4>
               </div>
-              <div className=" w-full lg:flex gap-4  overflow-x-auto ">
-                <div className=" h-48 w-52 bg-base-100 shadow-xl">
-                  <figure className="">
-                    <img
-                      src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80"
-                      alt="University"
-                      className="  border-t-emerald-800"
-                    />
-                  </figure>
-                  <div className=" items-center text-center">
-                    <h2 className="">Campus Life</h2>
-
-                    <div className="border-t items-center justify-center w-full">
-                      <h3>January ,11 2023</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className=" h-48 w-52 bg-base-100 shadow-xl">
-                  <figure className="">
-                    <img
-                      src="https://www.ox.ac.uk/sites/files/oxford/field/field_image_main/graduation_1.jpg"
-                      alt="University"
-                      className="  border-t-emerald-800"
-                    />
-                  </figure>
-                  <div className=" items-center text-center">
-                    <h2 className=""> convocation</h2>
-
-                    <div className="border-t items-center justify-center w-full">
-                      <h3>January ,11 2023</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className=" h-48 w-52 bg-base-100 shadow-xl">
-                  <figure className="">
-                    <img
-                      src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80"
-                      alt="University"
-                      className="  border-t-emerald-800"
-                    />
-                  </figure>
-                  <div className=" items-center text-center">
-                    <h2 className="">Campus Life</h2>
-
-                    <div className="border-t items-center justify-center w-full">
-                      <h3>January ,11 2023</h3>
-                    </div>
-                  </div>
-                </div>
+              <div className=" w-3/4 lg:flex gap-4   ">
+               <NewsSlide></NewsSlide>
+               
+         
               </div>
             </div>
           </div>

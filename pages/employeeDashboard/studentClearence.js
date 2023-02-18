@@ -8,6 +8,7 @@ import { MdOutlineRequestPage } from 'react-icons/md';
 import { BsFillBarChartLineFill } from 'react-icons/bs';
 import StudentClearenceComponent from "../../components/EmployeeDashboard/StudentClearenceComponent";
 import Link from "next/link";
+import { FaWpforms } from "react-icons/fa";
 
 
 const StudentClearence = () => {
@@ -19,7 +20,7 @@ const StudentClearence = () => {
 
   }
   return (
-    <div>
+    <div className="bg-zinc-300">
       <div className="navbar  bg-gradient-to-r from-teal-600   to-stone-600">
         <div className="navbar-start">
           <div className="dropdown">
@@ -29,7 +30,7 @@ const StudentClearence = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <Link href='/dashboard' className="btn btn-ghost normal-case text-black  md:text-2xl">Dreamers University - Employee Portal</Link>
+          <Link href='/dashboard' className="btn btn-ghost normal-case text-black  md:text-2xl">Dreamers University - Administration Portal</Link>
         </div>
         <div className="navbar-end">
 
@@ -81,6 +82,20 @@ const StudentClearence = () => {
                       <BsFillBarChartLineFill size="20px" className="text-amber-400 ml-2"></BsFillBarChartLineFill>
                       <span class="flex-1 ml-2 whitespace-nowrap font-bold">Student Waiver</span>
 
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/employeeDashboard/studentApplication"
+                      class="flex items-center p-2 text-base font-normal text-black hover:text-white rounded-lg dark:text-black hover:bg-black dark:hover:bg-gray-700"
+                    >
+                      <FaWpforms
+                        size="20px"
+                        className="text-amber-400 ml-2"
+                      ></FaWpforms>
+                      <span class="flex-1 ml-2 whitespace-nowrap font-bold">
+                        Student Application
+                      </span>
                     </Link>
                   </li>
 

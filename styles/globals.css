@@ -106,6 +106,39 @@ a {
   }
 } */
 
+/* campus life animation  */
+.zoom-in-out-box {
+	/* margin: 0px;
+	width:px;
+	height: 50px; */
+	/* background: #f50057; */
+	animation: zoom-in-zoom-out 1s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+	0% {
+	  transform: scale(1, 1);
+	}
+	20% {
+	  transform: scale(1.2, 1.2);
+	}
+	/* 100% {
+	  transform: scale(1, 1);
+	} */
+  }
+
+/* animation */
+  .anime{
+    position: relative;
+    animation-name: info;
+    animation-duration: 7s;
+    animation-delay: 2s;
+  }
+  
+@keyframes info {
+   75%  { left:0px; top:0px;}
+    0%   { left:0px; top:200px;}
+ }
 
 
 

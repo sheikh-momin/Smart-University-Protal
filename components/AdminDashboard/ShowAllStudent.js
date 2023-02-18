@@ -8,7 +8,7 @@ const ShowAllStudent = () => {
   const [loading, setLoading] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:5000/studentDetails')
+        fetch('https://smart-university-protal-server-coral.vercel.app/studentDetails')
             .then(res => res.json())
             .then(data => setShowAllStudent(data))
             setLoading(false);
@@ -21,7 +21,7 @@ const ShowAllStudent = () => {
     const itsClicked= (_id)=>{
       console.log('its clicked',_id)
       
-        fetch(`http://localhost:5000/studentDetails/${_id}`)
+        fetch(`https://smart-university-protal-server-coral.vercel.app/studentDetails/${_id}`)
             .then(res => res.json())
             .then(data => setStudentDetails(data))
             console.log(studentDetails)
@@ -31,11 +31,11 @@ const ShowAllStudent = () => {
     }
 
     return (
-        <div>
+        <div className='flex justify-center'>
             {
               console.log(showAllStudent)
             }
-            <div className="overflow-x-auto ">
+        <div className="overflow-x-auto md:w-1/2">
   <table className="table w-full">
 
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Colabaration = () => {
     return (
-        <div className='mb-20 ml-0'>
+        <div className='mb-20 ml-0 anime'>
             <p className='text-center mb-6 text-teal-700 text-3xl font-bold italic font-serif'>International collaboration</p>
             <div className='grid grid-cols-1 gap-4  md:grid-cols-2 md:ml-28 lg:grid-cols-8 lg:ml-0'>
             <img className='border-2 h-2/3 mb-2 md:h-40 w-full hidden md:block' src="https://www.shutterstock.com/image-vector/university-logo-template-600w-1331386988.jpg" />

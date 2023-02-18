@@ -8,7 +8,8 @@ const Navbar = () => {
   const [allUsers, setAllUsers] = useState();
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
+      fetch(
+        `https://smart-university-protal-server-ruby.vercel.app/allUsers/${user?.email}`
       )
         .then((res) => res.json())
         .then((data) => {
@@ -69,6 +70,10 @@ const Navbar = () => {
           Hall
         </Link>
       </li>
+      
+
+
+
       <li>
         {user?.email ? (
           <>
@@ -137,6 +142,11 @@ const Navbar = () => {
           <></>
         )}
       </li>
+      <li>
+        <Link href="//admission/applyOnline" className="text-xl text-yellow-400 zoom-in-out-box font-bold">
+          Apply Online
+        </Link>
+      </li>
     </>
   );
   return (
@@ -170,7 +180,6 @@ const Navbar = () => {
           <div className=" flex">
             <div className="">
               <img
-              
                 src="/navIMG.png"
                 alt=""
                 className="md:w-40 md:h-20 w-18 h-12 md:hidden"
@@ -186,7 +195,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex md:mr-60">
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
       </div>

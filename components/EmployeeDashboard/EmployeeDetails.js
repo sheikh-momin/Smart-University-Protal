@@ -8,7 +8,9 @@ const EmployeeDetails = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://smart-university-protal-server-coral.vercel.app/employeeDetails`)
+      fetch(
+        `https://smart-university-protal-server-coral.vercel.app/employeeDetails`
+      )
         .then((res) => res.json())
         .then((data) => {
           data.map((s) => {
@@ -26,7 +28,7 @@ const EmployeeDetails = () => {
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={employeeDetails.img}
-              className="md:max-w-sm rounded-lg shadow-2xl hover:scale-90 ease-in duration-500"
+              className="md:max-w-sm rounded-lg shadow-2xl hover:scale-90 ease-in duration-500 w-48 h-48"
             />
             <div>
               <h1 className="md:text-2xl font-bold ">
@@ -35,9 +37,9 @@ const EmployeeDetails = () => {
               <p className="py-2">Employee's Email: {employeeDetails.email}</p>
               <p className="py-2">Designation: {employeeDetails.designation}</p>
               <p className="py-2">Department: {employeeDetails.department}</p>
-              <p className="py-2">
+              {/* <p className="py-2">
                 Marital Status: {employeeDetails.maritalStatus}
-              </p>
+              </p> */}
               <p className="py-2">Contact No: {employeeDetails.contact}</p>
             </div>
           </div>
