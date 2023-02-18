@@ -14,13 +14,13 @@ const NoticeAndRoutie = () => {
   }, []);
 
   return (
-    <div>
-      <div className="w-full">
+    
+      <div className="">
         {allNotices.map((n) => (
           <Notice key={n._id} allNotices={n}></Notice>
         ))}
       </div>
-    </div>
+    
   );
 };
 
