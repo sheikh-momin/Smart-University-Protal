@@ -33,7 +33,7 @@ const makecourse = () => {
         <div className="navbar-center">
           <Link
             href="/"
-            className="btn btn-ghost normal-case text-white text-xl"
+            className="btn btn-ghost normal-case text-white md:text-xl"
           >
             Dreamers University - Admin Portal
           </Link>
