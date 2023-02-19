@@ -3,7 +3,7 @@ import React from 'react';
 const TeacherCourse = () => {
     return (
         <div>
-            <div className="overflow-x-auto w-1/2 mx-auto mt-10">
+            <div className="overflow-x-auto md:w-1/2 mx-auto mt-10">
   <table className="table w-full">
 
 
