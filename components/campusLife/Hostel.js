@@ -3,7 +3,7 @@ import React from 'react';
 const Hostel = () => {
     return (
 
-        <div className='container mx-auto mt-12'>
+        <div className=' mt-12'>
              <h1 className='text-center text-teal-700 text-4xl font-bold italic font-serif mb-3'>Hostel Facilities</h1>
              <div className="divider"></div>
             
@@ -18,7 +18,7 @@ const Hostel = () => {
   </div>
 </div>
             
-            <div className='grid grid-cols-3 gap-8 container mt-6 mx-auto'>
+            <div className='grid md:grid-cols-3 gap-8 container mt-6 mx-auto'>
             <div>
                 <h3 className='text-3xl text-teal-700  font-bold italic font-serif'>In-room Amenities</h3>
                 <p className='text-xl mt-3'>#One Bed per Student shall be offered <br></br>

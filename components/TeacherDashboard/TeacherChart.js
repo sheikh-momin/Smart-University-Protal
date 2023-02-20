@@ -48,7 +48,7 @@ const TeacherChart = () => {
     ]
 
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center '>
             <RadialBarChart
                 width={860}
                 height={650}

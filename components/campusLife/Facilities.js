@@ -2,7 +2,7 @@ import React from 'react';
 
 const Facilities = () => {
     return (
-        <div className='mt-16 container mx-auto mb-4'>
+        <div className='mt-16  mb-4'>
              <h1 className='text-center text-teal-700 text-4xl font-bold italic font-serif'>Clubs And Extra Caricullar Activities</h1>
              <div className="divider"></div>
              <p className='text-center text-teal-600 text-3xl font-semibold mb-2'>Club Information</p>

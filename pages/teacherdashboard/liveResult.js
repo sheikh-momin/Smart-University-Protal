@@ -8,6 +8,7 @@ import { AiFillSave } from 'react-icons/ai';
 import { BsFillFileSpreadsheetFill } from 'react-icons/bs';
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
+import ParticalBackground from "../../components/ParticalBackground";
 
 const liveResult = () => {
   const { user, logOut } = useContext(AuthContext)
@@ -48,6 +49,7 @@ const liveResult = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
+        
           <Result></Result>
         </div>
 
@@ -126,6 +128,7 @@ const liveResult = () => {
           </ul>
         </div>
       </div>
+      <ParticalBackground></ParticalBackground>
     </div>
   );
 };

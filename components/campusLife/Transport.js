@@ -2,10 +2,10 @@ import React from 'react';
 
 const Transport = () => {
     return (
-        <div className='container mx-auto mt-16'>
+        <div className=' mt-16'>
              <h1 className='text-center mb-6 text-teal-700 text-4xl font-bold italic font-serif'>Transport Facilities</h1>
              <div className="divider"></div>
-           <div className='grid grid-cols-2 gap-6'>
+           <div className='grid md:grid-cols-2 gap-6'>
             
            <div>
            <p className='text-xl font-semibold'>Introduction:</p>
