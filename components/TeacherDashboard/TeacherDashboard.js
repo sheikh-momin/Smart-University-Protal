@@ -21,8 +21,12 @@ const TeacherDashboard = () => {
   };
   return (
     
-    <div className="bg-gradient-to-r from-indigo-200 via-purple-200 to-blue-300">
-      <div className="">
+    <div className="bg-gradient-to-br from-indigo-300 via-purple-300 to-blue-400 ">
+      <div className="relative w-full ">
+
+      <div className="absolute top-16 right-24 w-20 h-20 bg-gradient-to-tr from-indigo-200 via-purple-300 to-blue-500  animate-pulse">
+
+      </div>
       
       <div className="navbar bg-gradient-to-r from-indigo-900 via-purple-600 to-blue-600">
         <div className="navbar-start">
@@ -73,9 +77,11 @@ const TeacherDashboard = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          
+          <div className="grid sm:grid-cols-1 md:grid-cols-1">
           <TeacherDashboardProfile></TeacherDashboardProfile>
           <TeacherChart></TeacherChart>
+          </div>
+          
         </div>
 
         <div className="drawer-side">

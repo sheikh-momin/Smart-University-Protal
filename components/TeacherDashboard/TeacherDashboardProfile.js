@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
 import Loader from "../Loader";
 
-const TeacherDashboardProfile = () => {
+const  TeacherDashboardProfile = () => {
   const { user } = useContext(AuthContext);
   const [teacherDetails, setTeacherDetails] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -27,9 +27,9 @@ const TeacherDashboardProfile = () => {
   }
 
   return (
-    <div className="mx-5 md:mx-40">
+    <div className="mx-5 md:mx-40 ">
       {user?.email && (
-        <div className="hero bg-transparent mb-5 hover:scale-110 ease-in duration-500">
+        <div className="hero bg-transparent mb-5 hover:scale-110 ease-in duration-500  ">
           <div className="hero-content flex-col lg:flex-row ">
             <img
               src={teacherDetails.img}
