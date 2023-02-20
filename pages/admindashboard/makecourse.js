@@ -1,8 +1,15 @@
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import MakeCourse from "../../components/AdminDashboard/MakeCourse";
+import { AuthContext } from "../../Context/AuthProvider";
 
 const makecourse = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleSingOut = () => {
+    logOut()
+      .then(() => { })
+      .catch((error) => console.error(error));
+  };
   return (
     <div>
       <div className="navbar bg-gradient-to-r from-[#43cea2]  to-[#185a9d]">
@@ -157,13 +164,13 @@ const makecourse = () => {
                   </li>
 
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/signin"
                       class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                     >
                       <svg
                         aria-hidden="true"
-                        class="flex-shrink-0 w-6 h-6 text-gray-900 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        class="flex-shrink-0 w-6 h-6 text-red-800 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -174,8 +181,13 @@ const makecourse = () => {
                           clip-rule="evenodd"
                         ></path>
                       </svg>
-                      <span class="flex-1 ml-3 whitespace-nowrap">log Out</span>
-                    </a>
+                      <span
+                        onClick={handleSingOut}
+                        class="flex-1 text-red-800 ml-3 whitespace-nowrap"
+                      >
+                        log Out
+                      </span>
+                    </Link>
                   </li>
                 </ul>
               </div>
