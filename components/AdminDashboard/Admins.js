@@ -4,7 +4,7 @@ const Admins = () => {
   return (
     <div>
       <h2>Admins</h2>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
         <div className="card w-96 shadow-xl m-5 h-[400px]">
           <figure className="px-2 pt-5 m">
             <img
