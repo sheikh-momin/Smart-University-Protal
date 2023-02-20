@@ -141,6 +141,12 @@ a {
  }
 
 
+ .background{
+  background-image: url(/Assets/96119.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 70;
+ }
 
 body::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */

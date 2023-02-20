@@ -153,7 +153,6 @@ const index = () => {
                     </Link>
                   </li>
 
-
                   <li>
                     <Link
                       href="/signin"
