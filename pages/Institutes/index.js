@@ -9,7 +9,7 @@ const index = () => {
   return (
     <>
       <Navbar></Navbar>
-      <section>
+      <section className='mb-10'>
         <div>
           <div className="text-black font-bold text-3xl bg-base-200 p-5 mb-20 mt-10 border-l-8 border-green-800 ">
             <h2>Institutes And Centers</h2>
@@ -17,7 +17,7 @@ const index = () => {
 
           <div className="w-11/12 m-auto grid lg:grid-cols-2 justify-center">
             <Link href="Institutes/components/careercenter">
-              <div className="flex shadow w-11/12 h-52 p-5 ">
+              <div className="flex shadow w-11/12 h-52 p-3 ">
                 <div className="p-5 mr-5">
                   <img
                     src="https://www.jmu.edu/career/_actionlinkbuttons/button-careeradvocates.png"
@@ -46,7 +46,7 @@ const index = () => {
             </Link>
 
             <Link href="Institutes/components/research">
-              <div className="flex shadow w-11/12 h-52 p-5 ">
+              <div className="flex shadow w-11/12 h-52 p-3 ">
                 <div className="p-5 mr-5">
                   <img
                     src="https://twin-cities.umn.edu/sites/twin-cities.umn.edu/files/styles/mobile/public/BRI%20IEM_900x600.jpg?itok=lts1HZzE"
