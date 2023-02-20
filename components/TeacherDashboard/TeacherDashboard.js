@@ -10,6 +10,7 @@ import { SiCoursera } from "react-icons/si";
 import { AiFillContainer } from "react-icons/ai";
 import { AiFillSave } from "react-icons/ai";
 import { BsFillFileSpreadsheetFill } from "react-icons/bs";
+import ParticalBackground from "../ParticalBackground";
 
 const TeacherDashboard = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -19,7 +20,10 @@ const TeacherDashboard = () => {
       .catch((error) => console.error(error));
   };
   return (
-    <div className="bg-zinc-300">
+    
+    <div className="bg-gradient-to-r from-indigo-200 via-purple-200 to-blue-300">
+      <div className="">
+      
       <div className="navbar bg-gradient-to-r from-indigo-900 via-purple-600 to-blue-600">
         <div className="navbar-start">
           <div className="dropdown">
@@ -69,6 +73,7 @@ const TeacherDashboard = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
+          
           <TeacherDashboardProfile></TeacherDashboardProfile>
           <TeacherChart></TeacherChart>
         </div>
@@ -207,6 +212,7 @@ const TeacherDashboard = () => {
             </aside>
           </ul>
         </div>
+      </div>
       </div>
     </div>
   );
