@@ -5,7 +5,7 @@ import { AuthContext } from "../../Context/AuthProvider";
 
 const TeacherForm = () => {
   const { user } = useContext(AuthContext);
-  
+
   const {
     register,
     handleSubmit,
@@ -33,28 +33,33 @@ const TeacherForm = () => {
     };
     console.log(TeacherDetails);
 
-    fetch("https://smart-university-protal-server-coral.vercel.app/teacherDetails", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(TeacherDetails),
-    })
+    fetch(
+      "https://smart-university-protal-server-coral.vercel.app/teacherDetails",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(TeacherDetails),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         toast.success("Your Profile details is updated");
       });
-    
   };
-  
+
   return (
     <div>
-      <form onSubmit={handleSubmit(handleForm)} className="bg-white rounded-lg">
+      <form
+        onSubmit={handleSubmit(handleForm)}
+        className="bg-white rounded-lg px-6"
+      >
         <h2 className="bg-blue-600 text-white text-center text-xl font-bold py-4">
           Teacher Profile
         </h2>
-        <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1  p-12 pb-0">
+        <div className="grid lg:grid-cols-4 md:grid-cols-4 gap-4 grid-cols-1 lg:p-12 ">
           <div className="form-control ">
             <label className="label">
               <span className="label-text">Email:</span>
@@ -64,7 +69,7 @@ const TeacherForm = () => {
               // {...register("email", { required: "Email Id is required" })}
               name="mail"
               placeholder="Email"
-              className="input input-bordered input-info"
+              className="input input-bordered input-info lg:m-0 md:m-0 sm:mx-4"
               required
               defaultValue={user?.email}
             />
