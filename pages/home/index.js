@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Faculty from "../faculty";
 import Notice from "../Notice";
-import News from "../News";
+import NewsNotice from "../../components/NewsNotice/NewsNotice";
 import CampusLife from "../../components/CampusLife";
 import FacultyHome from "../../components/facultyHome";
 import MiddleNav from "../../components/MiddleNav";
@@ -18,7 +18,7 @@ const HomePage = () => {
       <MiddleNav></MiddleNav>
       <Navbar></Navbar>
       <Carusol></Carusol>
-      <News></News>
+     <NewsNotice></NewsNotice>
       <FacultyHome></FacultyHome>
       <CampusLife></CampusLife>
       <Colabaration></Colabaration>,<Footer></Footer>
