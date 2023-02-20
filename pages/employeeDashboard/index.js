@@ -20,7 +20,7 @@ const index = () => {
   };
 
   return (
-    <div className="bg-zinc-200">
+    <div className="bg-gradient-to-bl from-teal-200">
       <div className="navbar  bg-gradient-to-r from-teal-600   to-stone-600">
         <div className="navbar-start">
           <div className="dropdown">
