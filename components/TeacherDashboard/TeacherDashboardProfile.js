@@ -27,9 +27,9 @@ const  TeacherDashboardProfile = () => {
   }
 
   return (
-    <div className="mx-5 md:mx-40 ">
+    <div className="pr-32 w-full  card bg-base-100 shadow-xl ">
       {user?.email && (
-        <div className="hero bg-transparent mb-5 hover:scale-110 ease-in duration-500  ">
+        <div className="hero  mb-5 hover:scale-110 ease-in duration-500  ">
           <div className="hero-content flex-col lg:flex-row ">
             <img
               src={teacherDetails.img}
@@ -37,7 +37,7 @@ const  TeacherDashboardProfile = () => {
             />
             <div>
               <h1 className="md:text-2xl font-bold ">
-                Teacher's Name: {teacherDetails.name}
+                {teacherDetails.name}
               </h1>
               <p className="py-2">Teacher's Email: {teacherDetails.email}</p>
               <p className="py-2">Designation: {teacherDetails.designation}</p>
