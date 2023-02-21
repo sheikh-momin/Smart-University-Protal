@@ -79,11 +79,11 @@ const index = () => {
                 <h3 className="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9"></h3>
                 <time
                   datetime=""
-                  className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-white"
+                  className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 text-black"
                 >
                   Resume
                 </time>
-                <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300 ">
+                <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 text-black ">
                   You’ll eventually end up tailoring your resumes to specific
                   jobs, but creating your resume early or freshening up an
                   existing resume makes things easier when it’s time to apply.
@@ -99,16 +99,16 @@ const index = () => {
               <a
                 rel="noopener noreferrer"
                 href="#"
-                className="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900"
+                className="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 text-black"
               >
                 <h3 className="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9"></h3>
                 <time
                   datetime=""
-                  className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-white"
+                  className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 text-black"
                 >
                   Cover Letter
                 </time>
-                <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+                <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 text-black">
                   Cover Letters aren’t always required, but getting familiar
                   with what to include before you start applying can help you
                   easily create one when it is required. Even when not required,
@@ -130,11 +130,11 @@ const index = () => {
                 <h3 className="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9"></h3>
                 <time
                   datetime=""
-                  className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-white"
+                  className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 text-black"
                 >
                   Digital Profiles
                 </time>
-                <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+                <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 text-black">
                   Your digital “brand” is important in this virtual environment.
                   You’ll want to make sure your online and social media profiles
                   are complete and showcase you well when employers are
@@ -157,11 +157,11 @@ const index = () => {
                 <h3 className="mb-1 ml-8 font-semibold md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9"></h3>
                 <time
                   datetime=""
-                  className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-white"
+                  className="row-start-1 mb-1 md:col-start-1 xl:col-span-2 text-black"
                 >
                   Interview
                 </time>
-                <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+                <p className="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 text-black">
                   Plan ahead! Interviewing is a SKILL -- you want to get good at
                   it! Interviews can be scheduled on short timelines in a search
                   process, so get ahead of the game by preparing and practicing.
