@@ -10,6 +10,8 @@ import CampusLife from "../../components/CampusLife";
 import FacultyHome from "../../components/facultyHome";
 import MiddleNav from "../../components/MiddleNav";
 import TopNav from "../../components/TopNav";
+import AlumniCard from "../../components/AlumniCard";
+import AlumniCardSlide from "../../components/AlumniCardSlide";
 
 const HomePage = () => {
   return (
@@ -21,6 +23,8 @@ const HomePage = () => {
       <News></News>
       <FacultyHome></FacultyHome>
       <CampusLife></CampusLife>
+      <AlumniCard></AlumniCard>
+      <AlumniCardSlide></AlumniCardSlide>
       <Colabaration></Colabaration>,<Footer></Footer>
     </div>
   );
