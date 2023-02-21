@@ -54,6 +54,7 @@ const DropListComponent = () => {
                   <DeleteRegistarCourse
                     semester={drop.semester}
                     email={drop.email}
+                    drop={drop}
                   ></DeleteRegistarCourse>
                 </td>
               </tr>

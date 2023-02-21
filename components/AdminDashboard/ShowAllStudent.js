@@ -1,18 +1,41 @@
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { toast } from 'react-hot-toast';
+import { AuthContext } from '../../Context/AuthProvider';
 import Loader from '../Loader';
 
 const ShowAllStudent = () => {
   const [showAllStudent, setShowAllStudent] = useState([]);
   const [studentDetails, setStudentDetails] = useState([]);
   const [loading, setLoading] = useState([]);
+  const {user} =useContext(AuthContext)
     
     useEffect(() => {
         fetch('https://smart-university-protal-server-coral.vercel.app/studentDetails')
             .then(res => res.json())
             .then(data => setShowAllStudent(data))
             setLoading(false);
-    }, [])
+    }, [showAllStudent])
+
+
+  const handleDelete = id => {
+    const proceed = window.confirm('Are you sure you want to delete this ID?');
+    if (proceed) {
+      fetch(`https://smart-university-protal-server-coral.vercel.app/studentDetails/${id}`, {
+        method: 'DELETE',
+        headers: {
+          authorization: `bearer ${user}`
+        },
+      })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          if (data.deletedCount > 0) {
+            toast.success('Deleted Successfully');
+          }
+        })
+    }
+  };
 
 
     if (loading) {
@@ -75,7 +98,8 @@ const ShowAllStudent = () => {
           </td>
           
           <th>
-          <label onClick={()=>itsClicked(student._id)} htmlFor="my-modal" className="btn btn-ghost btn-xs">details</label>
+          <label onClick={()=>itsClicked(student._id)} htmlFor="my-modal" className="btn btn-ghost btn-xs mr-2">User Info</label>
+            <label onClick={() => handleDelete(student._id)} className="btn btn-secondary bg-red btn-xs">Delete</label>
           {/* The button to open modal */}
 {/* <label htmlFor="my-modal" className="btn">open modal</label> */}
 
@@ -105,99 +129,7 @@ const ShowAllStudent = () => {
       }
 
 
-      <tr>
-        
-        <td>
-          <div className="flex items-center space-x-3">
-            
-             
-            </div>
-            <div>
-              <div className="font-bold">tan@vir.com</div>
-              
-            </div>
-         
-        </td>
-        <td>
-          
-          <span className="">Tanvir</span>
-        </td>
-        
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
-      </tr>
-      <tr>
-       
-        <td>
-          <div className="flex items-center space-x-3">
-            
-             
-            </div>
-            <div>
-              <div className="font-bold">emon@leader.com</div>
-              
-            </div>
-         
-        </td>
-        <td>
-          
-          <span className="">Emon</span>
-        </td>
-        
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
-      </tr>
-      <tr>
-        {/* <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th> */}
-        <td>
-          <div className="flex items-center space-x-3">
-            
-             
-            </div>
-            <div>
-              <div className="font-bold">ni@shi.com</div>
-              
-            </div>
-         
-        </td>
-        <td>
-          
-          <span className="">Nishi</span>
-        </td>
-        
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
-      </tr>
-      <tr>
-       
-        <td>
-          <div className="flex items-center space-x-3">
-            
-             
-            </div>
-            <div>
-              <div className="font-bold">ni@shat.com</div>
-              
-            </div>
-         
-        </td>
-        <td>
-          
-          <span className="">Nishat</span>
-        </td>
-        
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
-      </tr>
-
+      
       
       
 

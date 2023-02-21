@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Context/AuthProvider";
 import Loader from "../Loader";
 
@@ -19,6 +20,25 @@ const StudentApplicationShow = () => {
     }
   }, [user, application])
 
+  const handleDelete = id => {
+    const proceed = window.confirm('Are you sure you want to delete this ID?');
+    if (proceed) {
+      fetch(`https://smart-university-protal-server-coral.vercel.app/studentApplication/${id}`, {
+        method: 'DELETE',
+        headers: {
+          authorization: `bearer ${user}`
+        },
+      })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          if (data.deletedCount > 0) {
+            toast.success('Deleted Successfully');
+          }
+        })
+    }
+  };
+
   if (loading) {
     return <Loader></Loader>
   }
@@ -38,6 +58,9 @@ const StudentApplicationShow = () => {
                 <h2 className='font-serif font-bold text-xl mt-5'>Instruction: {result.instruction }</h2>
                 <h2 className='font-serif font-bold text-xl mt-5'>Subject: {result.applicationType}</h2>
                 <p className='mt-5 font-serif font-lg'>{result.applicationBody}</p>
+                <div>
+                  <label onClick={() => handleDelete(result._id)} className="btn btn-secondary bg-red btn-xs">Delete</label>
+                </div>
                 
               </div>
             </div>
