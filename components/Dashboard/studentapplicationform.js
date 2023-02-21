@@ -15,14 +15,16 @@ const studentapplicationform = () => {
     const applicationBody = data.applicationBody;
     const semester = data.semester;
     const instruction = data.instruction;
+    const email = user.email;
 
     const StudentApplication = {
+      email: email,
       applicationType: applicationType,
       applicationBody: applicationBody,
       semester: semester,
       instruction: instruction,
     };
-    console.log(StudentApplication);
+
 
     fetch("https://smart-university-protal-server-coral.vercel.app/studentApplication", {
       method: "POST",
