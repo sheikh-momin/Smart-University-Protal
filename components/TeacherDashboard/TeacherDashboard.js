@@ -11,7 +11,6 @@ import { SiCoursera } from "react-icons/si";
 import { AiFillContainer } from "react-icons/ai";
 import { AiFillSave } from "react-icons/ai";
 import { BsFillFileSpreadsheetFill } from "react-icons/bs";
-import ParticalBackground from "../ParticalBackground";
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';

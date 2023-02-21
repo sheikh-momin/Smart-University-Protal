@@ -8,7 +8,7 @@ import { AiFillSave } from 'react-icons/ai';
 import { BsFillFileSpreadsheetFill } from 'react-icons/bs';
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
-import ParticalBackground from "../../components/ParticalBackground";
+
 
 const liveResult = () => {
   const { user, logOut } = useContext(AuthContext)
@@ -128,7 +128,7 @@ const liveResult = () => {
           </ul>
         </div>
       </div>
-      <ParticalBackground></ParticalBackground>
+      
     </div>
   );
 };
