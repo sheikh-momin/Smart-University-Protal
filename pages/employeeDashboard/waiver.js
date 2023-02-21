@@ -30,7 +30,7 @@ const Waiver = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <Link href='/dashboard' className="btn btn-ghost normal-case text-black  md:text-2xl">Dreamers University - Administration Portal</Link>
+          <Link href='/dashboard' className="btn btn-ghost normal-case text-black  md:text-2xl">Dreamers University - Employee Portal</Link>
         </div>
         <div className="navbar-end">
 

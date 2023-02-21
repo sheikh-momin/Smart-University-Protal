@@ -46,7 +46,7 @@ const EmployeeChart = () => {
     },
   ];
   return (
-    <div style={{ width: "100%", height: 300 }}>
+    <div className="mt-10" style={{ width: "100%", height: 300 }}>
       <ResponsiveContainer>
         <ComposedChart
           width={500}

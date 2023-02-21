@@ -22,7 +22,7 @@ const EmployeeDetails = () => {
   }, [user]);
 
   return (
-    <div className="mx-5 md:mx-40">
+    <div className="mx-5 md:mx-40 shadow-lg ">
       {user?.email && (
         <div className="hero bg-sky-100 mb-5 hover:scale-110 ease-in duration-500">
           <div className="hero-content flex-col lg:flex-row">

@@ -51,7 +51,7 @@ const StudentApplication = () => {
             href="/dashboard"
             className="btn btn-ghost normal-case text-black  md:text-2xl"
           >
-            Dreamers University - Administration Portal
+            Dreamers University - Employee Portal
           </Link>
         </div>
         <div className="navbar-end"></div>
