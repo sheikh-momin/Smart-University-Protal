@@ -3,7 +3,7 @@ import EmployeeDetails from "./EmployeeDetails";
 
 const EmployeeDashboard = () => {
   return (
-    <div className="md:w-3/4 w-full bg-zinc-200 ">
+    <div className="md:w-3/4 w-full bg-tranparent ">
       <section className="">
         <h2></h2>
         <div>

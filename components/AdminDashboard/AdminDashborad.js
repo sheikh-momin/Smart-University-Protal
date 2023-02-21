@@ -9,9 +9,9 @@ const AdminDashborad = () => {
     logOut()
       .then(() => {})
       .catch((error) => console.error(error));
-  };
+  }; 
   return (
-    <div>
+    <div className="bg-gradient-to-bl from-[#ccffef] ">
       <div>
         <div className="navbar bg-gradient-to-r from-[#43cea2]  to-[#185a9d]">
           <div className="navbar-start">

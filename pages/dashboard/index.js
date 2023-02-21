@@ -28,7 +28,7 @@ const index = () => {
       .catch((error) => console.error(error));
   };
   return (
-    <div className="bg-zinc-300 ">
+    <div className="bg-gradient-to-br from-blue-400 via-cyan-200 to-violet-500  ">
       <div className="navbar bg-gradient-to-r from-blue-900   to-cyan-500">
         <div className="navbar-start">
           <div className="dropdown">

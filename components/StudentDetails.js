@@ -28,9 +28,9 @@ const StudentDetails = () => {
   }
 
   return (
-    <div className="bg-zinc-300">
+    <div className="bg-transparent">
       {user?.email && (
-        <div className="hero bg-base-200 mb-5 hover:scale-110 ease-in duration-500">
+        <div className="hero bg-transparent mb-5 hover:scale-110 ease-in duration-500">
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={studentDetails.img}
