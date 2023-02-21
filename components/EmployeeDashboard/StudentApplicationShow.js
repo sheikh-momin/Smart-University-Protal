@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { AuthContext } from "../../Context/AuthProvider";
 import Loader from "../Loader";
+import { FaRegStar } from 'react-icons/fa';
+import { MdOutlineMarkEmailRead } from 'react-icons/md';
 
 
 const StudentApplicationShow = () => {
@@ -48,18 +50,21 @@ const StudentApplicationShow = () => {
       <div >
       {
           application?.map((result) => <div className='  mt-10'>
-            <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box bg-emerald-100">
               <div className="collapse-title text-xl font-medium flex justify-around">
-                <h2 className='font-mono font-xl font-semibold text-green-600'> Email:</h2>
-                <p> {result.email}</p>
+                <h2 className='font-mono font-xl font-semibold text-green-600'><FaRegStar className=" text-yellow-500 inline-block"></FaRegStar> Email:</h2>
+                <p><MdOutlineMarkEmailRead className="inline-block text-red-500"></MdOutlineMarkEmailRead> {result.email}</p>
+                
               </div>
+              
               <div className="collapse-content">
+                
                 <h2 className='font-serif font-bold text-xl mt-5'>Semester: {result.semester }</h2>
                 <h2 className='font-serif font-bold text-xl mt-5'>Instruction: {result.instruction }</h2>
                 <h2 className='font-serif font-bold text-xl mt-5'>Subject: {result.applicationType}</h2>
                 <p className='mt-5 font-serif font-lg'>{result.applicationBody}</p>
-                <div>
-                  <label onClick={() => handleDelete(result._id)} className="btn btn-secondary bg-red btn-xs">Delete</label>
+                <div className="flex justify-end mt-5">
+                  <label onClick={() => handleDelete(result._id)} className="btn btn-secondary bg-red btn-xs ">Delete</label>
                 </div>
                 
               </div>

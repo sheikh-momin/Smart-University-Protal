@@ -98,7 +98,7 @@ const ShowAllStudent = () => {
           </td>
           
           <th>
-          <label onClick={()=>itsClicked(student._id)} htmlFor="my-modal" className="btn btn-ghost btn-xs mr-2">User Info</label>
+          <label onClick={()=>itsClicked(student._id)} htmlFor="my-modal" className="btn btn-ghost btn-xs mr-5">User Info</label>
             <label onClick={() => handleDelete(student._id)} className="btn btn-secondary bg-red btn-xs">Delete</label>
           {/* The button to open modal */}
 {/* <label htmlFor="my-modal" className="btn">open modal</label> */}
