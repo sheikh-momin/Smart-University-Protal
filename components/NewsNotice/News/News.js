@@ -17,7 +17,7 @@ const News = () => {
  
      <div className='grid lg:grid-cols-3'>
      
-          <div className=" h-48 w-52 bg-base-100 shadow-xl lg:mr-1">
+          <div className=" lg:h-48 lg:w-52 sm:w-11/12 bg-base-100 shadow-xl lg:mr-1">
             <figure className="">
               <img
                 src="https://www.ox.ac.uk/sites/files/oxford/field/field_image_main/graduation_1.jpg"
@@ -36,7 +36,7 @@ const News = () => {
      
 
       
-          <div className=" h-48 w-52 bg-base-100 shadow-xl lg:mr-1">
+          <div className=" lg:h-48 lg:w-52 sm:w-11/12 bg-base-100 shadow-xl lg:mr-1">
             <figure className="">
               <img
                 src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80"
@@ -55,7 +55,7 @@ const News = () => {
      
 
        
-          <div className=" h-48 w-52 bg-base-100 shadow-xl lg:mr-1">
+          <div className=" lg:h-48 lg:w-52 sm:w-11/12 bg-base-100 shadow-xl lg:mr-1">
             <figure className="">
               <img
                 src="https://www.ox.ac.uk/sites/files/oxford/field/field_image_main/graduation_1.jpg"

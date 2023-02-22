@@ -6,15 +6,16 @@ import TeacherChart from "./TeacherChart";
 import TeacherCourse from "./TeacherCourse";
 import TeacherDashboardProfile from "./TeacherDashboardProfile";
 import TakenProject from "./TakenProject";
+import ClassProgress from "./ClassProgress";
 import { RiProfileFill } from "react-icons/ri";
 import { SiCoursera } from "react-icons/si";
 import { AiFillContainer } from "react-icons/ai";
 import { AiFillSave } from "react-icons/ai";
 import { BsFillFileSpreadsheetFill } from "react-icons/bs";
-import ParticalBackground from "../ParticalBackground";
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+
 
 const TeacherDashboard = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -78,25 +79,24 @@ const TeacherDashboard = () => {
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
           
-
-           <div className="container px-6 m-auto mt-10">
-          <div className="grid grid-cols-4 gap-x-32 md:grid-cols-8 lg:grid-cols-12">
-            <div className="col-span-4 lg:col-span-6 lg:mr-32"><TeacherDashboardProfile></TeacherDashboardProfile></div>
-            <div className="col-span-4 lg:col-span-6"> 
-
-<div className="">                   <Calendar  />          </div>
-            </div>
+          <div className="container px-6 m-auto mt-20">
+          <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+            <div className="col-span-4"><TeacherDashboardProfile></TeacherDashboardProfile></div>
+            <div className="col-span-4"><ClassProgress></ClassProgress></div>
+            <div className="col-span-4">    <Calendar  />     </div>
           </div>
         </div>
+         
 
+  
          <div className="container px-6 m-auto mt-20">
-          <div className="grid grid-cols-4 gap-6  gap-x-32 md:grid-cols-8 lg:grid-cols-12">
+          <div className="grid grid-cols-4 gap-6  gap-x-8 md:grid-cols-8 lg:grid-cols-12">
             <div className="col-span-4 lg:col-span-6"><TakenProject></TakenProject></div>
             <div className="col-span-4 lg:col-span-6">
-              <div className="card w-96 bg-base-100 shadow-xl">
+              <div className="card w-96 bg-[#305EEB] shadow-xl">
                 <div className="card-body grid justify-center">
-                  <h2 className="card-title">Project Progress</h2>
-                   <div className="radial-progress" style={{ "--value": "70", "--size": "12rem", "--thickness": "2px" }}>70%</div>
+                  <h2 className="card-title text-white">Project Progress</h2>
+                   <div className="radial-progress text-white" style={{ "--value": "70", "--size": "12rem", "--thickness": "2px" }}>70%</div>
                 </div>
               </div>
 
@@ -111,14 +111,7 @@ const TeacherDashboard = () => {
               <TeacherChart></TeacherChart>
             </div>
 
-            <div class="grid grid-cols-6 gap-4">
-              <div class="col-start-2 col-span-4"></div>
-              <div class="col-start-1 col-end-3 w-96 bg-blue">02</div>
-              <div class="col-end-7 col-span-2 w-96 bg-blue">03</div>
-              <div class="col-start-1 col-end-7">
-                
-              </div>
-            </div>
+           
           </div>
 
           <div className="drawer-side">
