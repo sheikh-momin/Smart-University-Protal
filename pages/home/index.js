@@ -19,7 +19,7 @@ import Testimonial from "../../components/Testimonial";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className=" ">
       <TopNav></TopNav>
       <MiddleNav></MiddleNav>
       <Navbar></Navbar>
@@ -28,7 +28,7 @@ const HomePage = () => {
       <FacultyHome></FacultyHome>
       <CampusLife></CampusLife>
       <AlumniCardSlide></AlumniCardSlide>
-      <Testimonial></Testimonial>
+      
       
       <AlumniCard></AlumniCard>
       

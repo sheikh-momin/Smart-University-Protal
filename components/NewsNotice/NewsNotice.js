@@ -3,7 +3,7 @@ import NewsSlide from "./News/News";
 import Notice from "./Notice/Notice";
 const NewsNotice = () => {
   return (
-    <section className="bg-slate-100 p-8 py-24">
+    <section className=" p-8 py-24">
       <h2 className="text-center text-black font-serif font-bold text-3xl  mb-6">
         News & Notice
       </h2>
