@@ -15,6 +15,7 @@ import AlumniCardSlide from "../../components/AlumniCardSlide";
 import CardFlip from "../../components/CardFlip";
 import ModifyCampusLife from "../../components/ModifyCampusLife";
 import FlipcardSlide from "../../components/FlipcardSlide";
+import Testimonial from "../../components/Testimonial";
 
 const HomePage = () => {
   return (
@@ -27,11 +28,11 @@ const HomePage = () => {
       <FacultyHome></FacultyHome>
       <CampusLife></CampusLife>
       <AlumniCardSlide></AlumniCardSlide>
-      <ModifyCampusLife></ModifyCampusLife>
-      <FlipcardSlide></FlipcardSlide>
+      <Testimonial></Testimonial>
+      
       <AlumniCard></AlumniCard>
       
-      
+      <FlipcardSlide></FlipcardSlide>
       
       
       <Colabaration></Colabaration>,<Footer></Footer>

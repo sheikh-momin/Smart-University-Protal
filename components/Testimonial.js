@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
-const Testimonial = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-};
 
+
+
+const Testimonial= () =>  {
+  return (
+    
+    <div className="bg-dark_purple ">
+        
+
+    </div>
+  );
+}
 export default Testimonial;
