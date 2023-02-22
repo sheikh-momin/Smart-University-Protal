@@ -93,7 +93,7 @@ const index = () => {
           >
             <li className="flex-1" role="presentation ">
               <button
-                className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
+                className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-2 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
                   tabSelected.currentTab === 1
                     ? "border-emerald-500 stroke-emerald-500 text-emerald-500 hover:border-emerald-600  hover:text-emerald-600 focus:border-emerald-700 focus:stroke-emerald-700 focus:text-emerald-700 disabled:border-slate-500"
                     : "justify-self-center border-transparent stroke-slate-700 text-slate-700 hover:border-emerald-500 hover:text-emerald-500 focus:border-emerald-600 focus:stroke-emerald-600 focus:text-emerald-600 disabled:text-slate-500"
@@ -116,7 +116,7 @@ const index = () => {
             </li>
             <li className="flex-1" role="presentation ">
               <button
-                className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
+                className={`-mb-px inline-flex h-12 w-full items-center justify-center  whitespace-nowrap rounded-t border-b-2 px-2 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
                   tabSelected.currentTab === 2
                     ? "border-emerald-500 stroke-emerald-500 text-emerald-500 hover:border-emerald-600  hover:text-emerald-600 focus:border-emerald-700 focus:stroke-emerald-700 focus:text-emerald-700 disabled:border-slate-500"
                     : "justify-self-center border-transparent stroke-slate-700 text-slate-700 hover:border-emerald-500 hover:text-emerald-500 focus:border-emerald-600 focus:stroke-emerald-600 focus:text-emerald-600 disabled:text-slate-500"
@@ -139,7 +139,7 @@ const index = () => {
             </li>
             <li className="flex-1" role="presentation ">
               <button
-                className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
+                className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-2 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
                   tabSelected.currentTab === 3
                     ? "border-emerald-500 stroke-emerald-500 text-emerald-500 hover:border-emerald-600  hover:text-emerald-600 focus:border-emerald-700 focus:stroke-emerald-700 focus:text-emerald-700 disabled:border-slate-500"
                     : "justify-self-center border-transparent stroke-slate-700 text-slate-700 hover:border-emerald-500 hover:text-emerald-500 focus:border-emerald-600 focus:stroke-emerald-600 focus:text-emerald-600 disabled:text-slate-500"
@@ -179,14 +179,14 @@ const index = () => {
                       <div className="container p-4 mx-auto space-y-16 sm:p-10">
                         <div className="space-y-4">
                           <h3 className="text-2xl font-bold leading-none sm:text-2xl">
-                            HALL FACILITIES
+                           FACILITIES
                           </h3>
                           <p className="max-w-2xl dark:text-black">
                             Indoor sports court, gym room, study room, band
                             room, etc. are also available for residents’ use.
                           </p>
                         </div>
-                        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+                        <div className="grid w-full grid-cols-1 gap-2 md:grid-cols-2">
                           <div className=" space-x-6">
                             <img
                               alt=""
@@ -195,7 +195,7 @@ const index = () => {
                             />
                             <div className="flex flex-col">
                               <h4 className="text-xl font-semibold">
-                                Hall Complex
+                                Complex
                               </h4>
                               <p className="text-sm dark:text-gray-400"></p>
                             </div>
