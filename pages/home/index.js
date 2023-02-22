@@ -12,6 +12,9 @@ import MiddleNav from "../../components/MiddleNav";
 import TopNav from "../../components/TopNav";
 import AlumniCard from "../../components/AlumniCard";
 import AlumniCardSlide from "../../components/AlumniCardSlide";
+import CardFlip from "../../components/CardFlip";
+import ModifyCampusLife from "../../components/ModifyCampusLife";
+import FlipcardSlide from "../../components/FlipcardSlide";
 
 const HomePage = () => {
   return (
@@ -23,8 +26,14 @@ const HomePage = () => {
      <NewsNotice></NewsNotice>
       <FacultyHome></FacultyHome>
       <CampusLife></CampusLife>
-      <AlumniCard></AlumniCard>
       <AlumniCardSlide></AlumniCardSlide>
+      <ModifyCampusLife></ModifyCampusLife>
+      <FlipcardSlide></FlipcardSlide>
+      <AlumniCard></AlumniCard>
+      
+      
+      
+      
       <Colabaration></Colabaration>,<Footer></Footer>
     </div>
   );
