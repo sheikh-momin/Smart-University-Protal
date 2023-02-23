@@ -1,7 +1,12 @@
 import React from "react";
 import Charts from "../../pages/dashboard/Charts";
+import ChartofStudent from "../ChartofStudent";
 import ProtalFooter from "../ProtalFooter/ProtalFooter";
 import StudentDetails from "../StudentDetails";
+import Studentinfo from "../Studentinfo";
+import Studentinfo2 from "../Studentinfo2";
+import Studentinfo3 from "../Studentinfo3";
+import StudentPro from "../StudentPro";
 
 const Dashboard = () => {
   return (
@@ -27,11 +32,44 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="flex justify-center">
-          <Charts></Charts>
+        <div className="w-full grid gap-5 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1" >
+          <div className="pt-10">
+            <ChartofStudent></ChartofStudent>
+          </div>
+          <div className="pt-10">
+
+            <StudentPro></StudentPro>
+          </div>
+
+
         </div>
+
+
+       
+
+        <div className="w-full grid gap-5 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1" >
+        
+          <div className="pt-10">
+
+            <Studentinfo2></Studentinfo2>
+         
+        </div>
+          <div className="pt-10">
+
+            <Studentinfo3></Studentinfo3>
+         
+        </div>
+
+
+
+        </div>
+
+
+
+
+
       </section>
-      
+
     </div>
   );
 };
