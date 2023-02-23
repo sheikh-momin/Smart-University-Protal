@@ -12,10 +12,14 @@ import MiddleNav from "../../components/MiddleNav";
 import TopNav from "../../components/TopNav";
 import AlumniCard from "../../components/AlumniCard";
 import AlumniCardSlide from "../../components/AlumniCardSlide";
+import CardFlip from "../../components/CardFlip";
+import ModifyCampusLife from "../../components/ModifyCampusLife";
+import FlipcardSlide from "../../components/FlipcardSlide";
+import Testimonial from "../../components/Testimonial";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className=" ">
       <TopNav></TopNav>
       <MiddleNav></MiddleNav>
       <Navbar></Navbar>
@@ -23,8 +27,14 @@ const HomePage = () => {
      <NewsNotice></NewsNotice>
       <FacultyHome></FacultyHome>
       <CampusLife></CampusLife>
-      <AlumniCard></AlumniCard>
       <AlumniCardSlide></AlumniCardSlide>
+      
+      
+      <AlumniCard></AlumniCard>
+      
+      <FlipcardSlide></FlipcardSlide>
+      
+      
       <Colabaration></Colabaration>,<Footer></Footer>
     </div>
   );

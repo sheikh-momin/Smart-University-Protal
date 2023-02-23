@@ -4,7 +4,7 @@ import "react-photo-view/dist/react-photo-view.css";
 
 const CampusLife = () => {
   return (
-    <div className="lg:my-24 lg:px-40 lg:py-24 px-4 mb-12 bg-slate-100">
+    <div className="lg:my-24 lg:px-40 lg:py-24 px-4 mb-12 ">
       {" "}
       <h2 className="text-3xl font-bold text-center mb-6 font-serif italic">
         Campus Life
