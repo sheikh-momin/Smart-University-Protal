@@ -27,7 +27,7 @@ const  TeacherDashboardProfile = () => {
   }
 
   return (
-    <div className="pr-32 w-full  card bg-base-100 shadow-xl ">
+    <div className="pr-32 w-full  card bg-[#81A9FB] shadow-xl ">
       {user?.email && (
         <div className="hero  mb-5 hover:scale-110 ease-in duration-500  ">
           <div className="hero-content flex-col lg:flex-row ">

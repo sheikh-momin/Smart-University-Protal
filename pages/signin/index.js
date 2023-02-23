@@ -57,13 +57,13 @@ const index = () => {
         <div className="hero ">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="inset-y-0 right-0">
-              <div className="w-9/12 float-right">
+              <div className="w-11/12 grid justify-center ">
                 <Lottie animationData={login} loop={true} />
               </div>
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
               <div className="flex justify-center">
-                <div className="card shadow p-12 py-8 bg-base-200 w-96">
+                <div className="card shadow p-12 py-8 bg-base-200 ">
                   <h2 className="text-primary text-2xl mb-5">Sing In</h2>
 
                   <form onSubmit={handleSubmit(handleSignIn)}>

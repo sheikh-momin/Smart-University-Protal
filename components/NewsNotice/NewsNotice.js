@@ -9,7 +9,7 @@ const NewsNotice = () => {
       </h2>
 
       <div className="grid lg:grid-cols-2">
-        <div className="lg:mr-40">
+        <div className="lg:mr-40 sm:mb-8">
           <NewsSlide></NewsSlide>
         </div>
 
