@@ -15,24 +15,14 @@ const About = () => {
             className="w-full h-full"/>
              </div>
 
-        <div className="flex mt-10">
+        <div className="grid lg:grid-cols-2 gap-5 md:grid-cols-1 sm:grid-cols-1 mt-10 ">
           <div className="w-1/3 h-96">
-            <div className="drawer drawer-mobile ">
-              <input
+            {/* <div className="drawer drawer-mobile "> */}
+              {/* <input
                 id="my-drawer-2"
                 type="checkbox"
                 className="drawer-toggle"
-              />
-              {/* <div className="drawer-content flex flex-col items-center justify-center"> */}
-                {/* <!-- Page content here --> */}
-                {/* <label
-                  htmlFor="my-drawer-2"
-                  className="btn btn-primary drawer-button lg:hidden"
-                >
-                  Open drawer
-                </label> */}
-              {/* </div> */}
-              {/* drawer-side */}
+              /> */}
               <div className="">
                 {/* <label htmlFor="my-drawer-2" className="drawer-overlay"></label> */}
                 <ul className="menu p-4 w-80   bg-zinc-300  text-black font-bold ">
@@ -42,7 +32,7 @@ const About = () => {
                   <li><a className="ml-10  text-md" href="#structure">Structure of Dreamers University</a></li>
                   {/* <li><a className="ml-10 text-md">Member States</a></li> */}
                 </ul>
-              </div>
+              {/* </div> */}
             </div>
           </div>
 
